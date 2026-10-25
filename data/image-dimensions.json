@@ -1,0 +1,182 @@
+{
+  "/assets/web_page/P-DOINS0.png": {
+    "width": 1200,
+    "height": 588
+  },
+  "/assets/web_page/P-DOINS1.png": {
+    "width": 1200,
+    "height": 915
+  },
+  "/assets/web_page/P-DOINS2.png": {
+    "width": 1200,
+    "height": 622
+  },
+  "/assets/web_page/VeFloodBN.png": {
+    "width": 1200,
+    "height": 836
+  },
+  "/assets/web_page/VeFloodBN_additional1.png": {
+    "width": 1200,
+    "height": 815
+  },
+  "/assets/web_page/agent_you_must_knows.png": {
+    "width": 1200,
+    "height": 687
+  },
+  "/assets/web_page/agent_you_must_knows_additional1.png": {
+    "width": 1200,
+    "height": 1001
+  },
+  "/assets/web_page/agent_you_must_knows_additional2.png": {
+    "width": 1200,
+    "height": 1020
+  },
+  "/assets/web_page/chronos2.png": {
+    "width": 1200,
+    "height": 941
+  },
+  "/assets/web_page/chronos2_additional.png": {
+    "width": 1144,
+    "height": 1048
+  },
+  "/assets/web_page/clinical_brain_tumor_detection.png": {
+    "width": 1200,
+    "height": 966
+  },
+  "/assets/web_page/clinical_brain_tumor_detection_additional1.png": {
+    "width": 1200,
+    "height": 945
+  },
+  "/assets/web_page/clinical_brain_tumor_detection_additional2.png": {
+    "width": 1032,
+    "height": 1274
+  },
+  "/assets/web_page/clinical_brain_tumor_detection_additional3.png": {
+    "width": 1160,
+    "height": 1116
+  },
+  "/assets/web_page/customer_platform1.png": {
+    "width": 1200,
+    "height": 882
+  },
+  "/assets/web_page/customer_platform2.png": {
+    "width": 1200,
+    "height": 730
+  },
+  "/assets/web_page/customer_platform_additional1.png": {
+    "width": 918,
+    "height": 1182
+  },
+  "/assets/web_page/fine_tuning_qwen_hotelbot.png": {
+    "width": 1200,
+    "height": 778
+  },
+  "/assets/web_page/hateful_memes_detection.png": {
+    "width": 1200,
+    "height": 929
+  },
+  "/assets/web_page/hateful_memes_detection_additional1.png": {
+    "width": 1200,
+    "height": 766
+  },
+  "/assets/web_page/head_img.jpeg": {
+    "width": 460,
+    "height": 460
+  },
+  "/assets/web_page/llamafactory.png": {
+    "width": 1200,
+    "height": 917
+  },
+  "/assets/web_page/llamafactory_additional2.png": {
+    "width": 1200,
+    "height": 941
+  },
+  "/assets/web_page/llamafactory_additional3.png": {
+    "width": 1200,
+    "height": 832
+  },
+  "/assets/web_page/logo.png": {
+    "width": 1200,
+    "height": 1200
+  },
+  "/assets/web_page/nexus_page.png": {
+    "width": 1200,
+    "height": 1026
+  },
+  "/assets/web_page/nexus_page_additional1.png": {
+    "width": 1200,
+    "height": 906
+  },
+  "/assets/web_page/nexus_page_additional2.png": {
+    "width": 1170,
+    "height": 1414
+  },
+  "/assets/web_page/omni_rec.png": {
+    "width": 1200,
+    "height": 803
+  },
+  "/assets/web_page/omni_rec_additional1.png": {
+    "width": 1200,
+    "height": 1144
+  },
+  "/assets/web_page/omni_rec_additional2.png": {
+    "width": 1200,
+    "height": 866
+  },
+  "/assets/web_page/peanut1.png": {
+    "width": 1200,
+    "height": 877
+  },
+  "/assets/web_page/peanut2.png": {
+    "width": 1174,
+    "height": 1318
+  },
+  "/assets/web_page/peanut3.png": {
+    "width": 1152,
+    "height": 666
+  },
+  "/assets/web_page/rl.png": {
+    "width": 1200,
+    "height": 882
+  },
+  "/assets/web_page/rl_additional1.png": {
+    "width": 1200,
+    "height": 790
+  },
+  "/assets/web_page/rl_additional2.png": {
+    "width": 1200,
+    "height": 841
+  },
+  "/assets/web_page/scratchoml_NIDS.png": {
+    "width": 1200,
+    "height": 924
+  },
+  "/assets/web_page/scratchoml_NIDS_additional1.png": {
+    "width": 1200,
+    "height": 1000
+  },
+  "/assets/web_page/scratchoml_NIDS_additional2.png": {
+    "width": 1200,
+    "height": 492
+  },
+  "/assets/web_page/uparis_ds.png": {
+    "width": 1200,
+    "height": 900
+  },
+  "/assets/web_page/uparis_ds_additional.png": {
+    "width": 1200,
+    "height": 915
+  },
+  "/assets/web_page/weibo_sentiment_qabot.png": {
+    "width": 1200,
+    "height": 1021
+  },
+  "/assets/web_page/weibo_sentiment_qabot_additional1.png": {
+    "width": 1200,
+    "height": 512
+  },
+  "/assets/web_page/weibo_sentiment_qabot_additional2.png": {
+    "width": 1200,
+    "height": 876
+  }
+}

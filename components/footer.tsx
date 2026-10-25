@@ -1,0 +1,81 @@
+"use client";
+
+import Link from "next/link";
+import { ArrowUpRight, Github, ArrowUp } from "lucide-react";
+import { homeCopy } from "@/data/site-copy";
+import { useCopy } from "@/components/locale-provider";
+import { asset, site } from "@/lib/site-config";
+import { technicalSkills } from "@/data/portfolio";
+
+export function Footer() {
+  const { locale, t, href } = useCopy();
+  return (
+    <footer id="contact" className="site-footer">
+      <div className="shell">
+        <div className="contact-banner">
+          <div>
+            <p className="eyebrow">
+              {t("LET’S CONNECT THE DOTS", "让想法相互连接")}
+            </p>
+            <h2>
+              {t("Curious about", "对研究感兴趣？")}
+              <br />
+              {t("what’s next?", "一起探索下一步。")}
+            </h2>
+          </div>
+          <a
+            href={site.github}
+            className="paper-button"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Github size={22} />
+            {t("Connect on GitHub", "在 GitHub 上交流")}
+            <ArrowUpRight size={20} />
+          </a>
+        </div>
+        <div className="footer-grid">
+          <div>
+            <Link className="brand" href={href()}>
+              <img src={asset(site.logo)} width="36" height="36" alt="" />
+              AI Lab.
+            </Link>
+            <p>{homeCopy[locale].contactDescription}</p>
+          </div>
+          <div>
+            <h3>{t("Explore", "探索")}</h3>
+            <Link href={`${href()}#about`}>
+              {t("About the lab", "关于实验室")}
+            </Link>
+            <Link href={`${href()}#research`}>
+              {t("Research directions", "研究方向")}
+            </Link>
+            <Link href={`${href()}#portfolio`}>
+              {t("All projects", "全部项目")}
+            </Link>
+            <Link href={`${href()}#notes`}>
+              {t("Research notes", "研究笔记")}
+            </Link>
+          </div>
+          <div>
+            <h3>{t("Research interests", "研究兴趣")}</h3>
+            <div className="footer-tags">
+              {technicalSkills.map((skill) => (
+                <span key={skill}>{skill}</span>
+              ))}
+            </div>
+          </div>
+        </div>
+        <div className="footer-bottom">
+          <span>
+            © {new Date().getFullYear()} {site.name} · AI Research Lab
+          </span>
+          <Link href={href()}>
+            {t("Back to top", "返回顶部")}
+            <ArrowUp size={16} />
+          </Link>
+        </div>
+      </div>
+    </footer>
+  );
+}
