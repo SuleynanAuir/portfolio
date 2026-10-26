@@ -50,6 +50,19 @@ export function Navigation() {
               </Link>
             ))}
           </div>
+          <div className="header-topic-band">
+            <ul
+              className="header-topics"
+              aria-label={t("Research topics", "研究主题")}
+            >
+              {researchTopics.map((topic, index) => (
+                <li key={topic}>
+                  {index > 0 && <span aria-hidden="true">✳</span>}
+                  {topic}
+                </li>
+              ))}
+            </ul>
+          </div>
           <div className="nav-actions">
             <Link
               className="language-switch"
@@ -76,19 +89,6 @@ export function Navigation() {
             </button>
           </div>
         </nav>
-        <div className="header-topic-band">
-          <ul
-            className="header-topics"
-            aria-label={t("Research topics", "研究主题")}
-          >
-            {researchTopics.map((topic, index) => (
-              <li key={topic}>
-                {index > 0 && <span aria-hidden="true">✳</span>}
-                {topic}
-              </li>
-            ))}
-          </ul>
-        </div>
       </div>
       {open && (
         <div className="mobile-nav paper-card" id="mobile-menu">

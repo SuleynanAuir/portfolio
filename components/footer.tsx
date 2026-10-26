@@ -7,8 +7,19 @@ import { useCopy } from "@/components/locale-provider";
 import { asset, site } from "@/lib/site-config";
 import { technicalSkills } from "@/data/portfolio";
 
-export function Footer() {
+export function Footer({ compact = false }: { compact?: boolean }) {
   const { locale, t, href } = useCopy();
+  if (compact)
+    return (
+      <footer id="contact" className="selected-footer shell">
+        <span>
+          © {new Date().getFullYear()} {site.name} · AI Research Lab
+        </span>
+        <a href={site.github} target="_blank" rel="noreferrer">
+          <Github size={16} /> GitHub <ArrowUpRight size={15} />
+        </a>
+      </footer>
+    );
   return (
     <footer id="contact" className="site-footer">
       <div className="shell">
@@ -17,11 +28,7 @@ export function Footer() {
             <p className="eyebrow">
               {t("LET’S CONNECT THE DOTS", "让想法相互连接")}
             </p>
-            <h2>
-              {t("Curious about", "对研究感兴趣？")}
-              <br />
-              {t("what’s next?", "一起探索下一步。")}
-            </h2>
+            <h2>{t("Curious about what’s next?", "一起探索下一步。")}</h2>
           </div>
           <a
             href={site.github}

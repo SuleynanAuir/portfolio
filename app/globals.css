@@ -2924,3 +2924,2354 @@ h2 {
     font-size: 11px;
   }
 }
+
+/* Compact masthead and the academic / professional profile. */
+.header-panel .paper-nav {
+  padding: 7px 16px 5px;
+}
+.header-panel .brand {
+  font-size: 23px;
+  line-height: 1.2;
+}
+.header-panel .brand img {
+  width: 30px;
+  height: 30px;
+}
+.header-panel .nav-contact {
+  width: 32px;
+  height: 32px;
+  border-radius: 9px;
+}
+.header-topic-band {
+  padding: 8px 16px 5px;
+  clip-path: polygon(0 5px, 100% 0, 100% 100%, 0 100%);
+}
+.header-topics li {
+  font-size: 11px;
+}
+.header-topics li > span {
+  font-size: 14px;
+}
+.academic-profile {
+  min-width: 0;
+  padding: 16px;
+  border: 1px solid #d6dce4;
+  border-radius: 16px;
+  background: #fff;
+}
+.academic-institution {
+  color: #586476;
+  font-size: 10px;
+  line-height: 1.5;
+  margin-bottom: 6px;
+}
+.academic-education h2 {
+  font-size: 15px;
+  line-height: 1.4;
+  letter-spacing: -0.3px;
+}
+.academic-period {
+  margin-top: 5px;
+  color: #666;
+  font-size: 10px;
+  line-height: 1.5;
+}
+.academic-credentials {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 12px;
+}
+.academic-credentials .gpa-row {
+  margin: 0;
+  font-size: 10px;
+  gap: 5px;
+}
+.academic-credentials .rank-badge {
+  font-size: 10px;
+  padding: 3px 5px;
+}
+.academic-credentials .gpa-badge {
+  padding-inline: 6px;
+}
+.academic-credentials .university-logos {
+  gap: 6px;
+}
+.academic-credentials .university-logos img {
+  width: 30px;
+  height: 30px;
+}
+.academic-credentials .university-connector {
+  font-size: 12px;
+}
+.academic-laboratories {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid #e0e4ea;
+}
+.academic-laboratories > h2 {
+  letter-spacing: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  line-height: 1.5;
+  margin: 0 0 9px;
+}
+.academic-laboratories ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 7px;
+}
+.laboratory-item {
+  padding: 7px 9px;
+  border-radius: 7px;
+  border-left: 3px solid var(--lab-accent);
+  background: var(--lab-bg);
+}
+.laboratory-blue {
+  --lab-accent: #92b7e4;
+  --lab-bg: #f0f6ff;
+  --lab-ink: #315b91;
+}
+.laboratory-purple {
+  --lab-accent: #c5adeb;
+  --lab-bg: #f5f0fc;
+  --lab-ink: #704c9b;
+}
+.laboratory-mint {
+  --lab-accent: #9bcbb1;
+  --lab-bg: #eff8f2;
+  --lab-ink: #326849;
+}
+.laboratory-item h3 {
+  font-size: 10.5px;
+  line-height: 1.45;
+  font-weight: 500;
+}
+.laboratory-label {
+  display: table;
+  color: var(--lab-ink);
+  font-size: 9px;
+  line-height: 1.5;
+  font-weight: 700;
+  margin-top: 4px;
+}
+.home-intro .profile-summary {
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr) minmax(0, 1.35fr);
+  padding: 14px 18px;
+  gap: 18px;
+}
+.profile-summary > .internship-info {
+  border: 0;
+  padding: 0;
+}
+.activities-info {
+  min-width: 0;
+  padding-left: 18px;
+  border-left: 1px solid #ddd;
+}
+.activities-info > h2 {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 10px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.activities-info > ul {
+  display: grid;
+  gap: 7px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.activity-item h3 {
+  font-size: 11px;
+  line-height: 1.35;
+  font-weight: 650;
+}
+.activity-copy > p {
+  color: #636363;
+  font-size: 9.5px;
+  line-height: 1.4;
+  margin-top: 2px;
+}
+.activity-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px 5px;
+  list-style: none;
+  margin: 3px 0 0;
+  padding: 0;
+}
+.activity-tags li {
+  font-size: 9px;
+  line-height: 1.4;
+  border-radius: 3px;
+  padding: 1px 5px;
+  color: #315b91;
+  background: #eaf2ff;
+}
+.activity-1 .activity-tags li {
+  color: #326849;
+  background: #eaf6ed;
+}
+.activity-2 .activity-tags li {
+  color: #704c9b;
+  background: #f0eafa;
+}
+.activity-4 .activity-tags li {
+  color: #8b5d0b;
+  background: #fff2d4;
+}
+@media (min-width: 1100px) {
+  .home-intro > .hero {
+    grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.2fr) minmax(0, 0.75fr);
+    column-gap: 24px;
+    row-gap: 20px;
+  }
+}
+@media (min-width: 1100px) and (max-height: 800px) {
+  .home-intro > .hero {
+    padding-block: 8px;
+    row-gap: 10px;
+  }
+  .academic-profile {
+    padding: 10px;
+  }
+  .academic-laboratories {
+    margin-top: 8px;
+    padding-top: 7px;
+  }
+  .academic-credentials {
+    margin-top: 8px;
+  }
+  .academic-laboratories > h2 {
+    margin-bottom: 6px;
+  }
+  .academic-laboratories ul {
+    gap: 5px;
+  }
+  .laboratory-item {
+    padding-block: 5px;
+  }
+  .home-intro .hero-visual {
+    max-width: 242px;
+  }
+  .home-intro .profile-summary {
+    padding-block: 10px;
+  }
+  .activities-info > ul {
+    gap: 5px;
+  }
+}
+@media (max-width: 1099px) and (min-width: 761px) {
+  .home-intro > .hero {
+    grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+  }
+  .hero-copy {
+    grid-column: 1 / -1;
+  }
+  .academic-profile {
+    width: 100%;
+  }
+  .home-intro .profile-summary {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .activities-info {
+    grid-column: 1 / -1;
+    border-left: 0;
+    padding: 14px 0 0;
+    border-top: 1px solid #ddd;
+  }
+  .activities-info > ul {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px 24px;
+  }
+}
+@media (max-width: 760px) {
+  .header-panel .paper-nav {
+    padding: 6px 10px 4px;
+  }
+  .header-panel .brand {
+    font-size: 21px;
+  }
+  .header-panel .brand img {
+    width: 28px;
+    height: 28px;
+  }
+  .header-topic-band {
+    padding: 10px 8px 6px;
+  }
+  .header-topics {
+    gap: 4px 8px;
+  }
+  .header-topics li {
+    font-size: 10px;
+  }
+  .academic-profile {
+    order: 1;
+    padding: 18px;
+  }
+  .academic-institution {
+    font-size: 11px;
+  }
+  .academic-education h2 {
+    font-size: 17px;
+  }
+  .academic-period {
+    font-size: 11px;
+  }
+  .academic-credentials .gpa-row,
+  .academic-credentials .rank-badge {
+    font-size: 11px;
+  }
+  .academic-laboratories > h2 {
+    font-size: 12px;
+  }
+  .laboratory-item {
+    padding: 10px;
+  }
+  .laboratory-item h3 {
+    font-size: 12px;
+  }
+  .laboratory-label {
+    font-size: 10px;
+  }
+  .home-intro .profile-summary {
+    grid-template-columns: minmax(0, 1fr);
+    padding: 18px;
+    gap: 18px;
+  }
+  .activities-info {
+    padding: 14px 0 0;
+    border-left: 0;
+    border-top: 1px solid #ddd;
+  }
+  .activities-info > ul {
+    gap: 14px;
+  }
+  .activity-item h3 {
+    font-size: 12px;
+  }
+  .activity-copy > p {
+    font-size: 11px;
+    margin-top: 4px;
+  }
+  .activity-tags {
+    margin-top: 5px;
+  }
+  .activity-tags li {
+    font-size: 10px;
+    padding: 2px 5px;
+  }
+}
+
+/* Academic roles, award emphasis and expanded professional experience. */
+.academic-education {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 5px 10px;
+  align-items: center;
+}
+.academic-institution,
+.academic-education > h2 {
+  grid-column: 1 / -1;
+  margin: 0;
+}
+.academic-period {
+  grid-column: 1;
+  margin: 0;
+}
+.academic-credentials {
+  display: contents;
+}
+.academic-credentials .gpa-row {
+  grid-column: 1;
+  margin-top: 6px;
+}
+.academic-credentials .university-logos {
+  grid-column: 2;
+  grid-row: 3 / 5;
+  gap: 8px;
+}
+.academic-credentials .university-logos img {
+  width: 54px;
+  height: 54px;
+}
+.academic-credentials .university-connector {
+  font-size: 18px;
+}
+.laboratory-meta {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.35fr);
+  gap: 6px;
+  align-items: center;
+  margin-top: 5px;
+}
+.laboratory-meta .laboratory-label {
+  display: block;
+  margin: 0;
+  padding: 3px 5px;
+  border: 1px solid var(--lab-accent);
+  border-radius: 4px;
+  font-size: 9px;
+  line-height: 1.35;
+}
+.laboratory-role {
+  display: block;
+  border-radius: 4px;
+  padding: 3px 5px;
+  background: #fff0d6;
+  color: #7a4b10;
+  font-size: 9px;
+  line-height: 1.35;
+}
+.role-caption {
+  text-transform: uppercase;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+  margin-right: 3px;
+}
+.laboratory-role strong {
+  font-weight: 800;
+}
+.home-intro .profile-summary {
+  grid-template-columns: minmax(0, 1.16fr) minmax(0, 1fr) minmax(0, 1.18fr);
+}
+.honors-info > ul > li {
+  font-size: 12px;
+  line-height: 1.5;
+}
+.home-intro .honors-info > ul {
+  gap: 9px;
+}
+.honor-emphasis {
+  color: #b12f4c;
+  font-weight: 800;
+  white-space: nowrap;
+}
+.internship-info > ul {
+  gap: 10px;
+}
+.internship-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.internship-heading h3 {
+  min-width: 0;
+}
+.internship-heading .internship-logo {
+  width: 36px;
+  height: 26px;
+}
+.internship-info .internship-period {
+  display: block;
+  font-size: 9px;
+  color: #666;
+  margin: 2px 0 4px;
+}
+.internship-roles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.internship-roles strong,
+.internship-roles > span {
+  font-size: 9px;
+  line-height: 1.4;
+  padding: 2px 5px;
+  border-radius: 4px;
+}
+.internship-roles strong {
+  background: #eae5fb;
+  color: #633f9b;
+  font-weight: 800;
+}
+.internship-roles > span {
+  background: #fff0d6;
+  color: #7a4b10;
+  font-weight: 700;
+}
+.internship-info .internship-summary {
+  display: block;
+  font-size: 10px;
+  line-height: 1.45;
+  margin-top: 5px;
+}
+.internship-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #315b91;
+  font-size: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 3px;
+}
+.internship-more:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.activity-item {
+  position: relative;
+  padding-right: 46px;
+}
+.activity-heading h3 {
+  margin: 0;
+}
+.activity-logo {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+.activity-logo-wide {
+  width: 44px;
+  height: 30px;
+}
+.internship-detail {
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  width: min(720px, calc(100vw - 32px));
+  max-height: calc(100svh - 48px);
+  padding: 32px;
+  border: 2px solid #101010;
+  border-radius: 20px;
+  background: #fffdf8;
+  color: #101010;
+  box-shadow: 7px 7px 0 #101010;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+.internship-detail::backdrop {
+  background: #1118;
+  backdrop-filter: blur(4px);
+}
+.dialog-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+}
+.detail-organization-logo {
+  display: block;
+  object-fit: contain;
+  margin-bottom: 18px;
+}
+.internship-info .internship-detail h2 {
+  display: block;
+  font-size: 23px;
+  line-height: 1.35;
+  letter-spacing: -0.5px;
+  text-transform: none;
+  margin: 0 0 8px;
+  padding-right: 20px;
+}
+.internship-info .internship-detail p {
+  display: block;
+  font-size: 13px;
+  margin: 8px 0;
+}
+.internship-detail .internship-roles {
+  margin-block: 14px;
+}
+.internship-detail .internship-roles strong,
+.internship-detail .internship-roles > span {
+  font-size: 12px;
+  padding: 5px 8px;
+}
+.internship-info .internship-detail h3 {
+  font-size: 16px;
+  margin: 24px 0 12px;
+  line-height: 1.45;
+}
+.internship-info .internship-detail ul {
+  display: grid;
+  list-style: disc;
+  padding-left: 20px;
+  gap: 14px;
+}
+.internship-detail li {
+  font-size: 14px;
+  line-height: 1.7;
+}
+@media (min-width: 1100px) {
+  .home-intro > .hero {
+    grid-template-columns: minmax(0, 1.35fr) minmax(0, 1.3fr) minmax(0, 0.7fr);
+    column-gap: 20px;
+  }
+}
+@media (min-width: 1100px) and (max-height: 800px) {
+  .home-intro .profile-summary {
+    padding: 9px 16px;
+    gap: 14px;
+  }
+  .honors-info,
+  .activities-info {
+    padding-left: 14px;
+  }
+  .home-intro > .hero {
+    row-gap: 8px;
+  }
+  .academic-laboratories ul {
+    gap: 3px;
+  }
+  .laboratory-item {
+    padding-block: 4px;
+  }
+  .laboratory-meta {
+    margin-top: 3px;
+  }
+  .laboratory-meta .laboratory-label,
+  .laboratory-role {
+    padding-block: 2px;
+  }
+  .internship-info > ul {
+    gap: 8px;
+  }
+}
+@media (min-width: 761px) and (max-width: 1099px) {
+  .home-intro .profile-summary {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 760px) {
+  .home-intro .profile-summary {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .academic-education {
+    column-gap: 8px;
+  }
+  .academic-credentials .university-logos {
+    gap: 5px;
+  }
+  .academic-credentials .university-logos img {
+    width: 44px;
+    height: 44px;
+  }
+  .academic-credentials .university-connector {
+    font-size: 15px;
+  }
+  .academic-period {
+    font-size: 10px;
+  }
+  .academic-credentials .gpa-row {
+    gap: 4px;
+  }
+  .academic-credentials .gpa-row,
+  .academic-credentials .rank-badge {
+    font-size: 10px;
+  }
+  .laboratory-meta {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 5px;
+  }
+  .laboratory-meta .laboratory-label,
+  .laboratory-role {
+    font-size: 10px;
+    padding: 4px 6px;
+  }
+  .role-caption {
+    font-size: 9px;
+  }
+  .honors-info > ul > li {
+    font-size: 13px;
+  }
+  .home-intro .honors-info > ul {
+    gap: 11px;
+  }
+  .internship-info > ul {
+    gap: 18px;
+  }
+  .internship-info .internship-period {
+    font-size: 11px;
+  }
+  .internship-roles strong,
+  .internship-roles > span {
+    font-size: 10px;
+  }
+  .internship-info .internship-summary {
+    font-size: 12px;
+    line-height: 1.6;
+  }
+  .internship-more {
+    font-size: 12px;
+    padding-block: 4px;
+  }
+  .internship-detail {
+    padding: 24px 20px;
+  }
+  .internship-info .internship-detail h2 {
+    font-size: 19px;
+  }
+}
+@media (max-width: 360px) {
+  .academic-education {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .academic-credentials .university-logos {
+    grid-column: 1;
+    grid-row: auto;
+    justify-self: end;
+  }
+}
+.internship-meta-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 4px 6px;
+  margin-top: 4px;
+}
+.internship-meta-line .internship-period {
+  margin: 0;
+  white-space: nowrap;
+}
+.internship-more {
+  display: flex;
+  width: fit-content;
+  line-height: 1.4;
+}
+@media (min-width: 1100px) and (max-width: 1199px) {
+  .home-intro .shell {
+    width: calc(100% - 40px);
+  }
+  .home-intro > .hero {
+    grid-template-columns: minmax(0, 1.25fr) minmax(0, 1.45fr) minmax(0, 0.65fr);
+  }
+}
+
+/* Free vertical space for the profile: one compact navigation row. */
+.header-panel {
+  border-width: 2px;
+  border-radius: 13px;
+  box-shadow: 4px 4px 0 #101010;
+}
+.header-panel .paper-nav {
+  padding: 7px 12px;
+  gap: 12px;
+}
+.header-panel .brand {
+  font-size: 20px;
+  gap: 6px;
+}
+.header-panel .brand img {
+  width: 26px;
+  height: 26px;
+}
+.header-panel .desktop-nav {
+  gap: 12px;
+  flex-shrink: 0;
+}
+.header-panel .desktop-nav a {
+  font-size: 12px;
+}
+.header-panel .nav-actions {
+  gap: 10px;
+  flex-shrink: 0;
+}
+.header-panel .language-switch {
+  font-size: 12px;
+}
+.header-panel .nav-contact {
+  width: 28px;
+  height: 28px;
+}
+.header-topic-band {
+  flex: 1;
+  min-width: 0;
+  clip-path: none;
+  padding: 7px 10px;
+  border-radius: 7px;
+}
+.header-topics {
+  gap: 6px 10px;
+}
+.header-topics li {
+  gap: 10px;
+  font-size: 10px;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+.header-topics li > span {
+  font-size: 12px;
+}
+.academic-education {
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 7px 10px;
+}
+.academic-education .academic-institution,
+.academic-education > h2 {
+  grid-column: 1;
+}
+.academic-credentials .university-logos {
+  grid-column: 2;
+  grid-row: 1 / 3;
+  align-self: center;
+}
+.academic-record {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 6px 10px;
+  margin-top: 3px;
+}
+.academic-record .academic-period {
+  margin: 0;
+}
+.academic-record .gpa-row {
+  margin: 0;
+  gap: 5px;
+  font-size: 10px;
+}
+.academic-record .rank-badge {
+  font-size: 10px;
+  padding: 3px 5px;
+}
+.academic-record .gpa-badge {
+  padding-inline: 6px;
+}
+.academic-laboratories ul {
+  gap: 12px;
+}
+.laboratory-item {
+  padding-block: 7px;
+}
+.honors-info .honor-with-logo {
+  grid-template-columns: minmax(0, 1fr) 62px;
+  gap: 8px;
+  min-height: 36px;
+}
+.honor-logo {
+  width: 62px;
+  height: 36px;
+}
+.activity-item {
+  padding-right: 74px;
+  min-height: 48px;
+}
+.activity-logo {
+  width: 46px;
+  height: 46px;
+}
+.activity-logo-wide {
+  width: 66px;
+  height: 38px;
+}
+.activity-3 .activity-logo {
+  width: 60px;
+  height: 60px;
+}
+@media (min-width: 1100px) {
+  .header-topics {
+    flex-wrap: nowrap;
+  }
+  .header-topics li {
+    font-size: clamp(10px, 0.85vw, 11px);
+  }
+}
+@media (min-width: 1100px) and (max-height: 800px) {
+  .academic-laboratories ul {
+    gap: 12px;
+  }
+  .laboratory-item {
+    padding-block: 5px;
+  }
+}
+@media (max-width: 1099px) {
+  .header-panel .paper-nav {
+    flex-wrap: wrap;
+  }
+  .header-topic-band {
+    order: 4;
+    flex-basis: 100%;
+    padding-block: 5px;
+  }
+  .header-panel .nav-actions {
+    margin-left: auto;
+  }
+}
+@media (max-width: 760px) {
+  .header-panel .paper-nav {
+    padding: 5px 8px;
+    gap: 5px 10px;
+  }
+  .header-topics {
+    gap: 3px 8px;
+  }
+  .header-topics li {
+    gap: 7px;
+    font-size: 9px;
+  }
+  .header-topics li > span {
+    font-size: 10px;
+  }
+  .academic-education .academic-institution {
+    grid-column: 1 / -1;
+  }
+  .academic-credentials .university-logos {
+    grid-row: 2;
+  }
+  .academic-record {
+    gap: 8px;
+  }
+  .academic-record .gpa-row {
+    font-size: 11px;
+  }
+  .academic-record .rank-badge {
+    font-size: 11px;
+  }
+  .academic-laboratories ul {
+    gap: 14px;
+  }
+  .laboratory-item {
+    padding-block: 10px;
+  }
+  .activity-item {
+    padding-right: 72px;
+  }
+  .honors-info .honor-with-logo {
+    grid-template-columns: minmax(0, 1fr) 58px;
+  }
+  .honor-logo {
+    width: 58px;
+    height: 36px;
+  }
+}
+@media (max-width: 360px) {
+  .academic-education {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+  .academic-credentials .university-logos {
+    grid-column: 2;
+    grid-row: 2;
+  }
+}
+
+/* Laboratory tenure and award responsibilities. */
+.laboratory-period {
+  display: inline-block;
+  margin-left: 6px;
+  color: #596374;
+  font-size: 9px;
+  line-height: 1.4;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.laboratory-meta .laboratory-label {
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  background: transparent;
+}
+.honor-role {
+  display: table;
+  margin-top: 4px;
+  padding: 2px 6px;
+  border: 1px solid #d0c2e9;
+  border-radius: 4px;
+  background: #f2ecfa;
+  color: #67438c;
+  font-size: 9px;
+  line-height: 1.35;
+  font-weight: 700;
+}
+@media (min-width: 1100px) {
+  .home-intro .profile-summary {
+    grid-template-columns: minmax(0, 1.16fr) minmax(0, 1.18fr) minmax(0, 1fr);
+  }
+}
+@media (min-width: 761px) and (max-width: 1099px) {
+  .home-intro .profile-summary {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .profile-summary .activities-info {
+    grid-column: auto;
+    border-top: 0;
+    border-left: 1px solid #ddd;
+    padding: 0 0 0 18px;
+  }
+  .profile-summary .activities-info > ul {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .profile-summary .honors-info {
+    grid-column: 1 / -1;
+    border-left: 0;
+    border-top: 1px solid #ddd;
+    padding: 14px 0 0;
+  }
+}
+@media (max-width: 760px) {
+  .laboratory-period {
+    font-size: 10px;
+  }
+  .honor-role {
+    font-size: 10px;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1199px) {
+  .home-intro .honors-info > ul {
+    gap: 8px;
+  }
+}
+
+/* Two-line awards and hand-drawn marker headings. */
+.honors-info .honor-with-logo {
+  container-type: inline-size;
+  grid-template-columns: minmax(0, 1fr) 62px;
+  row-gap: 4px;
+}
+.honor-title {
+  grid-column: 1 / -1;
+  font-size: clamp(9px, 3.8cqi, 12px);
+  line-height: 1.5;
+  white-space: nowrap;
+}
+.honor-details {
+  grid-column: 1;
+  grid-row: 2;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  white-space: nowrap;
+}
+.honor-details .honor-role {
+  display: inline-block;
+  margin: 0;
+  padding: 2px 5px;
+}
+.honor-with-logo .honor-logo {
+  grid-column: 2;
+  grid-row: 2;
+  height: 25px;
+}
+.academic-laboratories > .profile-section-heading,
+.profile-summary > div > .profile-section-heading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 850;
+  line-height: 1.4;
+  letter-spacing: 0.01em;
+  text-transform: none;
+  margin-bottom: 12px;
+}
+.profile-section-heading > svg {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  stroke-width: 2.2;
+}
+.brush-label {
+  position: relative;
+  display: inline-block;
+  isolation: isolate;
+  padding: 2px 5px;
+}
+.brush-label::before,
+.brush-label::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  z-index: -1;
+  background: var(--marker-color, #b9dfed);
+}
+.brush-label::before {
+  inset: 15% -4px 4%;
+  opacity: 0.65;
+  transform: rotate(-1.4deg);
+  clip-path: polygon(
+    1% 15%,
+    14% 9%,
+    28% 13%,
+    46% 3%,
+    64% 9%,
+    83% 0,
+    99% 9%,
+    97% 24%,
+    100% 38%,
+    98% 58%,
+    100% 78%,
+    94% 92%,
+    70% 88%,
+    51% 100%,
+    31% 91%,
+    12% 99%,
+    0 83%,
+    2% 63%,
+    0 39%
+  );
+}
+.brush-label::after {
+  left: 2%;
+  right: -2%;
+  top: 54%;
+  height: 35%;
+  opacity: 0.45;
+  transform: rotate(0.8deg);
+  clip-path: polygon(0 18%, 98% 0, 100% 66%, 73% 86%, 39% 69%, 1% 100%);
+}
+.academic-laboratories {
+  --marker-color: #a8d9e9;
+}
+.internship-info {
+  --marker-color: #c1afea;
+}
+.activities-info {
+  --marker-color: #a8ddbd;
+}
+.honors-info {
+  --marker-color: #f4d078;
+}
+@media (max-width: 760px) {
+  .academic-laboratories > .profile-section-heading,
+  .profile-summary > div > .profile-section-heading {
+    font-size: 17px;
+  }
+  .honor-details {
+    gap: 5px;
+    font-size: 12px;
+  }
+  .honor-details .honor-role {
+    font-size: 9px;
+  }
+  .honors-info .honor-with-logo {
+    grid-template-columns: minmax(0, 1fr) 52px;
+    column-gap: 6px;
+  }
+  .honor-with-logo .honor-logo {
+    width: 52px;
+  }
+}
+.honors-info .honor-with-logo {
+  row-gap: 0;
+}
+.honor-with-logo .honor-logo {
+  height: 32px;
+}
+.home-intro .honors-info > ul {
+  gap: 7px;
+}
+@media (min-width: 1100px) and (max-width: 1199px) {
+  .academic-laboratories > .profile-section-heading,
+  .profile-summary > div > .profile-section-heading {
+    margin-bottom: 8px;
+  }
+  .home-intro > .hero {
+    row-gap: 6px;
+  }
+}
+@media (max-width: 760px) {
+  .home-intro .honors-info > ul {
+    gap: 11px;
+  }
+}
+
+/* Soft surfaces are intentionally limited to the first home panel. */
+.home-intro {
+  --surface-blue: #e2effa;
+  --surface-purple: #eee7fa;
+  --surface-mint: #e3f4e9;
+  --surface-gold: #fff2ce;
+  --surface-rose: #fbe7ed;
+}
+.home-intro .coral {
+  background: var(--surface-rose);
+  color: #25212a;
+}
+.home-intro .blue {
+  background: var(--surface-blue);
+  color: #21374d;
+}
+.home-intro .yellow,
+.home-intro .portrait-frame,
+.home-intro .portrait-caption {
+  background: var(--surface-gold);
+  color: #25212a;
+}
+.home-intro .purple,
+.home-intro .sticker-bottom {
+  background: var(--surface-purple);
+  color: #25212a;
+}
+.home-intro .sticker-top {
+  background: var(--surface-mint);
+}
+.home-intro .header-topic-band {
+  background: #101010;
+  color: #fff;
+}
+.home-intro .header-topics li > span {
+  color: #ffc224;
+}
+.home-intro .paper-button,
+.home-intro .header-panel .nav-contact {
+  background: #101010;
+  color: #fff;
+}
+.home-intro .paper-button.secondary,
+.home-intro .paper-button.light {
+  background: #fff;
+  color: #25212a;
+}
+.academic-laboratories {
+  --marker-color: #9bcde0;
+}
+.internship-info {
+  --marker-color: #c2afe0;
+}
+.activities-info {
+  --marker-color: #a2d7bc;
+}
+.honors-info {
+  --marker-color: #e9cb8d;
+}
+.academic-laboratories,
+.profile-summary > div {
+  container-type: inline-size;
+}
+.academic-laboratories > .profile-section-heading,
+.profile-summary > div > .profile-section-heading {
+  font-family:
+    var(--font-marker), "Marker Felt", "Comic Sans MS", var(--font-onest),
+    sans-serif;
+  font-size: clamp(18px, 5.8cqi, 26px);
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+  text-transform: uppercase;
+  gap: 8px;
+  margin-bottom: 12px;
+  color: #242027;
+}
+.profile-section-heading > svg {
+  width: 30px;
+  height: 30px;
+  stroke-width: 2.6;
+}
+.brush-label {
+  padding: 4px 6px;
+  transform: rotate(-1deg);
+  -webkit-text-stroke: 0;
+}
+.brush-label::before {
+  inset: -5px -10px -5px;
+  opacity: 1;
+  transform: rotate(-1deg);
+  clip-path: none;
+  background: var(--marker-color);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20700%20130%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cfilter%20id%3D%22dry%22%20x%3D%22-5%25%22%20y%3D%22-20%25%22%20width%3D%22110%25%22%20height%3D%22140%25%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%22.13%20.45%22%20numOctaves%3D%223%22%20seed%3D%228%22%2F%3E%3CfeDisplacementMap%20in%3D%22SourceGraphic%22%20scale%3D%225%22%2F%3E%3C%2Ffilter%3E%3C%2Fdefs%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22white%22%20stroke-linecap%3D%22round%22%20filter%3D%22url%28%23dry%29%22%3E%3Cpath%20d%3D%22M38%2038%20L639%2028%22%20stroke-width%3D%2221%22%20opacity%3D%22.55%22%2F%3E%3Cpath%20d%3D%22M25%2055%20L654%2042%22%20stroke-width%3D%2223%22%20opacity%3D%22.8%22%2F%3E%3Cpath%20d%3D%22M13%2076%20L660%2062%22%20stroke-width%3D%2222%22%2F%3E%3Cpath%20d%3D%22M34%2091%20L639%2079%22%20stroke-width%3D%2219%22%20opacity%3D%22.8%22%2F%3E%3Cpath%20d%3D%22M403%20113%20Q505%2092%20644%2094%20L514%20120%20L600%20114%22%20stroke-width%3D%227%22%20opacity%3D%22.85%22%2F%3E%3Cpath%20d%3D%22M660%2018%20L669%203%20M676%2027%20L694%2016%22%20stroke-width%3D%227%22%2F%3E%3Cpath%20d%3D%22M671%2024%20L676%2017%22%20stroke-width%3D%223%22%2F%3E%3C%2Fg%3E%3Cg%20fill%3D%22white%22%20opacity%3D%22.8%22%20filter%3D%22url%28%23dry%29%22%3E%3Cpath%20d%3D%22M8%2071%20l-4%208%206%207%203-10z%20M15%2096%20l5%203-3%206-5-5z%20M30%20108%20l7-2%203%206-6%202z%20M113%20111%20l5-3%204%204-6%205z%20M174%20105%20l9-4-2%209-7%202z%22%2F%3E%3Ccircle%20cx%3D%2259%22%20cy%3D%22113%22%20r%3D%222%22%2F%3E%3Ccircle%20cx%3D%2278%22%20cy%3D%22116%22%20r%3D%222%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20700%20130%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cfilter%20id%3D%22dry%22%20x%3D%22-5%25%22%20y%3D%22-20%25%22%20width%3D%22110%25%22%20height%3D%22140%25%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%22.13%20.45%22%20numOctaves%3D%223%22%20seed%3D%228%22%2F%3E%3CfeDisplacementMap%20in%3D%22SourceGraphic%22%20scale%3D%225%22%2F%3E%3C%2Ffilter%3E%3C%2Fdefs%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22white%22%20stroke-linecap%3D%22round%22%20filter%3D%22url%28%23dry%29%22%3E%3Cpath%20d%3D%22M38%2038%20L639%2028%22%20stroke-width%3D%2221%22%20opacity%3D%22.55%22%2F%3E%3Cpath%20d%3D%22M25%2055%20L654%2042%22%20stroke-width%3D%2223%22%20opacity%3D%22.8%22%2F%3E%3Cpath%20d%3D%22M13%2076%20L660%2062%22%20stroke-width%3D%2222%22%2F%3E%3Cpath%20d%3D%22M34%2091%20L639%2079%22%20stroke-width%3D%2219%22%20opacity%3D%22.8%22%2F%3E%3Cpath%20d%3D%22M403%20113%20Q505%2092%20644%2094%20L514%20120%20L600%20114%22%20stroke-width%3D%227%22%20opacity%3D%22.85%22%2F%3E%3Cpath%20d%3D%22M660%2018%20L669%203%20M676%2027%20L694%2016%22%20stroke-width%3D%227%22%2F%3E%3Cpath%20d%3D%22M671%2024%20L676%2017%22%20stroke-width%3D%223%22%2F%3E%3C%2Fg%3E%3Cg%20fill%3D%22white%22%20opacity%3D%22.8%22%20filter%3D%22url%28%23dry%29%22%3E%3Cpath%20d%3D%22M8%2071%20l-4%208%206%207%203-10z%20M15%2096%20l5%203-3%206-5-5z%20M30%20108%20l7-2%203%206-6%202z%20M113%20111%20l5-3%204%204-6%205z%20M174%20105%20l9-4-2%209-7%202z%22%2F%3E%3Ccircle%20cx%3D%2259%22%20cy%3D%22113%22%20r%3D%222%22%2F%3E%3Ccircle%20cx%3D%2278%22%20cy%3D%22116%22%20r%3D%222%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+.brush-label::after {
+  content: none;
+}
+@media (max-width: 760px) {
+  .profile-section-heading > svg {
+    width: 28px;
+    height: 28px;
+  }
+  .academic-laboratories > .profile-section-heading,
+  .profile-summary > div > .profile-section-heading {
+    font-size: clamp(18px, 6cqi, 24px);
+  }
+}
+.brush-label {
+  font-weight: 400;
+  -webkit-text-stroke: 0;
+}
+.brush-label:lang(zh) {
+  font-family: var(--font-onest), sans-serif;
+  font-weight: 400;
+}
+@media (min-width: 1100px) and (max-height: 800px) {
+  .academic-laboratories > .profile-section-heading,
+  .profile-summary > div > .profile-section-heading {
+    margin-bottom: 8px;
+  }
+  .brush-label {
+    padding-block: 3px;
+  }
+  .home-intro > .hero {
+    row-gap: 6px;
+  }
+  .home-intro .profile-summary {
+    padding-block: 7px;
+  }
+  .academic-profile {
+    padding-block: 8px;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1199px) and (max-height: 800px) {
+  .academic-laboratories > .profile-section-heading,
+  .profile-summary > div > .profile-section-heading {
+    margin-bottom: 6px;
+  }
+}
+
+/* Profile refinements: metadata stays with its subject, logos get dedicated room. */
+.activity-inline-title {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 2px 7px;
+}
+.activity-inline-title p {
+  margin: 0;
+  font-size: 9px;
+  color: #666;
+}
+.internship-entry {
+  position: relative;
+}
+.internship-heading {
+  padding-right: 58px;
+  min-height: 28px;
+}
+.internship-heading .internship-logo {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+}
+.internship-meta-line {
+  justify-content: flex-start;
+  gap: 4px 8px;
+  padding-right: 58px;
+}
+.internship-meta-line .internship-period {
+  margin: 0;
+}
+@media (min-width: 1100px) {
+  .home-intro > .hero {
+    grid-template-columns: minmax(0, 1.23fr) minmax(0, 1.42fr) minmax(0, 0.7fr);
+  }
+}
+@media (max-width: 760px) {
+  .activity-inline-title p {
+    font-size: 11px;
+  }
+  .internship-heading .internship-logo {
+    width: 60px;
+    height: 60px;
+  }
+  .internship-heading,
+  .internship-meta-line {
+    padding-right: 68px;
+  }
+}
+
+/* Image-led project studies: original project colors, readable editorial rhythm. */
+.project-study-page {
+  padding-bottom: 90px;
+}
+.study-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.95fr);
+  gap: 40px;
+  align-items: center;
+  padding: 32px 0 42px;
+}
+.study-hero-copy {
+  min-width: 0;
+}
+.study-hero h1 {
+  font-size: clamp(32px, 4.5vw, 64px);
+  line-height: 1.06;
+  letter-spacing: -0.045em;
+  overflow-wrap: anywhere;
+  margin-bottom: 24px;
+}
+.study-hero .detail-summary {
+  font-size: 17px;
+  line-height: 1.8;
+  margin: 0 0 22px;
+}
+.study-hero .button-row {
+  gap: 10px;
+  margin-top: 25px;
+}
+.study-hero .paper-button {
+  padding: 12px 14px;
+  font-size: 12px;
+  gap: 8px;
+}
+.study-tags {
+  gap: 8px;
+}
+.study-tags span {
+  border: 1px solid transparent;
+  padding: 7px 10px;
+  font-size: 12px;
+}
+.study-tags .study-tag-0 {
+  background: #e3efff;
+  color: #284e82;
+  border-color: #bdd3ee;
+}
+.study-tags .study-tag-1 {
+  background: #eee6fb;
+  color: #66438b;
+  border-color: #d6c4ec;
+}
+.study-tags .study-tag-2 {
+  background: #e2f2e8;
+  color: #2e694b;
+  border-color: #bfdcca;
+}
+.study-tags .study-tag-3 {
+  background: #fff0ce;
+  color: #815b14;
+  border-color: #edd7a4;
+}
+.study-tags .study-tag-4 {
+  background: #fbe4e9;
+  color: #963a54;
+  border-color: #edc2cd;
+}
+.study-figure {
+  margin: 26px 0;
+  border: 1px solid #dedbd5;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #fff;
+}
+.study-image-link {
+  display: block;
+  position: relative;
+  padding: 15px;
+  background: #fff;
+}
+.study-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 600px;
+  object-fit: contain;
+}
+.detail-hero-image {
+  margin: 0;
+  border: 2px solid #161616;
+  box-shadow: 6px 6px 0 #161616;
+}
+.detail-hero-image .study-image-link {
+  min-height: 280px;
+  display: grid;
+  align-items: center;
+  padding: 20px;
+}
+.detail-hero-image img {
+  max-height: 410px;
+}
+.image-expand {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 28px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+}
+.study-figure figcaption {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  font-size: 11px;
+  line-height: 1.6;
+  color: #666;
+  padding: 12px 16px;
+  border-top: 1px solid #e7e5e0;
+  background: #faf9f5;
+}
+.study-figure figcaption a {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  color: #365f8c;
+  gap: 3px;
+}
+.study-workflow {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  border-block: 1px solid #d7d5cf;
+  padding: 22px 0;
+  gap: 22px;
+  margin-bottom: 52px;
+  scroll-margin-top: 30px;
+}
+.study-workflow > div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.study-step {
+  font-size: 13px;
+  font-weight: 700;
+  background: #fff0ce;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+.study-workflow h2 {
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  line-height: 1.5;
+}
+.study-grid {
+  grid-template-columns: minmax(0, 1fr) 250px;
+  gap: 62px;
+  align-items: start;
+}
+.study-narrative {
+  gap: 50px;
+  min-width: 0;
+}
+.study-section {
+  scroll-margin-top: 30px;
+}
+.study-section-number {
+  color: #777;
+  font-size: 10px;
+  margin-bottom: 12px;
+}
+.study-section h2,
+.study-reproduction h2 {
+  font-size: clamp(24px, 2.7vw, 34px);
+  line-height: 1.2;
+  letter-spacing: -0.035em;
+  margin: 0 0 22px;
+}
+.study-section > p:not(.eyebrow),
+.study-reproduction > p:not(.eyebrow) {
+  font-size: 16px;
+  line-height: 1.9;
+  color: #4e5054;
+}
+.study-section > p + p {
+  margin-top: 16px;
+}
+.study-sidebar {
+  position: sticky;
+  top: 28px;
+  display: grid;
+  gap: 32px;
+}
+.study-contents {
+  border-left: 2px solid #dedbd5;
+  padding-left: 20px;
+}
+.study-contents > p {
+  font-size: 10px;
+  margin-bottom: 18px;
+}
+.study-contents a {
+  display: flex;
+  gap: 9px;
+  font-size: 12px;
+  line-height: 1.6;
+  margin: 13px 0;
+  color: #555;
+}
+.study-contents a span {
+  color: #999;
+}
+.study-contents a:hover {
+  color: #2264aa;
+}
+.study-reading {
+  padding: 20px;
+  border-radius: 14px;
+  background: #f4f1e9;
+}
+.study-reading h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.study-reading > a {
+  display: block;
+  border-top: 1px solid #ddd8ce;
+  padding: 16px 0;
+}
+.study-reading .learning-source {
+  font-size: 10px;
+  color: #687383;
+}
+.study-reading h3 {
+  font-size: 13px;
+  margin: 8px 0;
+}
+.study-reading p {
+  font-size: 11px;
+  color: #666;
+  line-height: 1.7;
+}
+.study-reproduction {
+  box-shadow: 4px 4px 0 #101010;
+  background: #f2f5fc;
+  scroll-margin-top: 30px;
+}
+.study-source-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  margin-top: 22px;
+}
+.study-source-links a {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 700;
+}
+.study-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+  margin-top: 24px;
+}
+.study-metrics > div {
+  border: 1px solid #d5dfd4;
+  border-radius: 12px;
+  background: #edf5eb;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.study-metrics span {
+  font-size: 12px;
+  color: #50614a;
+}
+.study-metrics strong {
+  font-size: 30px;
+  letter-spacing: -0.04em;
+}
+.study-metrics small {
+  font-size: 10px;
+  line-height: 1.5;
+  color: #687461;
+}
+.study-metrics > p {
+  grid-column: 1 / -1;
+  font-size: 11px;
+  color: #777;
+}
+@media (max-width: 1000px) {
+  .study-hero {
+    gap: 24px;
+  }
+  .study-grid {
+    grid-template-columns: minmax(0, 1fr) 210px;
+    gap: 30px;
+  }
+  .study-workflow {
+    gap: 14px;
+  }
+}
+@media (max-width: 760px) {
+  .study-hero {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 30px;
+    padding-top: 18px;
+  }
+  .study-hero h1 {
+    font-size: 38px;
+  }
+  .study-hero .detail-summary {
+    font-size: 15px;
+  }
+  .study-hero .paper-button {
+    font-size: 11px;
+  }
+  .study-workflow {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    margin-bottom: 32px;
+  }
+  .study-workflow h2 {
+    font-size: 12px;
+  }
+  .study-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 34px;
+  }
+  .study-sidebar {
+    position: static;
+  }
+  .study-contents {
+    display: none;
+  }
+  .study-section > p:not(.eyebrow),
+  .study-reproduction > p:not(.eyebrow) {
+    font-size: 15px;
+  }
+  .detail-hero-image .study-image-link {
+    min-height: 190px;
+    padding: 10px;
+  }
+  .study-figure .study-image-link {
+    padding: 8px;
+  }
+  .study-figure figcaption {
+    font-size: 10px;
+    padding: 10px;
+  }
+  .study-narrative {
+    gap: 36px;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1199px) {
+  .internship-meta-line {
+    column-gap: 5px;
+  }
+  .internship-meta-line .internship-period {
+    font-size: 8px;
+  }
+}
+.study-hero {
+  margin-bottom: 16px;
+}
+
+.study-specifications {
+  margin-top: 24px;
+  border: 1px solid #dedbd5;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.study-specifications > div {
+  display: grid;
+  grid-template-columns: minmax(110px, 0.65fr) minmax(0, 2fr);
+  gap: 18px;
+  padding: 16px 18px;
+  background: #faf9f5;
+}
+.study-specifications > div + div {
+  border-top: 1px solid #e4e0d7;
+}
+.study-specifications dt {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.7;
+}
+.study-specifications dd {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.8;
+  color: #555;
+  overflow-wrap: anywhere;
+}
+@media (max-width: 440px) {
+  .study-specifications > div {
+    grid-template-columns: 1fr;
+    gap: 5px;
+    padding: 14px;
+  }
+}
+
+/* One continuous page for the research principle, selected work and contact. */
+.selected-page {
+  background: #fffefa;
+  padding-top: 36px;
+}
+.selected-content {
+  padding-bottom: 28px;
+}
+.selected-intro {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 28px;
+}
+.selected-title {
+  text-align: center;
+}
+.selected-title .eyebrow {
+  font-size: 10px;
+  margin-bottom: 15px;
+}
+.selected-title h2 {
+  font-size: clamp(28px, 3.3vw, 52px);
+  letter-spacing: -2px;
+  line-height: 1.35;
+}
+.selected-title h2 span {
+  display: inline-block;
+  background: #327cea;
+  color: white;
+  padding: 2px 10px 6px;
+}
+.selected-quote {
+  margin: 0;
+  padding: 22px 26px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 0 #101010;
+}
+.selected-quote > svg {
+  color: #327cea;
+  margin-bottom: 8px;
+}
+.selected-quote p {
+  font-size: clamp(17px, 1.65vw, 25px);
+  line-height: 1.55;
+}
+.selected-quote em {
+  color: #7152aa;
+  font-style: normal;
+  font-weight: 600;
+}
+.selected-quote strong {
+  color: #267965;
+  font-weight: 600;
+}
+.selected-quote cite {
+  display: block;
+  border-top: 1px solid #e4e5e9;
+  margin-top: 16px;
+  padding-top: 12px;
+  font-size: 12px;
+  font-style: normal;
+}
+.selected-label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  color: #555;
+}
+.selected-label h3,
+.selected-label span {
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+.selected-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 14px;
+}
+.selected-card {
+  padding: 16px 13px 12px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  transition: box-shadow 0.2s;
+}
+.selected-card:hover {
+  box-shadow: 4px 4px 0 #101010;
+}
+.selected-card-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 62px;
+  gap: 6px;
+  align-items: center;
+  min-height: 72px;
+}
+.selected-card-heading img {
+  width: 62px;
+  height: 68px;
+  object-fit: contain;
+}
+.selected-meta {
+  font-size: 9px;
+  line-height: 1.4;
+  color: #666;
+  margin-bottom: 7px;
+}
+.selected-card h3 {
+  font-size: 16px;
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+}
+.selected-card > p {
+  font-size: 11px;
+  line-height: 1.7;
+  color: #555;
+  margin: 12px 0 18px;
+}
+.selected-card-actions {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
+}
+.selected-card-actions .text-link {
+  font-size: 10px;
+  gap: 4px;
+}
+.selected-github {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.selected-github:hover {
+  background: #e4ecff;
+}
+.coming-soon {
+  font-size: 10px;
+  color: #7152aa;
+  background: #efe9f9;
+  padding: 7px 9px;
+  border-radius: 6px;
+}
+.peanut-wordmark {
+  font-weight: 800;
+  font-size: 22px;
+  letter-spacing: -1px;
+  line-height: 0.95;
+  color: #815b35;
+  text-align: center;
+}
+.selected-page .site-footer {
+  background: #edf1f8;
+  color: #172337;
+  padding-top: 22px;
+}
+.selected-page .contact-banner {
+  background: #dce7fa;
+  border: 0;
+  padding: 22px 28px;
+  margin-bottom: 24px;
+  border-radius: 18px;
+}
+.selected-page .contact-banner h2 {
+  font-size: clamp(20px, 2.7vw, 38px);
+  white-space: nowrap;
+  letter-spacing: -1px;
+}
+.selected-page .contact-banner .eyebrow {
+  font-size: 9px;
+  margin-bottom: 6px;
+}
+.selected-page .contact-banner .paper-button {
+  padding: 12px 20px;
+  font-size: 12px;
+}
+.selected-page .footer-grid {
+  gap: 40px;
+  padding-bottom: 20px;
+}
+.selected-page .footer-grid h3 {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.selected-page .footer-grid p,
+.selected-page .footer-grid > div:nth-child(2) > a {
+  color: #536078;
+  font-size: 11px;
+}
+.selected-page .footer-tags span {
+  color: #536078;
+  border-color: #bcc9dc;
+  font-size: 9px;
+  padding: 4px 6px;
+}
+.selected-page .footer-bottom {
+  border-color: #c8d2e1;
+  color: #536078;
+  padding-block: 14px;
+}
+@media (min-width: 1600px) {
+  .selected-card {
+    padding: 20px;
+  }
+  .selected-card h3 {
+    font-size: 19px;
+  }
+  .selected-card > p {
+    font-size: 13px;
+  }
+  .selected-card-heading {
+    grid-template-columns: minmax(0, 1fr) 80px;
+  }
+  .selected-card-heading img {
+    width: 80px;
+    height: 78px;
+  }
+}
+@media (max-width: 1099px) {
+  .selected-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .selected-intro {
+    gap: 24px;
+  }
+}
+@media (max-width: 700px) {
+  .selected-intro {
+    grid-template-columns: 1fr;
+  }
+  .selected-title h2 {
+    font-size: 34px;
+    letter-spacing: -1.3px;
+  }
+  .selected-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+  .selected-card-heading {
+    grid-template-columns: 1fr;
+  }
+  .selected-card-heading img,
+  .peanut-wordmark {
+    grid-row: 1;
+    justify-self: end;
+    height: 60px;
+  }
+  .selected-card h3 {
+    font-size: 17px;
+  }
+  .selected-card > p {
+    font-size: 12px;
+  }
+  .selected-page .contact-banner {
+    align-items: flex-start;
+    padding: 20px;
+    gap: 18px;
+  }
+  .selected-page .contact-banner h2 {
+    font-size: clamp(17px, 4.6vw, 30px);
+    letter-spacing: -0.6px;
+  }
+  .selected-page .footer-grid {
+    gap: 24px;
+  }
+}
+@media (max-width: 380px) {
+  .selected-grid {
+    grid-template-columns: 1fr;
+  }
+  .selected-card-heading {
+    grid-template-columns: minmax(0, 1fr) 76px;
+  }
+  .selected-card-heading img,
+  .peanut-wordmark {
+    grid-row: auto;
+  }
+}
+
+/* Compact introduction and image-led selected project cards. */
+.selected-page {
+  padding-top: 24px;
+}
+.selected-intro {
+  margin-bottom: 20px;
+  gap: 28px;
+}
+.selected-title .eyebrow {
+  margin-bottom: 8px;
+}
+.selected-title h2 {
+  font-size: clamp(26px, 2.8vw, 42px);
+  line-height: 1.2;
+}
+.selected-quote {
+  padding: 14px 22px;
+}
+.selected-quote > svg {
+  width: 23px;
+  height: 23px;
+  margin-bottom: 3px;
+}
+.selected-quote p {
+  font-size: clamp(16px, 1.4vw, 21px);
+  line-height: 1.45;
+}
+.selected-quote cite {
+  text-align: right;
+  margin-top: 9px;
+  padding-top: 8px;
+}
+.selected-grid .selected-card-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.selected-grid .selected-card h3 {
+  text-align: center;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.selected-grid .selected-card-heading img {
+  width: 100%;
+  height: 155px;
+  object-fit: contain;
+}
+.selected-grid .peanut-wordmark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 155px;
+  font-size: 44px;
+}
+.selected-grid .selected-card-actions {
+  padding-top: 14px;
+}
+.selected-grid .coming-soon {
+  font-size: 9px;
+}
+@media (min-width: 1600px) {
+  .selected-grid .selected-card-heading img,
+  .selected-grid .peanut-wordmark {
+    height: 185px;
+  }
+}
+@media (max-width: 700px) {
+  .selected-intro {
+    gap: 16px;
+  }
+  .selected-title h2 {
+    font-size: 28px;
+  }
+  .selected-grid .selected-card-heading img,
+  .selected-grid .peanut-wordmark {
+    height: 135px;
+  }
+}
+
+/* Keep the selected-work page focused on full-resolution project figures. */
+.selected-content {
+  max-width: 1480px;
+  width: calc(100% - 64px);
+}
+.selected-image-link {
+  display: block;
+  width: 100%;
+  cursor: zoom-in;
+}
+.selected-grid .selected-card-heading img {
+  height: 205px;
+}
+.selected-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  border-top: 1px solid #dce2eb;
+  padding-block: 16px;
+  color: #536078;
+  font-size: 11px;
+}
+.selected-footer a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+@media (min-width: 1600px) {
+  .selected-grid .selected-card-heading img {
+    height: 240px;
+  }
+}
+@media (max-width: 700px) {
+  .selected-content {
+    width: calc(100% - 32px);
+  }
+  .selected-grid .selected-card-heading img {
+    height: 160px;
+  }
+}
+@media (max-width: 380px) {
+  .selected-grid .selected-card-heading img {
+    height: 210px;
+  }
+}
+
+/* Desktop selected work occupies one viewport, with two equal image rows. */
+@media (min-width: 1100px) and (min-height: 560px) {
+  .selected-page {
+    height: 100svh;
+    min-height: 0;
+    padding: 12px 0 0;
+    display: grid;
+    grid-template-rows: minmax(0, 1fr) 32px;
+    gap: 8px;
+  }
+  .selected-content {
+    min-height: 0;
+    padding-bottom: 0;
+    display: grid;
+    grid-template-rows: auto 16px minmax(0, 1fr);
+    gap: 10px;
+  }
+  .selected-intro {
+    margin: 0;
+    gap: 24px;
+  }
+  .selected-title .eyebrow {
+    font-size: 8px;
+    margin-bottom: 5px;
+  }
+  .selected-title h2 {
+    font-size: clamp(24px, 2.1vw, 32px);
+    line-height: 1.15;
+    letter-spacing: -1px;
+  }
+  .selected-title h2 span {
+    padding: 2px 8px 4px;
+  }
+  .selected-quote {
+    padding: 10px 18px;
+    border-radius: 16px;
+    box-shadow: 4px 4px 0 #101010;
+  }
+  .selected-quote > svg {
+    width: 18px;
+    height: 18px;
+    margin-bottom: 0;
+  }
+  .selected-quote p {
+    font-size: clamp(14px, 1.15vw, 18px);
+    line-height: 1.35;
+  }
+  .selected-quote cite {
+    font-size: 10px;
+    margin-top: 5px;
+    padding-top: 5px;
+  }
+  .selected-label {
+    margin: 0;
+    align-items: center;
+  }
+  .selected-grid {
+    min-height: 0;
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+  .selected-grid .selected-card {
+    min-height: 0;
+    padding: 10px 12px 8px;
+    display: grid;
+    grid-template-rows: minmax(0, 1fr) 30px;
+    gap: 6px;
+  }
+  .selected-grid .selected-card-heading {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: 36px minmax(0, 1fr);
+    min-height: 0;
+    gap: 6px;
+  }
+  .selected-grid .selected-card h3 {
+    min-height: 0;
+    height: 36px;
+    font-size: clamp(13px, 1.1vw, 17px);
+  }
+  .selected-image-link {
+    height: 100%;
+    min-height: 0;
+  }
+  .selected-grid .selected-card-heading img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    object-fit: contain;
+  }
+  .selected-grid .selected-card-actions {
+    padding: 0;
+    margin: 0;
+  }
+  .selected-github {
+    width: 28px;
+    height: 28px;
+  }
+  .selected-footer {
+    padding-block: 5px;
+    height: 32px;
+    font-size: 10px;
+  }
+}
+
+.activity-2 .activity-logo {
+  width: 60px;
+  height: 60px;
+}
+
+/* A dedicated logo column keeps every activity mark aligned and separated. */
+.activities-info .activity-item {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 56px;
+  align-items: center;
+  column-gap: 12px;
+  min-height: 56px;
+  padding-right: 0;
+}
+.activity-copy {
+  min-width: 0;
+}
+.activities-info .activity-logo {
+  position: static;
+  transform: none;
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  justify-self: center;
+  align-self: center;
+}
+.activities-info > ul {
+  row-gap: 8px;
+}
+@media (max-width: 1099px) {
+  .activities-info > ul {
+    row-gap: 14px;
+  }
+}
+@media (min-width: 1100px) and (max-height: 800px) {
+  .activities-info .activity-item {
+    grid-template-columns: minmax(0, 1fr) 48px;
+    min-height: 48px;
+  }
+  .activities-info .activity-logo {
+    width: 48px;
+    height: 48px;
+  }
+}

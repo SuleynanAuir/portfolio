@@ -1,9 +1,12 @@
 "use client";
 
-import { Award, Briefcase } from "lucide-react";
+import { InternshipEntry } from "@/components/internship-entry";
+import { Award, Briefcase, Globe2 } from "lucide-react";
 import {
+  activities,
   education,
   honorLogos,
+  honorRoles,
   internships,
   profileSkills,
 } from "@/data/profile";
@@ -43,58 +46,100 @@ export function ProfileSummary() {
     <section
       className="profile-summary"
       aria-label={t(
-        "Education, honors and internships",
-        "教育背景、荣誉与实习",
+        "Internships, activities and honors",
+        "实习、活动实践与荣誉",
       )}
     >
-      <div className="education-info">
-        <div className="education-details">
-          <h2>{education.institution}</h2>
-          <p className="education-degree">{education.degree}</p>
-          <div className="education-meta">
-            <p className="education-period">
-              {education.period} {t("(Expected)", "（预计毕业）")}
-            </p>
-            <p className="gpa-row">
-              <span className="gpa-badge">
-                <strong>GPA</strong> {education.gpa}
-              </span>
-              <strong className="rank-badge">({education.rank})</strong>
-            </p>
-          </div>
-        </div>
-        <div
-          className="university-logos"
-          aria-label="Beijing Normal University × Hong Kong Baptist University"
-        >
-          <img
-            src={asset("/assets/schools/beijing-normal-university.svg")}
-            alt="Beijing Normal University"
-            width={56}
-            height={56}
-          />
-          <span className="university-connector" aria-hidden="true">
-            X
+      <div className="internship-info">
+        <h2 className="profile-section-heading">
+          <Briefcase size={24} aria-hidden="true" />
+          <span className="brush-label">{t("Internship", "实习经历")}</span>
+        </h2>
+        <ul>
+          {internships.map((internship) => (
+            <InternshipEntry
+              key={internship.organization}
+              internship={internship}
+            />
+          ))}
+        </ul>
+      </div>
+      <div className="activities-info">
+        <h2 className="profile-section-heading">
+          <Globe2 size={24} aria-hidden="true" />
+          <span className="brush-label">
+            {t("Activities & Practice", "活动与实践")}
           </span>
-          <img
-            src={asset("/assets/schools/hong-kong-baptist-university.png")}
-            alt="Hong Kong Baptist University"
-            width={56}
-            height={56}
-          />
-        </div>
+        </h2>
+        <ul>
+          {activities.map((activity, index) => (
+            <li
+              key={activity.name}
+              className={`activity-item activity-${index + 1}`}
+            >
+              <div className="activity-copy">
+                <div className="activity-heading">
+                  <div
+                    className={
+                      index === 0 ? "activity-inline-title" : undefined
+                    }
+                  >
+                    <h3>{activity.name}</h3>
+                    {index === 0 && <p>Taiwan, China · Jun 2024</p>}
+                  </div>
+                </div>
+                {index !== 0 && <p>{activity.details}</p>}
+                <ul className="activity-tags" aria-label={t("Topics", "主题")}>
+                  {activity.tags.map((tag) => (
+                    <li key={tag}>{tag}</li>
+                  ))}
+                </ul>
+              </div>
+              <img
+                className="activity-logo"
+                src={asset(activity.logo)}
+                alt={activity.logoAlt}
+                width={56}
+                height={56}
+              />
+            </li>
+          ))}
+        </ul>
       </div>
       <div className="honors-info">
-        <h2>
-          <Award size={18} aria-hidden="true" />
-          {t("Honors", "荣誉与奖学金")}
+        <h2 className="profile-section-heading">
+          <Award size={24} aria-hidden="true" />
+          <span className="brush-label">{t("Honors", "荣誉与奖学金")}</span>
         </h2>
         <ul>
           {education.honors.map((honor) => {
             const logo = honorLogos[honor];
+            const role = honorRoles[honor];
+            const ranking = honor.match(/\((2nd Place|Top \d+%)\)$/)?.[1];
+            const title = ranking ? honor.replace(/ \([^)]*\)$/, "") : honor;
             return (
               <li key={honor} className={logo ? "honor-with-logo" : undefined}>
-                <span>{honor}</span>
+                {role && ranking ? (
+                  <>
+                    <span className="honor-title">{title}</span>
+                    <span className="honor-details">
+                      <strong className="honor-emphasis">({ranking})</strong>
+                      <span className="honor-role">{role}</span>
+                    </span>
+                  </>
+                ) : (
+                  <span>
+                    {honor.split(/(× 3)/g).map((part, index) =>
+                      part === "× 3" ? (
+                        <strong key={index} className="honor-emphasis">
+                          {part}
+                        </strong>
+                      ) : (
+                        part
+                      ),
+                    )}
+                  </span>
+                )}
                 {logo && (
                   <img
                     className="honor-logo"
@@ -107,34 +152,6 @@ export function ProfileSummary() {
               </li>
             );
           })}
-        </ul>
-      </div>
-      <div className="internship-info">
-        <h2>
-          <Briefcase size={18} aria-hidden="true" />
-          {t("Internship", "实习经历")}
-        </h2>
-        <ul>
-          {internships.map((internship) => (
-            <li key={internship.organization}>
-              <h3>{internship.organization}</h3>
-              <div className="internship-meta">
-                <p>
-                  <span>{internship.role}</span>
-                  <span className="internship-duration">
-                    {internship.months} {t("months", "个月")}
-                  </span>
-                </p>
-                <img
-                  className="internship-logo"
-                  src={asset(internship.logo)}
-                  alt={internship.logoAlt}
-                  width={46}
-                  height={28}
-                />
-              </div>
-            </li>
-          ))}
         </ul>
       </div>
     </section>

@@ -1,0 +1,2334 @@
+{
+  "agent-you-mustknows": {
+    "sources": ["https://github.com/SuleynanAuir/Agent-You-MustKnows"],
+    "overview": {
+      "en": "A structured reading atlas for autonomous agents: connecting surveys, retrieval, memory, execution harnesses and agent evolution into a practical research pathway.",
+      "zh": "面向自主智能体的结构化文献地图，将综述、检索、记忆、执行框架与智能体演化组织为可循序推进的研究路线。"
+    },
+    "hero": "/assets/projects/agent-reading-map.svg",
+    "heroCaption": {
+      "en": "Research reading map, organized from the repository’s topic index.",
+      "zh": "根据仓库主题索引整理的研究阅读地图。"
+    },
+    "stages": [
+      {
+        "en": "Survey the field",
+        "zh": "综述与全局框架"
+      },
+      {
+        "en": "Connect retrieval and memory",
+        "zh": "检索与记忆"
+      },
+      {
+        "en": "Study the agent harness",
+        "zh": "执行与评测框架"
+      },
+      {
+        "en": "Explore training and evolution",
+        "zh": "训练与演化"
+      }
+    ],
+    "sections": [
+      {
+        "title": {
+          "en": "A modular knowledge base",
+          "zh": "模块化知识体系"
+        },
+        "paragraphs": [
+          {
+            "en": "The repository is a literature archive and topic index rather than an executable agent framework. Its five essay directories separate broad agent surveys, RAG and GraphRAG, memory systems, agent harnesses, and evolution or training. This organization helps relate individual papers to the component they study.",
+            "zh": "仓库以文献归档和主题索引为主，并非可运行的智能体框架。五类 essay 目录分别组织综合综述、RAG 与 GraphRAG、记忆系统、Agent Harness，以及演化与训练，便于将论文映射到系统组件。"
+          },
+          {
+            "en": "The survey collection includes work on LLM-based autonomous agents and multimodal interaction. Retrieval papers connect external evidence to generation; the memory collection extends this view to information retained and updated across interactions.",
+            "zh": "综述集合覆盖基于大语言模型的自主智能体及多模态交互。检索论文讨论外部证据与生成的连接，记忆文献则进一步关注跨交互的信息保存、更新与利用。"
+          }
+        ],
+        "image": "/assets/web_page/agent_you_must_knows_additional1.png",
+        "caption": {
+          "en": "Repository index linking surveys, RAG, memory and harness literature.",
+          "zh": "仓库中综述、RAG、记忆与 Harness 的文献索引。"
+        }
+      },
+      {
+        "title": {
+          "en": "From reading to system questions",
+          "zh": "从阅读到系统问题"
+        },
+        "paragraphs": [
+          {
+            "en": "The recommended sequence starts with surveys, proceeds through retrieval and memory, then examines harnesses before moving into evolution. It separates what the model can infer from what the surrounding system must retrieve, store, execute and evaluate.",
+            "zh": "推荐路线先建立综述框架，再阅读检索与记忆，随后研究 Harness，最后进入演化方向。该结构区分模型推断能力与外围系统的检索、存储、执行和评估职责。"
+          },
+          {
+            "en": "RAGEN and Hyperagents appear in the evolution collection. A separate links index adds online references on agents, ReAct, harnesses and RAG. Together these resources support literature reviews, seminar preparation and architectural comparison.",
+            "zh": "演化目录包含 RAGEN 与 Hyperagents，在线链接索引补充 Agent、ReAct、Harness 和 RAG 资料。它们共同服务于文献综述、组会报告和架构比较。"
+          }
+        ],
+        "image": "/assets/web_page/agent_you_must_knows_additional2.png",
+        "caption": {
+          "en": "The documented reading sequence and intended research uses.",
+          "zh": "仓库给出的阅读顺序与研究用途。"
+        }
+      },
+      {
+        "title": {
+          "en": "Research output and scope",
+          "zh": "研究产出与范围"
+        },
+        "paragraphs": [
+          {
+            "en": "The deliverable is an inspectable reading pathway, not a benchmark score. Papers remain attributed to their authors, while the repository supplies the taxonomy and navigation needed to compare methods across related research questions.",
+            "zh": "项目产出是可查阅的阅读路径，而非模型基准分数。论文归属原作者，仓库提供分类与导航，支持围绕相关研究问题对比方法。"
+          },
+          {
+            "en": "When extending the collection, new entries belong in the corresponding thematic folder and in the README index. Keeping the index and files aligned makes the archive useful as a maintained research notebook.",
+            "zh": "扩展资料时，将新条目放入对应主题目录并同步更新 README 索引，使文件与索引保持一致，形成持续维护的研究笔记。"
+          }
+        ],
+        "image": null,
+        "caption": {
+          "en": "",
+          "zh": ""
+        }
+      }
+    ],
+    "reproduction": {
+      "en": "Start with essay/survey/, then essay/RAG/, essay/memory/, essay/agent-harness/ and essay/evol/. Use links/web_links.md for supporting references. There is no training or inference command to run.",
+      "zh": "依次阅读 essay/survey/、essay/RAG/、essay/memory/、essay/agent-harness/ 和 essay/evol/，并结合 links/web_links.md。该项目没有训练或推理命令。"
+    },
+    "metrics": [],
+    "specifications": [
+      {
+        "label": {
+          "en": "Archive structure",
+          "zh": "归档结构"
+        },
+        "value": {
+          "en": "essay/survey · essay/RAG · essay/memory · essay/agent-harness · essay/evol",
+          "zh": "essay/survey · essay/RAG · essay/memory · essay/agent-harness · essay/evol"
+        }
+      },
+      {
+        "label": {
+          "en": "Supporting index",
+          "zh": "辅助索引"
+        },
+        "value": {
+          "en": "links/web_links.md connects online articles to the paper collection.",
+          "zh": "links/web_links.md 将在线文章连接到论文集合。"
+        }
+      },
+      {
+        "label": {
+          "en": "Research use",
+          "zh": "研究用途"
+        },
+        "value": {
+          "en": "Literature comparison, seminar preparation and architecture-oriented reading.",
+          "zh": "文献比较、组会准备与面向架构的专题阅读。"
+        }
+      }
+    ]
+  },
+  "nexus": {
+    "sources": [
+      "https://github.com/SuleynanAuir/NEXUS-Navigating-Emergent-X-agent-Universe-Simulator-with-Unprecedented-Insight"
+    ],
+    "overview": {
+      "en": "An attention-guided cognitive simulation pipeline that connects domain adaptation, reflective search, evidence analysis and graph-grounded multi-agent worlds.",
+      "zh": "以用户关注锚点驱动的认知推演系统，贯通领域适配、反思检索、证据分析与基于图谱的多智能体世界。"
+    },
+    "hero": "/assets/projects/nexus-architecture.webp",
+    "heroCaption": {
+      "en": "NEXUS architecture: domain models, research agents and the cognitive simulation world.",
+      "zh": "NEXUS 架构：领域模型、研究智能体与认知仿真世界。"
+    },
+    "stages": [
+      {
+        "en": "Adapt domain models",
+        "zh": "领域模型适配"
+      },
+      {
+        "en": "Search and anchor evidence",
+        "zh": "检索与关注锚定"
+      },
+      {
+        "en": "Build graph-backed personas",
+        "zh": "构建图谱与角色"
+      },
+      {
+        "en": "Simulate and interrogate",
+        "zh": "仿真与交互访谈"
+      }
+    ],
+    "sections": [
+      {
+        "title": {
+          "en": "Personalized evidence before simulation",
+          "zh": "先构建个性化证据"
+        },
+        "paragraphs": [
+          {
+            "en": "NEXUS combines the LLaMA Foundry workflow with UPAIRS and CognitiveTemp search agents. Domain adaptation prepares the model for specialized material, while reflective retrieval supplies evidence selected around the user’s actual question and attention anchors.",
+            "zh": "NEXUS 结合 LLaMA Foundry 训练流程、UPAIRS 与 CognitiveTemp 搜索智能体。领域适配增强专门材料的处理能力，反思检索围绕用户问题与关注锚点提供证据。"
+          },
+          {
+            "en": "The README describes Hypothesis annotations as an input to a four-role analysis chain: signal interpretation, evidence review, event association and strategic synthesis. Its structured output becomes a prior for the subsequent simulation rather than an unfiltered document dump.",
+            "zh": "README 使用 Hypothesis 标注作为四角色分析链的输入：信号解析、证据评审、事件关联与战略整合。结构化输出作为后续推演的先验，而非直接堆叠原始文档。"
+          }
+        ],
+        "image": "/assets/projects/nexus-architecture.webp",
+        "caption": {
+          "en": "The end-to-end integration of fine-tuning, deep search and simulation.",
+          "zh": "微调、深度搜索与仿真的端到端整合。"
+        }
+      },
+      {
+        "title": {
+          "en": "A graph-grounded cognitive twin",
+          "zh": "基于图谱的认知孪生"
+        },
+        "paragraphs": [
+          {
+            "en": "The Canyon simulation stage extracts entities and relations, constructs a GraphRAG knowledge network and initializes agents with different knowledge and cognitive tendencies. Environmental factors and incoming events influence the evolution of interactions.",
+            "zh": "Canyon 仿真阶段提取实体与关系、构建 GraphRAG 知识网络，并初始化具有不同知识与认知倾向的角色。环境因素与事件流共同影响交互演化。"
+          },
+          {
+            "en": "The system supports multiple perspectives spanning public policy, markets, communities and researchers. Reports and interviews with simulated individuals make the trajectories inspectable; these are scenario explorations, not established forecasts of real-world outcomes.",
+            "zh": "系统覆盖政策、市场、社群与研究者等视角，通过报告和虚拟个体访谈检查演化轨迹。这些结果是情景推演，不等同于经过验证的现实预测。"
+          }
+        ],
+        "image": "/assets/web_page/nexus_page_additional1.png",
+        "caption": {
+          "en": "Repository comparison panels for the cognitive simulation workflow.",
+          "zh": "仓库展示的认知仿真对比面板。"
+        }
+      },
+      {
+        "title": {
+          "en": "Efficiency and evidence interpretation",
+          "zh": "效率与结果解读"
+        },
+        "paragraphs": [
+          {
+            "en": "The README compares an optimized GPT-4o configuration using 30 simulation rounds with an earlier 96-round setup. It reports approximately 18–20 minutes versus 50 minutes and a $2–3 run cost versus $5 in that comparison.",
+            "zh": "README 对比了优化后的 GPT-4o 30 轮配置与早期 96 轮配置：该案例报告约 18–20 分钟对比 50 分钟，单次成本约 2–3 美元对比 5 美元。"
+          },
+          {
+            "en": "These figures describe the documented configuration and its API assumptions. The central engineering contribution is the coupling of targeted evidence, personalized priors and inspectable simulation, with speed and cost treated as configuration-dependent observations.",
+            "zh": "这些数字对应仓库记录的配置及 API 假设。核心工程贡献在于连接目标证据、个性化先验与可检查的仿真流程；耗时与成本需结合具体配置解读。"
+          }
+        ],
+        "image": "/assets/web_page/nexus_page_additional2.png",
+        "caption": {
+          "en": "Repository diagnostics and comparison charts; values depend on the documented setup.",
+          "zh": "仓库诊断与对比图，数值依赖所记录的实验配置。"
+        }
+      }
+    ],
+    "reproduction": {
+      "en": "Follow the README module sequence: domain data preparation, UPAIRS/CognitiveTemp retrieval, attention annotation, GraphRAG initialization and simulation. Preserve the model, evidence sources, agent configuration and round budget with each run.",
+      "zh": "按 README 模块顺序准备领域数据、运行 UPAIRS/CognitiveTemp 检索、收集关注标注、初始化 GraphRAG 并开展仿真；每次运行保留模型、信源、角色配置和轮次预算。"
+    },
+    "metrics": [],
+    "specifications": [
+      {
+        "label": {
+          "en": "Evidence input",
+          "zh": "证据输入"
+        },
+        "value": {
+          "en": "Search results, domain documents and Hypothesis highlights or annotations.",
+          "zh": "搜索结果、领域文档及 Hypothesis 高亮与批注。"
+        }
+      },
+      {
+        "label": {
+          "en": "Analysis roles",
+          "zh": "分析角色"
+        },
+        "value": {
+          "en": "Signal analyst → evidence reviewer → association reasoner → strategy integrator.",
+          "zh": "信号解析 → 证据评审 → 关联推理 → 战略整合。"
+        }
+      },
+      {
+        "label": {
+          "en": "Simulation output",
+          "zh": "仿真产出"
+        },
+        "value": {
+          "en": "Entity–relation graphs, agent personas, event reports and interviews.",
+          "zh": "实体关系图、角色画像、事件报告及虚拟访谈。"
+        }
+      }
+    ]
+  },
+  "uparis-ds-agents": {
+    "sources": ["https://github.com/SuleynanAuir/UPAIRS-Agents"],
+    "overview": {
+      "en": "A paragraph-level research system that allocates reflection and retrieval effort according to uncertainty, source quality and evidence gaps.",
+      "zh": "面向段落级研究报告的协作系统，根据不确定性、信源质量与证据缺口分配反思及检索预算。"
+    },
+    "hero": "/assets/projects/uparis-architecture.webp",
+    "heroCaption": {
+      "en": "UPARIS-DS: retrieval, paragraph generation, reflection and final synthesis.",
+      "zh": "UPARIS-DS：检索、段落生成、反思与最终合成。"
+    },
+    "stages": [
+      {
+        "en": "Plan report sections",
+        "zh": "规划报告结构"
+      },
+      {
+        "en": "Retrieve diverse evidence",
+        "zh": "检索多源证据"
+      },
+      {
+        "en": "Reflect and update paragraphs",
+        "zh": "段落反思与更新"
+      },
+      {
+        "en": "Quantify uncertainty",
+        "zh": "量化全局不确定性"
+      }
+    ],
+    "sections": [
+      {
+        "title": {
+          "en": "Eight roles, section-level refinement",
+          "zh": "八类角色与段落级迭代"
+        },
+        "paragraphs": [
+          {
+            "en": "The workflow separates planning, retrieval, summarization, reflection, updating, global uncertainty, final formatting and orchestration. A planner creates the report structure; section retrievers gather evidence; a reflector identifies gaps, weak support and bias before targeted updates.",
+            "zh": "流程拆分为规划、检索、摘要、反思、更新、全局不确定性、格式化和调度八类职责。规划器生成结构，分节检索器获取证据，反思器识别缺口、薄弱支撑与偏差，再定向更新段落。"
+          },
+          {
+            "en": "The pressure-driven design combines a five-factor uncertainty model with source authority, recency and consistency signals. Diversity-aware ranking helps avoid repeatedly citing closely related sources as if they were independent evidence.",
+            "zh": "压力驱动设计结合五因子不确定性模型以及权威性、时效性和一致性信号。多样性排序用于减少将高度相关信源误当作独立证据的问题。"
+          }
+        ],
+        "image": "/assets/projects/uparis-architecture.webp",
+        "caption": {
+          "en": "Uncertainty-aware paragraph refinement and multi-agent collaboration.",
+          "zh": "不确定性感知的段落优化与多智能体协作。"
+        }
+      },
+      {
+        "title": {
+          "en": "Inspectable outputs and retrieval diagnostics",
+          "zh": "可检查的产出与检索诊断"
+        },
+        "paragraphs": [
+          {
+            "en": "The report exposes cross-section insights, evidence strength, contradictions, knowledge gaps and references. The JSON output retains the query, task identifier, timestamp, Markdown report, global uncertainty and completion status.",
+            "zh": "报告呈现跨章节洞察、证据强度、矛盾、知识缺口与参考来源。JSON 输出保留问题、任务标识、时间戳、Markdown 报告、全局不确定性和完成状态。"
+          },
+          {
+            "en": "For the README’s “Artificial Intelligence Ethics” demo, reported confidence is 0.88 and uncertainty is 0.12 after two reflection loops, using 31 authoritative sources. NDCG 0.96 and MRR 1.00 are demo diagnostics, not universal retrieval guarantees.",
+            "zh": "在 README 的“人工智能伦理”演示中，两轮反思后报告置信度 0.88、不确定性 0.12、权威信源 31 个。NDCG 0.96、MRR 1.00 是该演示的诊断结果，并非普遍检索保证。"
+          }
+        ],
+        "image": "/assets/web_page/uparis_ds.png",
+        "caption": {
+          "en": "Repository overview and the documented demo’s quality signals.",
+          "zh": "仓库总览与演示中的质量信号。"
+        }
+      },
+      {
+        "title": {
+          "en": "Fast entry point and failure handling",
+          "zh": "快速入口与故障处理"
+        },
+        "paragraphs": [
+          {
+            "en": "The current README prioritizes controller_fast.py through main.py over historical usage examples. Configuration controls reflection loops, uncertainty thresholds, result directories and deterministic mode. The default uncertainty threshold is 0.2.",
+            "zh": "当前 README 优先使用由 main.py 调用的 controller_fast.py，而非历史用法。配置项控制反思轮数、不确定性阈值、结果目录与确定性模式，默认阈值为 0.2。"
+          },
+          {
+            "en": "Asynchronous search and model calls include retries, timeout handling and partial-result recovery. Retaining intermediate outputs allows a reader to inspect where a section gained support or remained uncertain.",
+            "zh": "异步搜索与模型调用包含重试、超时处理和部分结果恢复。保留中间产物，有助于追踪段落何时获得支撑以及哪里仍存在不确定性。"
+          }
+        ],
+        "image": null,
+        "caption": {
+          "en": "",
+          "zh": ""
+        }
+      }
+    ],
+    "reproduction": {
+      "en": "Use the current module-based quick start with DeepSeek and Tavily credentials supplied locally. Inspect runs/*_final.json and preserve reflection-loop and threshold settings alongside the generated report.",
+      "zh": "使用当前模块化快速入口，在本地提供 DeepSeek 与 Tavily 凭据；检查 runs/*_final.json，并随报告保存反思轮数与阈值设置。"
+    },
+    "metrics": [],
+    "specifications": [
+      {
+        "label": {
+          "en": "Runtime",
+          "zh": "运行组件"
+        },
+        "value": {
+          "en": "Python 3.10+ · asyncio / aiohttp · DeepSeek · Tavily.",
+          "zh": "Python 3.10+ · asyncio / aiohttp · DeepSeek · Tavily。"
+        }
+      },
+      {
+        "label": {
+          "en": "Stopping control",
+          "zh": "终止控制"
+        },
+        "value": {
+          "en": "uncertainty_threshold defaults to 0.2; reflection-loop count is configurable.",
+          "zh": "uncertainty_threshold 默认 0.2，反思轮数可配置。"
+        }
+      },
+      {
+        "label": {
+          "en": "Traceable artifacts",
+          "zh": "可追踪产物"
+        },
+        "value": {
+          "en": "runs/*_final.json retains report_markdown, global_uncertainty and task status.",
+          "zh": "runs/*_final.json 保留 report_markdown、global_uncertainty 及任务状态。"
+        }
+      }
+    ]
+  },
+  "cognitivetemp-deepsearch-agents": {
+    "sources": [
+      "https://github.com/SuleynanAuir/CognitiveTemp-DeepSearch-Agents"
+    ],
+    "overview": {
+      "en": "A configurable deep-research workflow that uses per-agent temperature settings to balance rigorous evidence review, reflective analysis and exploratory debate.",
+      "zh": "通过逐智能体温度设置调节证据审查、反思分析与探索性辩论的深度研究流程。"
+    },
+    "hero": "/assets/projects/cognitive-interface.webp",
+    "heroCaption": {
+      "en": "Search interface with cognitive-style and research settings.",
+      "zh": "提供认知风格与研究参数设置的搜索界面。"
+    },
+    "stages": [
+      {
+        "en": "Decompose the question",
+        "zh": "分解研究问题"
+      },
+      {
+        "en": "Retrieve and evaluate",
+        "zh": "检索与评估"
+      },
+      {
+        "en": "Reflect and debate",
+        "zh": "反思与辩论"
+      },
+      {
+        "en": "Synthesize with uncertainty",
+        "zh": "带不确定性的合成"
+      }
+    ],
+    "sections": [
+      {
+        "title": {
+          "en": "Temperature as a role-specific control",
+          "zh": "按角色配置温度"
+        },
+        "paragraphs": [
+          {
+            "en": "Eight roles cover planning, retrieval, evaluation, reflection, debate, uncertainty estimation, synthesis and orchestration. Low temperatures are assigned to planning and evidence review; higher temperatures allow the debate stage to explore competing interpretations.",
+            "zh": "八类角色负责规划、检索、评估、反思、辩论、不确定性、合成和调度。规划与证据审查采用较低温度，辩论阶段使用较高温度探索不同解释。"
+          },
+          {
+            "en": "Academic, balanced and creative presets alter temperature, iteration budgets and source targets together. This makes research style explicit in configuration rather than relying on a single broad instruction to “think harder.”",
+            "zh": "学术、平衡与创意预设共同调整温度、迭代预算和信源目标，将研究风格落实到配置，而非仅依赖笼统的“深入思考”指令。"
+          }
+        ],
+        "image": "/assets/projects/cognitive-interface.webp",
+        "caption": {
+          "en": "The interface exposes research controls before the query runs.",
+          "zh": "界面在查询运行前提供研究参数控制。"
+        }
+      },
+      {
+        "title": {
+          "en": "Evidence assessment and debate",
+          "zh": "证据评估与矛盾辩论"
+        },
+        "paragraphs": [
+          {
+            "en": "MECE decomposition divides the query into complementary subquestions. Cross-source credibility scoring and reflection examine evidence gaps; a multi-persona debate stage handles contradictory material before a synthesis stage writes the report.",
+            "zh": "MECE 分解将问题拆为互补子问题；跨来源可信度评分与反思检查证据缺口，多角色辩论处理矛盾材料，再由合成阶段撰写报告。"
+          },
+          {
+            "en": "Asyncio supports concurrent retrieval and API calls. Markdown outputs distinguish facts from inferences, while uncertainty-based termination determines whether additional research is justified.",
+            "zh": "Asyncio 支持并发检索和 API 调用；Markdown 输出区分事实与推断，不确定性终止逻辑用于判断是否需要继续研究。"
+          }
+        ],
+        "image": "/assets/projects/cognitive-results.webp",
+        "caption": {
+          "en": "A repository result snapshot showing ranking metrics, precision, time and token cost.",
+          "zh": "仓库结果截图展示排序指标、精度、耗时与 token 成本。"
+        }
+      },
+      {
+        "title": {
+          "en": "Performance in context",
+          "zh": "结合配置理解表现"
+        },
+        "paragraphs": [
+          {
+            "en": "The README reports 45–120 seconds and 15–30 sources for its documented query workflow, plus 196 tests across six agent components. These reported observations describe the documented workflow and component test coverage.",
+            "zh": "README 记录查询流程约 45–120 秒、15–30 个信源，并列出六类组件的 196 项测试。这些记录对应文档中的工作流程及组件测试覆盖。"
+          },
+          {
+            "en": "Compare presets on the same research question and evidence date. Useful tradeoffs include source coverage, contradiction handling, report length and cost, rather than treating lower temperature alone as a guarantee of factual correctness.",
+            "zh": "比较预设时应固定问题与证据日期，关注覆盖度、矛盾处理、报告长度与成本，而不把低温度本身当作事实正确性的保证。"
+          }
+        ],
+        "image": null,
+        "caption": {
+          "en": "",
+          "zh": ""
+        }
+      }
+    ],
+    "reproduction": {
+      "en": "Configure DeepSeek and Tavily, select the research preset in config.py and retain the resulting Markdown and statistics. The README links architecture, configuration and examples guides for custom workflows.",
+      "zh": "配置 DeepSeek 与 Tavily，在 config.py 中选择研究预设，保留 Markdown 和统计结果；自定义流程可参考 README 链接的架构、配置和示例文档。"
+    },
+    "metrics": [],
+    "specifications": [
+      {
+        "label": {
+          "en": "Low-temperature roles",
+          "zh": "低温角色"
+        },
+        "value": {
+          "en": "Planner and Evaluator: 0.1–0.3; Uncertainty: 0.1–0.2.",
+          "zh": "Planner 与 Evaluator：0.1–0.3；Uncertainty：0.1–0.2。"
+        }
+      },
+      {
+        "label": {
+          "en": "Exploratory roles",
+          "zh": "探索角色"
+        },
+        "value": {
+          "en": "Reflection and Synthesis: 0.2–0.6; Debate: 0.5–0.9.",
+          "zh": "Reflection 与 Synthesis：0.2–0.6；Debate：0.5–0.9。"
+        }
+      },
+      {
+        "label": {
+          "en": "Preset budget",
+          "zh": "预设预算"
+        },
+        "value": {
+          "en": "Academic: 5+ iterations; balanced: 3; creative: 1–2, as documented.",
+          "zh": "文档预设：学术 5 轮以上、平衡 3 轮、创意 1–2 轮。"
+        }
+      }
+    ]
+  },
+  "llama-factory-fine-tuning": {
+    "sources": [
+      "https://github.com/SuleynanAuir/Enterprise-Enhanced-LLaMA-Factory-Pro-Advanced-FineTuning-Local-Deployment-Pipeline"
+    ],
+    "overview": {
+      "en": "An integrated model-adaptation workflow from document-to-QA data engineering through parameter-efficient training to quantized local inference.",
+      "zh": "从文档转问答数据工程，到参数高效训练与量化本地推理的一体化模型适配流程。"
+    },
+    "hero": "/assets/projects/foundry-pipeline.svg",
+    "heroCaption": {
+      "en": "Pipeline summary derived from the repository’s data, training and deployment workflow.",
+      "zh": "根据仓库数据、训练与部署流程整理的架构示意。"
+    },
+    "stages": [
+      {
+        "en": "Generate and curate QA data",
+        "zh": "生成与筛选问答数据"
+      },
+      {
+        "en": "Register training datasets",
+        "zh": "注册训练数据集"
+      },
+      {
+        "en": "Adapt with LoRA / QLoRA",
+        "zh": "LoRA / QLoRA 适配"
+      },
+      {
+        "en": "Export and deploy locally",
+        "zh": "导出与本地部署"
+      }
+    ],
+    "sections": [
+      {
+        "title": {
+          "en": "Data engineering as the first stage",
+          "zh": "以数据工程为起点"
+        },
+        "paragraphs": [
+          {
+            "en": "EasyDataset turns domain documents into question–answer candidates, followed by quality review and filtering. Cleaned examples are standardized and registered in dataset_info.json so LLaMA Factory can load the intended dataset and conversation template.",
+            "zh": "EasyDataset 将领域文档转换为候选问答，再进行质量审查与筛选。清洗后的样本按规范组织并注册到 dataset_info.json，确保 LLaMA Factory 加载正确数据与对话模板。"
+          },
+          {
+            "en": "The workflow covers model configuration, source import, question generation and answer inspection. Keeping these steps visible makes it possible to trace poor model behavior back to data quality or formatting rather than only adjusting training parameters.",
+            "zh": "流程覆盖模型配置、资料导入、问题生成与答案检查，使模型表现问题能够追溯到数据质量或格式，而非只通过修改训练参数处理。"
+          }
+        ],
+        "image": "/assets/web_page/llamafactory.png",
+        "caption": {
+          "en": "Repository overview of the integrated fine-tuning and local deployment workflow.",
+          "zh": "仓库展示的一体化微调与本地部署流程。"
+        }
+      },
+      {
+        "title": {
+          "en": "Memory-aware adaptation and observation",
+          "zh": "显存约束下的适配与观测"
+        },
+        "paragraphs": [
+          {
+            "en": "Training options include LoRA, four-bit QLoRA and preference optimization. Mixed precision, gradient accumulation and multi-GPU configuration expose the tradeoff between sequence length, effective batch size and memory usage.",
+            "zh": "训练选项覆盖 LoRA、四位 QLoRA 与偏好优化。混合精度、梯度累积和多 GPU 配置用于权衡序列长度、有效批量与显存开销。"
+          },
+          {
+            "en": "The README illustrates Qwen configuration, adapter rank and alpha, cosine scheduling, gradient clipping and SwanLab monitoring. Configuration examples are starting points for a dataset-specific experiment, not guaranteed optimal settings.",
+            "zh": "README 展示 Qwen 配置、适配器 rank 与 alpha、余弦调度、梯度裁剪及 SwanLab 监控。示例配置是具体数据实验的起点，而非普遍最优参数。"
+          }
+        ],
+        "image": "/assets/projects/foundry-training.webp",
+        "caption": {
+          "en": "Training visualizations presented in the repository.",
+          "zh": "仓库中展示的训练可视化。"
+        }
+      },
+      {
+        "title": {
+          "en": "From checkpoint to local inference",
+          "zh": "从检查点到本地推理"
+        },
+        "paragraphs": [
+          {
+            "en": "The deployment path connects trained models to GGUF quantization and local inference with Ollama or llama.cpp. It makes the handoff between training artifacts and a usable local model explicit, including model-template compatibility.",
+            "zh": "部署路径将训练产物连接到 GGUF 量化，以及 Ollama 或 llama.cpp 本地推理，明确训练检查点到可用模型之间的交付过程及模板兼容性。"
+          },
+          {
+            "en": "Automated safety benchmarks, API authentication, service monitoring and CI are listed as future enhancements in the README. They remain roadmap items rather than completed production capabilities in this project description.",
+            "zh": "README 将自动化安全基准、API 鉴权、服务监控和 CI 列为后续增强，因此在本项目介绍中保留为路线图内容，而非已完成的生产能力。"
+          }
+        ],
+        "image": "/assets/web_page/llamafactory_additional2.png",
+        "caption": {
+          "en": "Training observation and local deployment instructions.",
+          "zh": "训练观测与本地部署说明。"
+        }
+      }
+    ],
+    "reproduction": {
+      "en": "Prepare the cloud GPU environment, review generated QA pairs, register the dataset and match the model template. Record training configuration and validation outputs before exporting adapters or quantized models for local inference.",
+      "zh": "准备云 GPU 环境，审查生成问答，注册数据集并匹配模型模板；记录训练配置和验证结果，再导出适配器或量化模型进行本地推理。"
+    },
+    "metrics": [],
+    "specifications": [
+      {
+        "label": {
+          "en": "Dataset contract",
+          "zh": "数据协议"
+        },
+        "value": {
+          "en": "Reviewed QA examples, JSON schema and dataset_info.json registration.",
+          "zh": "经过审查的问答样本、JSON Schema 及 dataset_info.json 注册。"
+        }
+      },
+      {
+        "label": {
+          "en": "Example training controls",
+          "zh": "示例训练控制"
+        },
+        "value": {
+          "en": "4-bit quantization, bf16, gradient accumulation and cosine learning-rate scheduling.",
+          "zh": "四位量化、bf16、梯度累积及余弦学习率调度。"
+        }
+      },
+      {
+        "label": {
+          "en": "Delivery artifacts",
+          "zh": "交付产物"
+        },
+        "value": {
+          "en": "Adapter checkpoints, training logs and a local inference / quantization path.",
+          "zh": "适配器检查点、训练日志及本地推理／量化流程。"
+        }
+      }
+    ]
+  },
+  "qwen-hotelservice-master": {
+    "sources": [
+      "https://github.com/SuleynanAuir/Distributed-Fine-Tuning-of-Qwen2.5-7B-as-HotelService-Master"
+    ],
+    "overview": {
+      "en": "Distributed adaptation of Qwen2.5-7B for hotel dialogue, search-role prediction and structured slot extraction, with separate SFT and preference-alignment stages.",
+      "zh": "面向酒店对话、搜索角色预测与结构化槽位抽取的 Qwen2.5-7B 分布式适配，包含独立的监督微调与偏好对齐阶段。"
+    },
+    "hero": "/assets/projects/hotel-architecture.webp",
+    "heroCaption": {
+      "en": "Repository architecture linking hotel dialogue data, LoRA / QLoRA and DPO.",
+      "zh": "仓库架构连接酒店对话数据、LoRA / QLoRA 与 DPO。"
+    },
+    "stages": [
+      {
+        "en": "Prepare dialogue JSONL",
+        "zh": "准备对话 JSONL"
+      },
+      {
+        "en": "Establish an SFT baseline",
+        "zh": "建立 SFT 基线"
+      },
+      {
+        "en": "Align preference pairs",
+        "zh": "偏好对齐"
+      },
+      {
+        "en": "Evaluate roles, slots and text",
+        "zh": "评估角色、槽位与回复"
+      }
+    ],
+    "sections": [
+      {
+        "title": {
+          "en": "Task structure and training paths",
+          "zh": "任务结构与训练路径"
+        },
+        "paragraphs": [
+          {
+            "en": "The project distinguishes search actions from assistant responses in multi-turn hotel conversations. Data preparation preserves structured arguments such as hotel type, facilities and price constraints, linking language generation to downstream search behavior.",
+            "zh": "项目在多轮酒店对话中区分搜索动作与助手回复。数据准备保留酒店类型、设施与价格等结构化参数，将语言生成连接到后续搜索行为。"
+          },
+          {
+            "en": "SFT-LoRA provides a baseline; SFT-QLoRA reduces base-model memory requirements; DPO consumes chosen/rejected response pairs for a later preference stage. Adapter artifacts are saved independently to support staged iteration.",
+            "zh": "SFT-LoRA 建立基线，SFT-QLoRA 降低基座显存需求，DPO 在后续阶段利用 chosen/rejected 响应对优化偏好。适配器独立保存，支持逐阶段迭代。"
+          }
+        ],
+        "image": "/assets/projects/hotel-architecture.webp",
+        "caption": {
+          "en": "The staged adaptation workflow and distributed training context.",
+          "zh": "分阶段适配流程与分布式训练环境。"
+        }
+      },
+      {
+        "title": {
+          "en": "Distributed engineering and monitoring",
+          "zh": "分布式工程与监控"
+        },
+        "paragraphs": [
+          {
+            "en": "Two-GPU torchrun scripts default to DDP and offer an optional ZeRO-2 path. TensorBoard tracks loss, gradient norms and preference reward margins; training and evaluation have separate entry points.",
+            "zh": "双 GPU torchrun 脚本默认使用 DDP，并提供可选 ZeRO-2 路径。TensorBoard 记录损失、梯度范数及偏好奖励间隔，训练与评估入口分离。"
+          },
+          {
+            "en": "The README documents memory-pressure mitigation through smaller batches, shorter sequences and gradient accumulation. It also separates DPO numerical-stability troubleshooting from distributed NCCL issues, making failures easier to localize.",
+            "zh": "README 通过减小批量、缩短序列与梯度累积应对显存压力，并区分 DPO 数值稳定性问题与分布式 NCCL 问题，便于定位故障。"
+          }
+        ],
+        "image": "/assets/web_page/fine_tuning_qwen_hotelbot.png",
+        "caption": {
+          "en": "Project overview of the hotel assistant training pipeline.",
+          "zh": "酒店助手训练流程的项目总览。"
+        }
+      },
+      {
+        "title": {
+          "en": "Evaluation with a defined test context",
+          "zh": "明确测试背景的评估"
+        },
+        "paragraphs": [
+          {
+            "en": "The reported SFT-LoRA checkpoint-2150 evaluation uses 560 long-dialogue examples: 242 search and 318 assistant samples. Role accuracy is 99.11%, slot F1 is 95.73% and slot exact match is 90.08%.",
+            "zh": "报告中的 SFT-LoRA checkpoint-2150 在 560 条长对话上评估，包含 242 条搜索样本与 318 条助手样本；角色准确率 99.11%，槽位 F1 为 95.73%，槽位完全匹配率 90.08%。"
+          },
+          {
+            "en": "Character-level BLEU-4 is 44.51 and ROUGE-L F1 is 60.40. These generation metrics and task-structure metrics should be read together; DPO training reward accuracy is a separate signal and does not replace held-out dialogue evaluation.",
+            "zh": "字符级 BLEU-4 为 44.51，ROUGE-L F1 为 60.40。生成指标需与任务结构指标共同解读；DPO 训练奖励准确率属于另一类信号，不能替代独立对话评估。"
+          }
+        ],
+        "image": "/assets/web_page/weibo_sentiment_qabot_additional2.png",
+        "caption": {
+          "en": "The hotel-service evaluation table retained in the portfolio’s original assets.",
+          "zh": "作品集原始素材中保存的酒店服务评估表。"
+        }
+      }
+    ],
+    "reproduction": {
+      "en": "Use qwen2/train_sft_lora_2gpu.sh or train_sft_qlora_2gpu.sh, then train_dpo_2gpu.sh for preference alignment. Evaluate with qwen2/eval_test_jsonl.py and preserve both metrics JSON and prediction JSONL.",
+      "zh": "使用 qwen2/train_sft_lora_2gpu.sh 或 train_sft_qlora_2gpu.sh，随后通过 train_dpo_2gpu.sh 对齐偏好；用 qwen2/eval_test_jsonl.py 评估并保留指标 JSON 与预测 JSONL。"
+    },
+    "metrics": [
+      {
+        "label": {
+          "en": "Role accuracy",
+          "zh": "角色准确率"
+        },
+        "value": "99.11%",
+        "context": "SFT-LoRA · 560 dialogues"
+      },
+      {
+        "label": {
+          "en": "Slot F1",
+          "zh": "槽位 F1"
+        },
+        "value": "95.73%",
+        "context": "checkpoint-2150"
+      },
+      {
+        "label": {
+          "en": "Slot exact match",
+          "zh": "槽位完全匹配"
+        },
+        "value": "90.08%",
+        "context": "Search-task arguments"
+      }
+    ],
+    "specifications": [
+      {
+        "label": {
+          "en": "Backbone and hardware",
+          "zh": "基座与硬件"
+        },
+        "value": {
+          "en": "Qwen2.5-7B-Instruct; the reported experiments use two RTX 4090 GPUs.",
+          "zh": "Qwen2.5-7B-Instruct；记录实验使用两张 RTX 4090。"
+        }
+      },
+      {
+        "label": {
+          "en": "Evaluation split",
+          "zh": "评估样本"
+        },
+        "value": {
+          "en": "560 long dialogues: 242 search examples and 318 assistant examples.",
+          "zh": "560 条长对话：242 条搜索样本与 318 条助手样本。"
+        }
+      },
+      {
+        "label": {
+          "en": "Preference data",
+          "zh": "偏好数据"
+        },
+        "value": {
+          "en": "build_dpo_from_sft.py supports constructing weak preference pairs from SFT data.",
+          "zh": "build_dpo_from_sft.py 支持从 SFT 数据构造弱偏好对。"
+        }
+      }
+    ]
+  },
+  "weibo-sentimentbot-qa-bot": {
+    "sources": [
+      "https://github.com/SuleynanAuir/WeiboPublics-SentimentBot-E2-FineTuning-Pipeline-of-Qwen3.5-0.6B-on-AutoDL-Cloud-Infrastrcture"
+    ],
+    "overview": {
+      "en": "An AutoDL-based sentiment-model adaptation pipeline with staged training, observable experiments and class-imbalance evaluation for Chinese social-media text.",
+      "zh": "面向中文社交媒体文本的 AutoDL 情感模型适配流程，结合分阶段训练、实验观测与类别不平衡评估。"
+    },
+    "hero": "/assets/projects/weibo-architecture.webp",
+    "heroCaption": {
+      "en": "The repository’s staged model-adaptation illustration.",
+      "zh": "仓库中的分阶段模型适配示意图。"
+    },
+    "stages": [
+      {
+        "en": "Normalize comments and labels",
+        "zh": "规范评论与标签"
+      },
+      {
+        "en": "Train instruction-following classification",
+        "zh": "训练指令分类"
+      },
+      {
+        "en": "Track checkpoints and adapters",
+        "zh": "跟踪检查点与适配器"
+      },
+      {
+        "en": "Stress-test class imbalance",
+        "zh": "检验类别不平衡"
+      }
+    ],
+    "sections": [
+      {
+        "title": {
+          "en": "One entry point for staged adaptation",
+          "zh": "统一入口的分阶段适配"
+        },
+        "paragraphs": [
+          {
+            "en": "run_all.sh and run_pipeline.py coordinate optional domain pretraining, instruction SFT, LoRA / QLoRA and preference-training modules. Weibo comments from weibo_senti_100k.csv are converted to prompt–answer examples with input IDs, attention masks and supervised labels.",
+            "zh": "run_all.sh 与 run_pipeline.py 协调可选领域预训练、指令 SFT、LoRA / QLoRA 及偏好训练模块。weibo_senti_100k.csv 评论被转换为 prompt–answer 样本及输入、注意力掩码和监督标签。"
+          },
+          {
+            "en": "The implementation uses Transformers Trainer and parameterized learning rates, warmup, weight decay, gradient clipping and checkpoint handling. Optional preference stages are distinct from the sentiment-classification experiment reported in the README.",
+            "zh": "实现使用 Transformers Trainer，并参数化学习率、预热、权重衰减、梯度裁剪和检查点管理。可选偏好阶段与 README 报告的情感分类实验分开描述。"
+          }
+        ],
+        "image": "/assets/projects/weibo-architecture.webp",
+        "caption": {
+          "en": "Data-to-model stages as presented by the project.",
+          "zh": "项目展示的数据到模型各阶段。"
+        }
+      },
+      {
+        "title": {
+          "en": "Operational visibility on cloud GPUs",
+          "zh": "云 GPU 上的运行可观测性"
+        },
+        "paragraphs": [
+          {
+            "en": "The monitoring workflow combines terminal progress, persistent run_all.log output and online or offline Weights & Biases tracking. AutoDL, tmux and Linux process management support long-running training and diagnosis.",
+            "zh": "监控流程结合终端进度、持久化 run_all.log 以及在线或离线 Weights & Biases。AutoDL、tmux 与 Linux 进程管理支持长时间训练及诊断。"
+          },
+          {
+            "en": "The README’s model naming is not fully consistent: its title uses Qwen3.5-0.6B while the stack also lists Qwen3-0.6B. Reproduction therefore depends on the actual configured checkpoint, which should be recorded with each run.",
+            "zh": "README 的模型命名存在差异：标题使用 Qwen3.5-0.6B，技术栈也列出 Qwen3-0.6B。因此复现应以实际配置的检查点为准，并随实验记录。"
+          }
+        ],
+        "image": "/assets/web_page/weibo_sentiment_qabot_additional1.png",
+        "caption": {
+          "en": "Repository organization for data, training and experiment outputs.",
+          "zh": "数据、训练与实验产物的仓库组织。"
+        }
+      },
+      {
+        "title": {
+          "en": "Why macro-F1 matters",
+          "zh": "为什么需要宏平均 F1"
+        },
+        "paragraphs": [
+          {
+            "en": "On the reported balanced 5,000-example evaluation, accuracy and macro-F1 are both 0.9736. Under a 4,500-positive / 500-negative distribution, accuracy remains 0.9702 while macro-F1 falls to 0.9250.",
+            "zh": "在报告的 5,000 条平衡样本评估中，准确率与宏平均 F1 均为 0.9736；当正负样本变为 4,500:500 时，准确率仍为 0.9702，但宏平均 F1 降至 0.9250。"
+          },
+          {
+            "en": "An earlier biased evaluation reported 0.9696 accuracy but only 0.4923 macro-F1 with zero negative-class recall. The evaluation script consequently supports random, stratified and controlled-imbalance sampling, retaining class-specific metrics and confusion matrices.",
+            "zh": "早期偏斜评估曾出现 0.9696 准确率、仅 0.4923 宏平均 F1 与零负类召回。评估脚本因此支持随机、分层及可控不平衡采样，并保留分类指标与混淆矩阵。"
+          }
+        ],
+        "image": null,
+        "caption": {
+          "en": "",
+          "zh": ""
+        }
+      }
+    ],
+    "reproduction": {
+      "en": "Run the selected stages through run_all.sh, retain the actual model checkpoint name and inspect evaluate_sft_classification.py outputs for balanced and imbalanced samples. Compare macro-F1 and per-class recall, not accuracy alone.",
+      "zh": "通过 run_all.sh 执行所选阶段，记录实际模型检查点，检查 evaluate_sft_classification.py 在平衡及不平衡样本上的产出；同时比较宏平均 F1 和逐类召回。"
+    },
+    "metrics": [
+      {
+        "label": {
+          "en": "Balanced macro-F1",
+          "zh": "平衡宏平均 F1"
+        },
+        "value": "0.9736",
+        "context": "2,500 positive / 2,500 negative"
+      },
+      {
+        "label": {
+          "en": "Imbalanced macro-F1",
+          "zh": "不平衡宏平均 F1"
+        },
+        "value": "0.9250",
+        "context": "4,500 positive / 500 negative"
+      }
+    ],
+    "specifications": [
+      {
+        "label": {
+          "en": "Data source",
+          "zh": "数据来源"
+        },
+        "value": {
+          "en": "dataset/weibo_senti_100k.csv → instruction-formatted sentiment labels.",
+          "zh": "dataset/weibo_senti_100k.csv → 指令格式情感标签。"
+        }
+      },
+      {
+        "label": {
+          "en": "Evaluation modes",
+          "zh": "评估模式"
+        },
+        "value": {
+          "en": "head, random, stratified and controlled imbalance; class-specific precision / recall are retained.",
+          "zh": "head、random、stratified 及可控不平衡，保留逐类精确率与召回率。"
+        }
+      },
+      {
+        "label": {
+          "en": "Run artifacts",
+          "zh": "运行产物"
+        },
+        "value": {
+          "en": "outputs/sft checkpoints, persistent logs and W&B experiment records.",
+          "zh": "outputs/sft 检查点、持久日志及 W&B 实验记录。"
+        }
+      }
+    ]
+  },
+  "chronos-2-time-series-foundation-model": {
+    "sources": ["https://github.com/SuleynanAuir/Amazon-TSChronos"],
+    "overview": {
+      "en": "A practical exploration of Chronos-2 forecasting with univariate and multivariate series, cross-series learning and known-future covariates.",
+      "zh": "围绕 Chronos-2 开展的时间序列预测实践，覆盖单变量、多变量、跨序列学习及已知未来协变量。"
+    },
+    "hero": "/assets/projects/chronos-workflow.svg",
+    "heroCaption": {
+      "en": "Forecasting data flow based on the README; a conceptual diagram, not a measured forecast.",
+      "zh": "依据 README 整理的预测数据流示意，非实测预测曲线。"
+    },
+    "stages": [
+      {
+        "en": "Organize time-indexed data",
+        "zh": "组织时序数据"
+      },
+      {
+        "en": "Separate available covariates",
+        "zh": "区分可用协变量"
+      },
+      {
+        "en": "Run pretrained inference",
+        "zh": "运行预训练推理"
+      },
+      {
+        "en": "Inspect points and quantiles",
+        "zh": "检查点预测与分位数"
+      }
+    ],
+    "sections": [
+      {
+        "title": {
+          "en": "Foundation-model forecasting",
+          "zh": "基础模型时序预测"
+        },
+        "paragraphs": [
+          {
+            "en": "The repository introduces Chronos-2 as a pretrained forecasting model supporting univariate, multivariate and related-series prediction. Compared with earlier Chronos variants, the README highlights native support for past-only and known-future covariates and a maximum context length of 8,192.",
+            "zh": "仓库介绍 Chronos-2 的单变量、多变量及相关序列预测能力。相较早期 Chronos，README 强调原生支持仅历史可用与未来已知协变量，以及 8,192 的最大上下文长度。"
+          },
+          {
+            "en": "This portfolio project concerns using and understanding the forecasting pipeline. The underlying pretrained model and its capabilities belong to the upstream Chronos work; the repository does not establish a newly trained foundation model.",
+            "zh": "本项目聚焦预测流程的使用与理解，底层预训练模型及能力属于上游 Chronos 工作；仓库并不代表从零训练了新的基础模型。"
+          }
+        ],
+        "image": "/assets/projects/chronos-workflow.svg",
+        "caption": {
+          "en": "Inputs, covariate availability and quantile outputs in the documented workflow.",
+          "zh": "文档流程中的输入、协变量可用性与分位数输出。"
+        }
+      },
+      {
+        "title": {
+          "en": "Data contracts and covariates",
+          "zh": "数据接口与协变量"
+        },
+        "paragraphs": [
+          {
+            "en": "predict_df expects a long-format DataFrame with an item identifier, timestamp and target. The prediction horizon is explicit. Columns shared with future_df identify covariates available over the forecast interval, while historical-only information stays in the observed context.",
+            "zh": "predict_df 接收包含序列标识、时间戳与目标列的长表，并显式设置预测步数。与 future_df 共享的列表示预测区间已知的协变量，仅历史信息则保留在观测上下文。"
+          },
+          {
+            "en": "The README uses energy-price forecasting as an example. Calendar or planned-event features may be known in advance, whereas future measurements must not be supplied as if they were available at prediction time.",
+            "zh": "README 以能源价格预测为例。日历或计划事件可预先获得，未来实测数据则不能被当作预测时已知的输入。"
+          }
+        ],
+        "image": "/assets/web_page/chronos2.png",
+        "caption": {
+          "en": "Repository comparison of Chronos model generations and supported inputs.",
+          "zh": "仓库对 Chronos 各代模型及输入能力的比较。"
+        }
+      },
+      {
+        "title": {
+          "en": "Uncertainty-aware presentation",
+          "zh": "带不确定性的结果展示"
+        },
+        "paragraphs": [
+          {
+            "en": "Inference returns point forecasts and requested quantiles, with the example interface using quantile levels from 0.1 to 0.9. Plotting the prediction interval together with the observed context communicates uncertainty beyond a single central trajectory.",
+            "zh": "推理返回点预测与所需分位数，接口示例使用 0.1 至 0.9 分位。将预测区间与历史观测共同绘制，可以表达单条中心轨迹之外的不确定性。"
+          },
+          {
+            "en": "The README provides usage examples rather than a repository-specific benchmark table. GPU execution is recommended for speed, with CPU inference also supported; the examples focus on input handling, inference and forecast visualization.",
+            "zh": "README 提供使用示例，未给出本仓库独立基准表。GPU 推理用于加速，亦支持 CPU；示例重点在输入处理、推理和预测可视化。"
+          }
+        ],
+        "image": "/assets/web_page/chronos2_additional.png",
+        "caption": {
+          "en": "Documented supported scenarios, hardware choices and upstream references.",
+          "zh": "文档列出的应用场景、硬件选项与上游参考。"
+        }
+      }
+    ],
+    "reproduction": {
+      "en": "Install the README dependencies, load the selected Chronos checkpoint, prepare df and optional future_df, then call predict_df with an explicit horizon and quantile levels. Preserve time splits and covariate availability.",
+      "zh": "安装 README 依赖并加载指定 Chronos 检查点，准备 df 与可选 future_df，再设置预测步数和分位数调用 predict_df；保存时间划分与协变量可用性。"
+    },
+    "metrics": [],
+    "specifications": [
+      {
+        "label": {
+          "en": "Input schema",
+          "zh": "输入结构"
+        },
+        "value": {
+          "en": "Long DataFrame with item_id, timestamp and target; optional future_df.",
+          "zh": "包含 item_id、timestamp、target 的长表，可选 future_df。"
+        }
+      },
+      {
+        "label": {
+          "en": "Forecast controls",
+          "zh": "预测控制"
+        },
+        "value": {
+          "en": "prediction_length and quantile_levels are explicit predict_df parameters.",
+          "zh": "prediction_length 与 quantile_levels 为 predict_df 显式参数。"
+        }
+      },
+      {
+        "label": {
+          "en": "Covariate boundary",
+          "zh": "协变量边界"
+        },
+        "value": {
+          "en": "Past-only features remain historical; future covariates must be known at inference time.",
+          "zh": "仅历史特征保留在历史窗口；未来协变量必须在推理时已知。"
+        }
+      }
+    ]
+  },
+  "vefloodbn": {
+    "sources": ["https://github.com/SuleynanAuir/VeFloodBN"],
+    "overview": {
+      "en": "An interpretable, municipality-level flood-risk study using a 12-node discrete Bayesian network, spatial mapping and ranking-sensitivity analysis.",
+      "zh": "使用 12 节点离散贝叶斯网络、空间地图与排名敏感性分析开展的市镇级可解释洪涝风险研究。"
+    },
+    "hero": "/assets/projects/flood-network.webp",
+    "heroCaption": {
+      "en": "The repository’s 12-node dependency graph for flood-risk inference.",
+      "zh": "仓库用于洪涝风险推断的 12 节点依赖图。"
+    },
+    "stages": [
+      {
+        "en": "Discretize municipal evidence",
+        "zh": "离散化市镇证据"
+      },
+      {
+        "en": "Validate the Bayesian network",
+        "zh": "校验贝叶斯网络"
+      },
+      {
+        "en": "Infer conditional flood risk",
+        "zh": "推断条件洪涝风险"
+      },
+      {
+        "en": "Map and compare rankings",
+        "zh": "地图与排名比较"
+      }
+    ],
+    "sections": [
+      {
+        "title": {
+          "en": "A structured dependency model",
+          "zh": "结构化依赖模型"
+        },
+        "paragraphs": [
+          {
+            "en": "The graph connects socioeconomic, terrain, rainfall, drainage and runoff variables to a binary Flood target. Conditional probability tables define the local relationships, while model checks verify normalization and graph consistency.",
+            "zh": "图结构连接社会经济、地形、降雨、排水和径流变量，最终指向二值 Flood 目标。条件概率表刻画局部关系，模型检查验证归一化与结构一致性。"
+          },
+          {
+            "en": "Markov-blanket and active-trail analysis explain how evidence travels through the network. Flood’s direct blanket contains drainage capacity and runoff potential. The arrows express modeling assumptions; graph structure alone does not establish causal effects from observations.",
+            "zh": "马尔可夫毯与活跃路径分析解释证据在网络中的传播，Flood 的直接毯包含排水能力与径流潜势。箭头体现建模假设，图结构本身并不证明观测数据中的因果效应。"
+          }
+        ],
+        "image": "/assets/projects/flood-network.webp",
+        "caption": {
+          "en": "Socioeconomic and environmental dependencies in the flood-risk network.",
+          "zh": "洪涝网络中的社会经济与环境依赖关系。"
+        }
+      },
+      {
+        "title": {
+          "en": "Exact inference, sampling and geography",
+          "zh": "精确推断、采样与地理映射"
+        },
+        "paragraphs": [
+          {
+            "en": "Variable elimination provides exact conditional probabilities, alongside rejection sampling, likelihood weighting and Gibbs MCMC comparisons. Quantile-based discretization maps continuous municipal features into the network’s finite states.",
+            "zh": "变量消元提供精确条件概率，并与拒绝采样、似然加权和 Gibbs MCMC 对比。基于分位数的离散化将连续市镇特征映射为网络有限状态。"
+          },
+          {
+            "en": "Per-municipality inference combines GDP, population, slope and river density under a specified rainfall scenario, then joins outputs to Veneto boundaries in GeoPandas. The map is a conditional model output rather than an independently validated operational hazard forecast.",
+            "zh": "逐市镇推断在指定降雨情景下结合 GDP、人口、坡度和河网密度，再通过 GeoPandas 与 Veneto 边界连接。地图表示条件模型输出，而非独立验证的业务灾害预报。"
+          }
+        ],
+        "image": "/assets/projects/flood-map.webp",
+        "caption": {
+          "en": "Spatial distribution of model-based flood probabilities across Veneto municipalities.",
+          "zh": "Veneto 各市镇模型洪涝概率的空间分布。"
+        }
+      },
+      {
+        "title": {
+          "en": "Robustness of the highest-risk shortlist",
+          "zh": "高风险名单的稳健性"
+        },
+        "paragraphs": [
+          {
+            "en": "Discrete evidence can assign identical probabilities to several municipalities. The project therefore compares strict top-N selection with stratified and proportional selection across probability groups, rather than hiding ties behind a single arbitrary ordering.",
+            "zh": "离散证据可能使多个市镇具有完全相同的概率。项目比较严格 Top-N、按概率档位分层及比例选取，避免用单一任意排序掩盖并列情况。"
+          },
+          {
+            "en": "Overlap and Jaccard similarity quantify whether the shortlist changes with the selection strategy. This evaluates ranking sensitivity, not observed-event prediction accuracy, and helps communicate how stable a displayed prioritization actually is.",
+            "zh": "Overlap 与 Jaccard 相似度衡量候选名单是否随选择策略改变。这评估的是排名敏感性，而非实际事件预测准确率，有助于说明展示优先级的稳定程度。"
+          }
+        ],
+        "image": "/assets/web_page/VeFloodBN_additional1.png",
+        "caption": {
+          "en": "Structural diagnostics and Markov-blanket visualizations.",
+          "zh": "结构诊断与马尔可夫毯可视化。"
+        }
+      }
+    ],
+    "reproduction": {
+      "en": "Run code/Flood_Disaster_Prediction_V2.ipynb with the municipality data and boundary GeoJSON. Check CPDs, retain discretization and rainfall assumptions, and export the risk map together with the Top-N strategy comparison.",
+      "zh": "使用市镇数据和边界 GeoJSON 运行 code/Flood_Disaster_Prediction_V2.ipynb；检查 CPD、保留离散化及降雨假设，并同时导出地图与 Top-N 策略比较。"
+    },
+    "metrics": [],
+    "specifications": [
+      {
+        "label": {
+          "en": "Target and states",
+          "zh": "目标与状态"
+        },
+        "value": {
+          "en": "Flood is binary; environmental and socioeconomic nodes typically use three discrete levels.",
+          "zh": "Flood 为二值目标，环境与社会经济节点通常使用三档离散状态。"
+        }
+      },
+      {
+        "label": {
+          "en": "Inference methods",
+          "zh": "推断方法"
+        },
+        "value": {
+          "en": "Variable elimination, rejection sampling, likelihood weighting and Gibbs sampling.",
+          "zh": "变量消元、拒绝采样、似然加权和 Gibbs 采样。"
+        }
+      },
+      {
+        "label": {
+          "en": "Rank diagnostics",
+          "zh": "排名诊断"
+        },
+        "value": {
+          "en": "top_only, stratified and proportional selection compared with Overlap and Jaccard.",
+          "zh": "使用 Overlap 和 Jaccard 比较 top_only、stratified、proportional 选择。"
+        }
+      }
+    ]
+  },
+  "clinical-brain-tumor-detection": {
+    "sources": [
+      "https://github.com/SuleynanAuir/Clinical-Brain-Tumor-Detection-Optimized-ML-Frame4MRI-Diagnosis"
+    ],
+    "overview": {
+      "en": "An MRI classification study connecting classical image processing, HOG features and comparative machine learning with transparent preprocessing choices.",
+      "zh": "连接经典图像处理、HOG 特征与机器学习对比实验的 MRI 分类研究，强调可解释的预处理选择。"
+    },
+    "hero": "/assets/web_page/clinical_brain_tumor_detection_additional3.png",
+    "heroCaption": {
+      "en": "MRI examples and image-processing comparisons from the project material.",
+      "zh": "项目材料中的 MRI 样例与图像处理比较。"
+    },
+    "stages": [
+      {
+        "en": "Resize and augment MRI images",
+        "zh": "调整与增强 MRI 图像"
+      },
+      {
+        "en": "Extract shape features",
+        "zh": "提取形状特征"
+      },
+      {
+        "en": "Compare classifiers",
+        "zh": "对比分类器"
+      },
+      {
+        "en": "Review validation and errors",
+        "zh": "检查验证与误差"
+      }
+    ],
+    "sections": [
+      {
+        "title": {
+          "en": "Image processing before classification",
+          "zh": "分类之前的图像处理"
+        },
+        "paragraphs": [
+          {
+            "en": "The README describes bilinear and bicubic interpolation for image resizing, plus rotations and horizontal or vertical flips for augmentation. These operations expose the tradeoff between standardized input geometry and preservation of local anatomical detail.",
+            "zh": "README 描述用于缩放的双线性与双三次插值，以及旋转、水平或垂直翻转增强。这些操作体现输入尺寸标准化与局部解剖细节保留之间的权衡。"
+          },
+          {
+            "en": "Histogram of Oriented Gradients encodes local edge orientation and shape information. This gives the classifier an explicit feature representation and makes preprocessing choices visible instead of embedding all transformations inside an opaque end-to-end model.",
+            "zh": "方向梯度直方图编码局部边缘方向及形状信息，为分类器提供显式特征表示，使预处理选择可见，而非全部隐藏在端到端模型内。"
+          }
+        ],
+        "image": "/assets/web_page/clinical_brain_tumor_detection_additional3.png",
+        "caption": {
+          "en": "MRI preprocessing examples retained in the project report.",
+          "zh": "项目报告保留的 MRI 预处理样例。"
+        }
+      },
+      {
+        "title": {
+          "en": "Comparative machine-learning design",
+          "zh": "机器学习对比设计"
+        },
+        "paragraphs": [
+          {
+            "en": "The documented model family includes SVM, MLP, XGBoost, KNN and logistic regression. They offer different inductive biases for the same imaging problem: margins, nonlinear feature interactions, boosted decisions, local similarity and linear probability modeling.",
+            "zh": "文档列出 SVM、MLP、XGBoost、KNN 与逻辑回归，分别提供间隔、非线性交互、提升树决策、局部相似性和线性概率建模等不同归纳偏置。"
+          },
+          {
+            "en": "The optimization discussion covers hyperparameter tuning, cross-validation and computation or memory efficiency. Comparisons should retain the same data split and preprocessing contract so that differences can be attributed to the modeling choice.",
+            "zh": "优化讨论覆盖超参数调节、交叉验证与计算或内存效率。比较时需保持相同数据划分和预处理协议，才能解释模型选择带来的差异。"
+          }
+        ],
+        "image": "/assets/web_page/clinical_brain_tumor_detection_additional2.png",
+        "caption": {
+          "en": "Project report panels combining imaging examples and model analysis.",
+          "zh": "结合图像样例与模型分析的项目报告面板。"
+        }
+      },
+      {
+        "title": {
+          "en": "Research scope and interpretation",
+          "zh": "研究范围与解读"
+        },
+        "paragraphs": [
+          {
+            "en": "The README states a medical-image classification objective but does not provide a numerical validation table or evidence of clinical deployment. This page presents a research workflow and avoids converting those objectives into demonstrated diagnostic performance.",
+            "zh": "README 给出医学图像分类目标，但没有数值验证表或临床部署证据。本页展示研究流程，不把目标转述为已证明的诊断性能。"
+          },
+          {
+            "en": "A useful next evaluation would isolate patients across splits, report class-specific errors and compare performance across acquisition settings. These are evaluation considerations for interpreting the study, not claims that such validation has already been completed.",
+            "zh": "后续评估可考虑患者独立划分、逐类误差与跨采集条件比较。这些是解读研究时的评估考虑，不表示相关验证已经完成。"
+          }
+        ],
+        "image": null,
+        "caption": {
+          "en": "",
+          "zh": ""
+        }
+      }
+    ],
+    "reproduction": {
+      "en": "Follow the repository’s MRI preparation and feature-extraction workflow, keeping image transformations and model settings fixed during comparison. Consult the project report for the available examples and experimental context.",
+      "zh": "按仓库 MRI 准备及特征提取流程操作，在对比中固定图像变换与模型设置，并结合项目报告中的样例与实验背景解读。"
+    },
+    "metrics": [],
+    "specifications": [
+      {
+        "label": {
+          "en": "Image operations",
+          "zh": "图像操作"
+        },
+        "value": {
+          "en": "Bilinear / bicubic interpolation, rotation and horizontal / vertical flips.",
+          "zh": "双线性／双三次插值、旋转与水平／垂直翻转。"
+        }
+      },
+      {
+        "label": {
+          "en": "Feature representation",
+          "zh": "特征表示"
+        },
+        "value": {
+          "en": "HOG encodes gradient orientations and local shape.",
+          "zh": "HOG 编码梯度方向与局部形状。"
+        }
+      },
+      {
+        "label": {
+          "en": "Model comparison",
+          "zh": "模型比较"
+        },
+        "value": {
+          "en": "SVM, MLP, XGBoost, KNN and logistic regression are listed in the README.",
+          "zh": "README 列出 SVM、MLP、XGBoost、KNN 和逻辑回归。"
+        }
+      }
+    ]
+  },
+  "scratchoml-nids": {
+    "sources": ["https://github.com/SuleynanAuir/ScratchOML-NIDS"],
+    "overview": {
+      "en": "A from-scratch network intrusion detector that combines binary attack detection and nine-class attack recognition into probabilistic ten-class outputs.",
+      "zh": "从零实现的网络入侵检测器，将攻击二分类与九类攻击识别融合为十类后验输出。"
+    },
+    "hero": "/assets/projects/scratchoml-architecture.webp",
+    "heroCaption": {
+      "en": "The two-stage UNSW-NB15 pipeline, preprocessing and posterior fusion.",
+      "zh": "UNSW-NB15 双阶段流程、预处理与后验融合。"
+    },
+    "stages": [
+      {
+        "en": "Fit train-only preprocessing",
+        "zh": "仅用训练集拟合预处理"
+      },
+      {
+        "en": "Estimate attack probability",
+        "zh": "估计攻击概率"
+      },
+      {
+        "en": "Classify attack type",
+        "zh": "识别攻击类别"
+      },
+      {
+        "en": "Fuse ten-class posteriors",
+        "zh": "融合十类后验"
+      }
+    ],
+    "sections": [
+      {
+        "title": {
+          "en": "A two-stage probability model",
+          "zh": "双阶段概率模型"
+        },
+        "paragraphs": [
+          {
+            "en": "Stage 1 estimates P(attack | x); Stage 2 estimates attack-type probabilities conditional on an attack. The normal posterior is 1 − P(attack | x), while each attack posterior is the product of the two stage probabilities. Direct argmax over the fused vector produces ten-class predictions.",
+            "zh": "第一阶段估计 P(attack | x)，第二阶段估计攻击条件下的类型概率。正常类后验为 1 − P(attack | x)，各攻击类后验为两阶段概率的乘积，再对融合向量取最大值输出十类预测。"
+          },
+          {
+            "en": "Logistic regression, Gaussian naïve Bayes, decision trees and MLP training are implemented without framework model classes. Gradient descent, momentum SGD and Adam are written explicitly; Adam’s second-moment accumulator is not presented as a Newton or Hessian-based optimizer.",
+            "zh": "逻辑回归、高斯朴素贝叶斯、决策树和 MLP 的训练不依赖框架模型类，显式实现梯度下降、动量 SGD 与 Adam；Adam 的二阶矩统计不等同于牛顿法或 Hessian 优化器。"
+          }
+        ],
+        "image": "/assets/projects/scratchoml-architecture.webp",
+        "caption": {
+          "en": "Handwritten models feed binary and attack-type predictions into posterior fusion.",
+          "zh": "手写模型为二分类与攻击类型分类提供概率，再进行后验融合。"
+        }
+      },
+      {
+        "title": {
+          "en": "Feature engineering without leakage",
+          "zh": "避免泄漏的特征工程"
+        },
+        "paragraphs": [
+          {
+            "en": "The pipeline cleans hexadecimal port values and mixed FTP fields, normalizes categories and checks label consistency. Numeric clipping, log transforms, standardization and category mappings are fitted on training data before being applied to the test set.",
+            "zh": "流程清洗十六进制端口与混合 FTP 字段，统一类别并检查标签一致性。数值裁剪、对数变换、标准化及类别映射均在训练集拟合后应用于测试集。"
+          },
+          {
+            "en": "Attack-focused features include traffic volume, byte rate, TTL asymmetry, packet-size differences and service ratios. Class weighting and optional stratified resampling address imbalance, while L2 regularization and validation-based early stopping constrain fitting.",
+            "zh": "攻击相关特征包括流量规模、字节速率、TTL 不对称、包大小差和服务比率。类别权重及可选分层重采样处理不平衡，L2 正则与验证早停限制过拟合。"
+          }
+        ],
+        "image": "/assets/projects/scratchoml-results.svg",
+        "caption": {
+          "en": "Evaluation summary redrawn from the current README, separating binary, attack-only and final ten-class tasks.",
+          "zh": "依据当前 README 重绘的评估摘要，区分二分类、仅攻击分类及最终十类任务。"
+        }
+      },
+      {
+        "title": {
+          "en": "Results and error localization",
+          "zh": "结果与错误定位"
+        },
+        "paragraphs": [
+          {
+            "en": "The README reports final ten-class accuracy of 0.73095 and macro-F1 of 0.44030. The selected handwritten MLP achieves macro-F1 0.88817 in binary detection and 0.46040 in nine-class attack recognition.",
+            "zh": "README 报告最终十类准确率 0.73095、宏平均 F1 为 0.44030；选出的手写 MLP 在攻击二分类与九分类中的宏平均 F1 分别为 0.88817 和 0.46040。"
+          },
+          {
+            "en": "Error analysis identifies fuzzers misclassified as normal as a Stage-1 bottleneck, alongside exploits confused with DoS in Stage 2. This explains why strong binary detection alone does not imply strong end-to-end rare-attack recognition.",
+            "zh": "误差分析将 fuzzers 被判为正常定位为第一阶段瓶颈，并指出第二阶段 exploits 与 DoS 的混淆。这说明较好的二分类表现并不意味着端到端稀有攻击识别同样可靠。"
+          }
+        ],
+        "image": null,
+        "caption": {
+          "en": "",
+          "zh": ""
+        }
+      }
+    ],
+    "reproduction": {
+      "en": "Use the UNSW-NB15 training and test CSVs with the repository notebook. Preserve the DEBUG_RUN and resampling settings, fit transformations only on training data, and inspect fused confusion matrices in addition to stage-level scores.",
+      "zh": "结合 UNSW-NB15 训练与测试 CSV 运行仓库 Notebook，保留 DEBUG_RUN 和重采样配置，仅在训练数据拟合变换，并同时检查融合混淆矩阵及各阶段分数。"
+    },
+    "metrics": [
+      {
+        "label": {
+          "en": "Ten-class accuracy",
+          "zh": "十类准确率"
+        },
+        "value": "0.73095",
+        "context": "UNSW-NB15 · README evaluation"
+      },
+      {
+        "label": {
+          "en": "Ten-class macro-F1",
+          "zh": "十类宏平均 F1"
+        },
+        "value": "0.44030",
+        "context": "Direct posterior fusion"
+      },
+      {
+        "label": {
+          "en": "Binary macro-F1",
+          "zh": "二分类宏平均 F1"
+        },
+        "value": "0.88817",
+        "context": "Handwritten MLP · Stage 1"
+      }
+    ],
+    "specifications": [
+      {
+        "label": {
+          "en": "Stable numeric computation",
+          "zh": "数值稳定计算"
+        },
+        "value": {
+          "en": "Clipped sigmoid, max-shifted softmax and log-space Gaussian naïve Bayes.",
+          "zh": "裁剪 sigmoid、减最大值 softmax 及对数空间高斯朴素贝叶斯。"
+        }
+      },
+      {
+        "label": {
+          "en": "Regularization",
+          "zh": "正则化"
+        },
+        "value": {
+          "en": "L2 penalties, validation patience and optional class weighting / resampling.",
+          "zh": "L2 惩罚、验证集 patience，以及可选类别权重／重采样。"
+        }
+      },
+      {
+        "label": {
+          "en": "Decoder",
+          "zh": "解码方式"
+        },
+        "value": {
+          "en": "direct_fused_argmax over normal and nine attack posterior probabilities.",
+          "zh": "对正常及九种攻击的后验概率执行 direct_fused_argmax。"
+        }
+      }
+    ]
+  },
+  "customer-analytics-platform": {
+    "sources": [
+      "https://github.com/SuleynanAuir/Customer-Analytics-Modeling-Churn-and-Value-in-E-Commerce"
+    ],
+    "overview": {
+      "en": "A customer-analytics study combining behavior prediction, PCA–K-means segmentation and RFM profiling for e-commerce marketing decisions.",
+      "zh": "将行为预测、PCA–K-means 分群及 RFM 画像结合起来的客户分析研究，服务于电商营销决策。"
+    },
+    "hero": "/assets/web_page/customer_platform_additional1.png",
+    "heroCaption": {
+      "en": "Customer-analysis figures from the project report.",
+      "zh": "项目报告中的客户分析图表。"
+    },
+    "stages": [
+      {
+        "en": "Explore customer behavior",
+        "zh": "探索客户行为"
+      },
+      {
+        "en": "Model engagement and churn",
+        "zh": "建模参与与流失"
+      },
+      {
+        "en": "Segment customer groups",
+        "zh": "划分客户群体"
+      },
+      {
+        "en": "Interpret value profiles",
+        "zh": "解读价值画像"
+      }
+    ],
+    "sections": [
+      {
+        "title": {
+          "en": "Connect demographics to behavior",
+          "zh": "连接人口属性与行为"
+        },
+        "paragraphs": [
+          {
+            "en": "The project uses the Customer Personality Analysis dataset to study demographic and behavioral patterns. Exploratory analysis precedes predictive modeling so that customer composition and observed spending behavior can be interpreted together.",
+            "zh": "项目使用 Customer Personality Analysis 数据集研究人口属性与行为模式，先进行探索分析，再开展预测建模，将客户构成与消费表现共同解读。"
+          },
+          {
+            "en": "The stated applications include identifying at-risk customers and predicting product-category preferences. These are modeling objectives for the dataset; the README does not report an online campaign experiment or measured business uplift.",
+            "zh": "目标包括识别潜在流失客户及预测商品类别偏好。这些是数据建模任务，README 并未报告线上营销实验或实测业务收益。"
+          }
+        ],
+        "image": "/assets/web_page/customer_platform_additional1.png",
+        "caption": {
+          "en": "Report visualizations of customer distributions and feature relationships.",
+          "zh": "报告中客户分布及特征关系的可视化。"
+        }
+      },
+      {
+        "title": {
+          "en": "Prediction and segmentation serve different questions",
+          "zh": "预测与分群回答不同问题"
+        },
+        "paragraphs": [
+          {
+            "en": "Logistic regression, decision trees and random forests provide supervised prediction baselines. PCA followed by K-means supplies an unsupervised view of customer groups, helping compare predictive scores with broader behavioral structure.",
+            "zh": "逻辑回归、决策树与随机森林提供监督预测基线；PCA 与 K-means 提供无监督客户分群视角，便于将预测分数与整体行为结构对照。"
+          },
+          {
+            "en": "RFM profiling adds recency, frequency and monetary-value dimensions for high-value customer analysis. Cluster membership and value profiles can inform how a marketing analyst interprets a score, rather than treating all customers with similar risk as interchangeable.",
+            "zh": "RFM 从最近购买、频次与金额三个维度分析高价值客户。分群与价值画像为风险分数增加解释，避免将风险接近的客户视作完全相同。"
+          }
+        ],
+        "image": "/assets/web_page/customer_platform2.png",
+        "caption": {
+          "en": "README feature overview: prediction, segmentation and RFM analysis.",
+          "zh": "README 中的预测、分群与 RFM 功能总览。"
+        }
+      },
+      {
+        "title": {
+          "en": "Analytical delivery and limits",
+          "zh": "分析交付与边界"
+        },
+        "paragraphs": [
+          {
+            "en": "The stack combines Pandas and NumPy for data work, scikit-learn for modeling, and Matplotlib and Seaborn for visualization. The report connects the analytical components to customer engagement, churn and value questions.",
+            "zh": "技术栈使用 Pandas 与 NumPy 处理数据、scikit-learn 建模、Matplotlib 与 Seaborn 可视化，并将组件连接到客户参与、流失与价值问题。"
+          },
+          {
+            "en": "No quantitative performance table is supplied in the README. Consequently, this page emphasizes the workflow and interpretable outputs, with business impact left for a separately defined validation experiment.",
+            "zh": "README 未提供数值性能表，因此本页重点展示流程与可解释产出，业务影响则需要另行定义验证实验。"
+          }
+        ],
+        "image": null,
+        "caption": {
+          "en": "",
+          "zh": ""
+        }
+      }
+    ],
+    "reproduction": {
+      "en": "Load the Customer Personality Analysis dataset, reproduce exploratory plots, then compare supervised models and PCA–K-means clusters. Document feature definitions and target construction before interpreting churn or value outputs.",
+      "zh": "加载 Customer Personality Analysis 数据，复现探索图，再比较监督模型及 PCA–K-means 分群；解读流失与价值结果前记录特征定义及标签构造。"
+    },
+    "metrics": [],
+    "specifications": [
+      {
+        "label": {
+          "en": "Dataset",
+          "zh": "数据集"
+        },
+        "value": {
+          "en": "Customer Personality Analysis; demographic and purchase-behavior fields.",
+          "zh": "Customer Personality Analysis，包含人口属性及购买行为字段。"
+        }
+      },
+      {
+        "label": {
+          "en": "Segmentation",
+          "zh": "分群"
+        },
+        "value": {
+          "en": "PCA dimensionality reduction followed by K-means clustering.",
+          "zh": "先进行 PCA 降维，再开展 K-means 聚类。"
+        }
+      },
+      {
+        "label": {
+          "en": "Value lens",
+          "zh": "价值视角"
+        },
+        "value": {
+          "en": "RFM: recency, frequency and monetary value complement predictive scores.",
+          "zh": "RFM 通过最近购买、频次和金额补充预测分数。"
+        }
+      }
+    ]
+  },
+  "drl-basis-projects": {
+    "sources": [
+      "https://github.com/SuleynanAuir/DRL-Basis-Project-v1",
+      "https://github.com/SuleynanAuir/DRL-Basis-Project-v2"
+    ],
+    "overview": {
+      "en": "Two reinforcement-learning studies covering value-based control, Monte Carlo policy gradients, actor–critic learning and PPO across discrete and continuous tasks.",
+      "zh": "两个强化学习实验项目，覆盖价值学习、蒙特卡洛策略梯度、Actor–Critic 与 PPO，并比较离散及连续控制任务。"
+    },
+    "hero": "/assets/projects/drl-methods.svg",
+    "heroCaption": {
+      "en": "Method map combining the two repositories’ implemented algorithm families.",
+      "zh": "根据两个仓库实现的算法整理的方法地图。"
+    },
+    "stages": [
+      {
+        "en": "Standardize environment interfaces",
+        "zh": "统一环境接口"
+      },
+      {
+        "en": "Train value or policy methods",
+        "zh": "训练价值或策略方法"
+      },
+      {
+        "en": "Evaluate across random seeds",
+        "zh": "跨随机种子评估"
+      },
+      {
+        "en": "Compare returns and stability",
+        "zh": "比较回报与稳定性"
+      }
+    ],
+    "sections": [
+      {
+        "title": {
+          "en": "Value learning and policy learning",
+          "zh": "价值学习与策略学习"
+        },
+        "paragraphs": [
+          {
+            "en": "Version 1 separates DQN / Double DQN in the repository root from PPO in ppo_code/. CartPole and Acrobot experiments log training returns, evaluation returns, maximum Q values and losses, with seed-specific model checkpoints.",
+            "zh": "v1 将根目录中的 DQN / Double DQN 与 ppo_code/ 中的 PPO 分开组织。CartPole、Acrobot 实验记录训练回报、评估回报、最大 Q 值和损失，并按随机种子保存模型。"
+          },
+          {
+            "en": "Version 2 adds REINFORCE and n-step A2C for CartPole and Pendulum. Categorical policies handle discrete actions; Gaussian policies handle continuous actions. A learned value baseline in A2C reduces policy-gradient variance relative to pure episodic returns.",
+            "zh": "v2 增加 CartPole 与 Pendulum 上的 REINFORCE 和 n-step A2C。分类策略处理离散动作，高斯策略处理连续动作；A2C 的价值基线用于降低纯回合回报策略梯度的方差。"
+          }
+        ],
+        "image": "/assets/projects/drl-methods.svg",
+        "caption": {
+          "en": "Algorithm families and the discrete / continuous control split.",
+          "zh": "算法类别及离散／连续控制的划分。"
+        }
+      },
+      {
+        "title": {
+          "en": "Stable policy updates and environment handling",
+          "zh": "稳定策略更新与环境处理"
+        },
+        "paragraphs": [
+          {
+            "en": "The PPO implementation uses clipped probability ratios, normalized advantages, value loss, entropy regularization and gradient clipping. The code adapts Gym and Gymnasium interfaces and accounts for terminal or truncated episodes.",
+            "zh": "PPO 实现包含裁剪概率比、优势归一化、价值损失、熵正则与梯度裁剪。代码适配 Gym 和 Gymnasium，并处理终止或截断回合。"
+          },
+          {
+            "en": "Pendulum support includes bounded continuous actions and an optional discretized-action wrapper. Reward scaling and rollout length are configurable because continuous control is sensitive to return magnitude and sampling settings.",
+            "zh": "Pendulum 支持有界连续动作及可选离散化包装器。奖励缩放与 rollout 长度可配置，因为连续控制对回报量级和采样设置较为敏感。"
+          }
+        ],
+        "image": "/assets/web_page/rl_additional2.png",
+        "caption": {
+          "en": "Experimental setup and hyperparameter tables from the reinforcement-learning report.",
+          "zh": "强化学习报告中的实验设置及超参数表。"
+        }
+      },
+      {
+        "title": {
+          "en": "Compare distributions, not a lucky seed",
+          "zh": "比较分布而非偶然成功"
+        },
+        "paragraphs": [
+          {
+            "en": "Both READMEs recommend multiple seeds and matched environments or training budgets. Version 2 aggregates aligned curves with mean and standard-error or standard-deviation shading, while keeping training and evaluation returns separate.",
+            "zh": "两个 README 都建议使用多个随机种子，并对齐环境及训练预算。v2 对齐曲线后展示均值及标准误或标准差阴影，同时区分训练与评估回报。"
+          },
+          {
+            "en": "The deliverables are reusable experiment scripts, logs, checkpoints and comparative plots. This page does not assign a winning algorithm without a shared evaluation protocol or promote a smoke-test run as a full experiment.",
+            "zh": "产出包括可复用实验脚本、日志、检查点及比较图。页面不在缺少统一评估协议时指定最优算法，也不将快速冒烟运行当作完整实验。"
+          }
+        ],
+        "image": "/assets/web_page/rl_additional1.png",
+        "caption": {
+          "en": "Comparative reinforcement-learning report accompanying the implementations.",
+          "zh": "配套实现的强化学习比较报告。"
+        }
+      }
+    ],
+    "reproduction": {
+      "en": "Use v1 for DQN / DDQN / PPO comparisons and v2 section_1/main.py for REINFORCE / A2C. Run v2 section_2/ppo.py for PPO-Clip, retaining environment, seed, timestep budget and evaluation protocol with every curve.",
+      "zh": "v1 用于 DQN / DDQN / PPO 对比，v2 的 section_1/main.py 用于 REINFORCE / A2C，section_2/ppo.py 用于 PPO-Clip；每条曲线保存环境、种子、步数预算及评估协议。"
+    },
+    "metrics": [],
+    "specifications": [
+      {
+        "label": {
+          "en": "Experiment matrix",
+          "zh": "实验矩阵"
+        },
+        "value": {
+          "en": "v1: CartPole / Acrobot; v2: CartPole / Pendulum, with multiple seeds.",
+          "zh": "v1：CartPole / Acrobot；v2：CartPole / Pendulum，使用多随机种子。"
+        }
+      },
+      {
+        "label": {
+          "en": "Policy parameterization",
+          "zh": "策略参数化"
+        },
+        "value": {
+          "en": "Categorical distributions for discrete actions; Gaussian distributions for continuous actions.",
+          "zh": "离散动作使用分类分布，连续动作使用高斯分布。"
+        }
+      },
+      {
+        "label": {
+          "en": "Logging contract",
+          "zh": "日志协议"
+        },
+        "value": {
+          "en": "Returns, policy / value losses, model weights and aggregate plots are retained.",
+          "zh": "保存回报、策略／价值损失、模型权重与汇总图。"
+        }
+      }
+    ]
+  },
+  "omni-rec": {
+    "sources": [
+      "https://github.com/SuleynanAuir/OMNI-Multimodal-Intelligent-OneRec-Based-System"
+    ],
+    "overview": {
+      "en": "A generative-recommendation workflow based on semantic item IDs, supervised sequence learning, ranking-aware reinforcement learning and constrained decoding.",
+      "zh": "基于语义物品 ID、监督序列学习、排序感知强化学习与约束解码的生成式推荐流程。"
+    },
+    "hero": "/assets/projects/omni-architecture.webp",
+    "heroCaption": {
+      "en": "OneRec architecture reproduced in the repository as the project’s modeling context.",
+      "zh": "仓库用于说明建模背景的 OneRec 架构图。"
+    },
+    "stages": [
+      {
+        "en": "Encode items as semantic IDs",
+        "zh": "将物品编码为语义 ID"
+      },
+      {
+        "en": "Learn behavior sequences",
+        "zh": "学习行为序列"
+      },
+      {
+        "en": "Optimize ranking rewards",
+        "zh": "优化排序奖励"
+      },
+      {
+        "en": "Decode valid candidates",
+        "zh": "解码合法候选"
+      }
+    ],
+    "sections": [
+      {
+        "title": {
+          "en": "Semantic IDs unify recommendation targets",
+          "zh": "用语义 ID 统一推荐目标"
+        },
+        "paragraphs": [
+          {
+            "en": "The project builds on MiniOneRec / OneRec-style generative recommendation. Item representations are discretized through residual quantization, with RQ-VAE and RQ-Kmeans routes documented for constructing semantic ID sequences.",
+            "zh": "项目基于 MiniOneRec / OneRec 风格的生成式推荐，通过残差量化离散化物品表示，并记录 RQ-VAE 与 RQ-Kmeans 构建语义 ID 序列的路径。"
+          },
+          {
+            "en": "SFT learns to predict item IDs from user history. Precomputed SID indices and item metadata connect the model’s token vocabulary to the actual catalog, making item identity an explicit part of the data contract.",
+            "zh": "SFT 根据用户历史预测物品 ID。预计算 SID 索引与物品元数据连接模型 token 词表和实际目录，使物品身份成为明确的数据接口约束。"
+          }
+        ],
+        "image": "/assets/projects/omni-architecture.webp",
+        "caption": {
+          "en": "Generative recommendation context: sequence modeling and iterative policy improvement.",
+          "zh": "生成式推荐背景：序列建模与迭代策略改进。"
+        }
+      },
+      {
+        "title": {
+          "en": "Ranking-aware optimization and valid decoding",
+          "zh": "排序感知优化与合法解码"
+        },
+        "paragraphs": [
+          {
+            "en": "The detailed training section describes GRPO with group-relative advantages, correctness rewards and ranking-sensitive penalties. A KL term constrains drift from the reference policy; a separate HEPO path weights different semantic-ID levels.",
+            "zh": "详细训练部分描述 GRPO 的组内相对优势、正确性奖励及排序敏感惩罚。KL 项约束与参考策略的偏移，独立 HEPO 路径则对不同语义 ID 层级施加权重。"
+          },
+          {
+            "en": "Trie-constrained decoding limits generated token prefixes to valid catalog entries, with beam search producing ranked candidates. The README also discusses PPO conceptually; that background is kept distinct from its documented GRPO training route.",
+            "zh": "前缀树约束将生成 token 限制为合法目录前缀，并通过束搜索形成候选排序。README 也讨论 PPO 原理，此处将其与所记录的 GRPO 训练路径区分。"
+          }
+        ],
+        "image": "/assets/web_page/omni_rec_additional1.png",
+        "caption": {
+          "en": "Repository comparison plot across training stages and model variants.",
+          "zh": "仓库中的训练阶段与模型变体比较图。"
+        }
+      },
+      {
+        "title": {
+          "en": "Evaluate relevance and exposure together",
+          "zh": "同时评估相关性与曝光"
+        },
+        "paragraphs": [
+          {
+            "en": "Offline evaluation includes HR@K, NDCG@K and ranking diagnostics, alongside coverage, novelty and recommendation concentration. These complementary measures help reveal a model that ranks relevant items well but repeatedly exposes only a narrow catalog slice.",
+            "zh": "离线评估覆盖 HR@K、NDCG@K 和排序诊断，并结合覆盖率、新颖性及推荐集中度，识别相关性较好但曝光集中于少量物品的情况。"
+          },
+          {
+            "en": "The repository includes Amazon data processing and training configurations. Upstream OneRec figures provide methodological context; they are not presented here as newly reproduced OMNI deployment or online A/B-test results.",
+            "zh": "仓库包含 Amazon 数据处理及训练配置。上游 OneRec 图表用于说明方法背景，本页不将其当作新复现的 OMNI 部署效果或线上 A/B 结果。"
+          }
+        ],
+        "image": "/assets/web_page/omni_rec_additional2.png",
+        "caption": {
+          "en": "Comparative results included in the README’s research context.",
+          "zh": "README 研究背景中的比较结果。"
+        }
+      }
+    ],
+    "reproduction": {
+      "en": "Prepare the SID index and item metadata, run the SFT stage, then the RL stage and offline evaluation. Keep dataset splits, decoding constraints, beam size and checkpoint identity aligned when comparing variants.",
+      "zh": "准备 SID 索引与物品元数据，依次运行 SFT、RL 和离线评估；比较变体时固定数据划分、解码约束、束大小及检查点身份。"
+    },
+    "metrics": [],
+    "specifications": [
+      {
+        "label": {
+          "en": "Training data",
+          "zh": "训练数据"
+        },
+        "value": {
+          "en": "User-history sequences, semantic-ID index JSON and item metadata JSON.",
+          "zh": "用户历史序列、语义 ID 索引 JSON 和物品元数据 JSON。"
+        }
+      },
+      {
+        "label": {
+          "en": "RL objective",
+          "zh": "RL 目标"
+        },
+        "value": {
+          "en": "Group-relative optimization with correctness / ranking rewards and a KL penalty.",
+          "zh": "使用正确性／排序奖励及 KL 惩罚的组内相对优化。"
+        }
+      },
+      {
+        "label": {
+          "en": "Decoding constraint",
+          "zh": "解码约束"
+        },
+        "value": {
+          "en": "A prefix trie restricts beam-search candidates to valid catalog ID sequences.",
+          "zh": "前缀树将束搜索候选限制为目录中的合法 ID 序列。"
+        }
+      }
+    ]
+  },
+  "peanut-video-restoration": {
+    "sources": [
+      "https://github.com/SuleynanAuir/PEANUT--Prompt-Enhanced-Ablation-with-Optical-Flow-Based-Neural-Unit"
+    ],
+    "overview": {
+      "en": "A prompt-guided video restoration pipeline connecting object-mask generation, optical-flow-based inpainting, temporal enhancement and video reconstruction.",
+      "zh": "以文本提示驱动的视频修复流程，连接目标掩码生成、光流补全、时序增强与视频重建。"
+    },
+    "hero": "/assets/projects/peanut-pipeline.webp",
+    "heroCaption": {
+      "en": "Prompt, masks and restored frame sequences from the repository’s demonstration.",
+      "zh": "仓库演示中的提示、掩码与修复帧序列。"
+    },
+    "stages": [
+      {
+        "en": "Extract and align frames",
+        "zh": "提取并对齐帧"
+      },
+      {
+        "en": "Generate prompt-guided masks",
+        "zh": "生成提示引导掩码"
+      },
+      {
+        "en": "Inpaint with temporal context",
+        "zh": "结合时序上下文补全"
+      },
+      {
+        "en": "Enhance and reassemble video",
+        "zh": "增强并重组视频"
+      }
+    ],
+    "sections": [
+      {
+        "title": {
+          "en": "A staged video-processing pipeline",
+          "zh": "分阶段视频处理流程"
+        },
+        "paragraphs": [
+          {
+            "en": "A video and natural-language object prompt feed P-MASk for binary mask generation. Frames and masks are resized together, then NOF-Eraser performs E2FGVI-based inpainting to replace the masked regions using temporal information.",
+            "zh": "视频与自然语言目标提示输入 P-MASk 生成二值掩码。帧和掩码共同缩放后，NOF-Eraser 基于 E2FGVI 利用时序信息补全被遮盖区域。"
+          },
+          {
+            "en": "UR-Net with BasicVSR++ provides an optional enhancement stage, followed by configurable denoising and video reconstruction. Intermediate mask, inpaint, restore and denoise packages make each transformation inspectable.",
+            "zh": "UR-Net 与 BasicVSR++ 提供可选增强阶段，随后执行可配置去噪与视频重建。中间的掩码、补全、增强和去噪产物使每一步可检查。"
+          }
+        ],
+        "image": "/assets/projects/peanut-pipeline.webp",
+        "caption": {
+          "en": "Visual correspondence between text prompt, masks and reconstructed frames.",
+          "zh": "文本提示、掩码与重建帧之间的对应关系。"
+        }
+      },
+      {
+        "title": {
+          "en": "Temporal consistency and resource control",
+          "zh": "时序一致性与资源控制"
+        },
+        "paragraphs": [
+          {
+            "en": "The optical-flow-based module propagates information between frames, while local and non-local temporal context supports reconstruction. The engineering objective is to remove the selected object without introducing conspicuous flicker or discontinuities.",
+            "zh": "基于光流的模块在帧间传播信息，局部及非局部时序上下文支持重建。工程目标是在移除指定目标的同时减少明显闪烁与不连续。"
+          },
+          {
+            "en": "Neighbor stride, loaded-frame count, extraction FPS and maximum resolution expose speed–quality and memory tradeoffs. Separate demo and batch-processing PowerShell entry points support single-video inspection and repeated processing.",
+            "zh": "邻帧步长、加载帧数、抽帧 FPS 与最大分辨率体现速度、质量和显存权衡。独立的演示与批处理 PowerShell 入口支持单视频检查及重复处理。"
+          }
+        ],
+        "image": "/assets/projects/peanut-flow.webp",
+        "caption": {
+          "en": "NOF-Eraser flow-based feature propagation and inpainting architecture.",
+          "zh": "NOF-Eraser 的光流特征传播与补全架构。"
+        }
+      },
+      {
+        "title": {
+          "en": "Assess quality beyond a single frame",
+          "zh": "超越单帧的质量评估"
+        },
+        "paragraphs": [
+          {
+            "en": "The evaluation workflow computes PSNR and SSIM against reference frames, then visualizes per-video trends and aggregate statistics. Sharpness, blur, artifacts and temporal consistency complement pixel-fidelity metrics.",
+            "zh": "评估流程相对参考帧计算 PSNR 与 SSIM，再绘制逐视频趋势和汇总统计。锐度、模糊、伪影与时序一致性补充像素保真指标。"
+          },
+          {
+            "en": "Quality and fast modes enable or skip enhancement stages. Comparisons should keep the source clip, mask and frame extraction settings fixed; a visually appealing isolated frame does not establish stable restoration across the whole sequence.",
+            "zh": "质量与快速模式可开启或跳过增强阶段。比较时应固定原视频、掩码及抽帧配置；单帧视觉效果好不等于整段视频修复稳定。"
+          }
+        ],
+        "image": "/assets/web_page/peanut2.png",
+        "caption": {
+          "en": "Example sequences used to inspect prompt-guided removal and restoration.",
+          "zh": "用于检查提示引导移除及修复的示例序列。"
+        }
+      }
+    ],
+    "reproduction": {
+      "en": "Use the demo or batch PowerShell script with VideoPath and TextPrompt. Keep the component environments and weights consistent, preserve intermediate packages, and run the experiment quality and visualization scripts against matched reference frames.",
+      "zh": "在演示或批处理 PowerShell 脚本中设置 VideoPath 与 TextPrompt，保持组件环境和权重一致，保留中间产物，并对匹配参考帧运行实验质量及可视化脚本。"
+    },
+    "metrics": [],
+    "specifications": [
+      {
+        "label": {
+          "en": "Mask and repair modules",
+          "zh": "掩码与修复模块"
+        },
+        "value": {
+          "en": "P-MASk → NOF-Eraser (E2FGVI-based) → optional UR-Net / BasicVSR++.",
+          "zh": "P-MASk → NOF-Eraser（基于 E2FGVI）→ 可选 UR-Net / BasicVSR++。"
+        }
+      },
+      {
+        "label": {
+          "en": "Resource controls",
+          "zh": "资源控制"
+        },
+        "value": {
+          "en": "NeighborStride, MaxLoadFrames, MaxResolution and FrameExtractionFps.",
+          "zh": "NeighborStride、MaxLoadFrames、MaxResolution 与 FrameExtractionFps。"
+        }
+      },
+      {
+        "label": {
+          "en": "Quality inspection",
+          "zh": "质量检查"
+        },
+        "value": {
+          "en": "PSNR / SSIM plus sharpness, blur, artifacts and temporal consistency.",
+          "zh": "PSNR / SSIM，以及锐度、模糊、伪影和时序一致性。"
+        }
+      }
+    ]
+  },
+  "p-adonis-ocr": {
+    "sources": ["https://github.com/SuleynanAuir/P-ADONIS"],
+    "overview": {
+      "en": "A document-image enhancement workflow using prior-guided text super-resolution, configurable recognizers and paired visual / recognition evaluation.",
+      "zh": "使用先验引导文本超分、可配置识别器及视觉／识别双重评估的文档图像增强流程。"
+    },
+    "hero": "/assets/projects/padonis-comparison.webp",
+    "heroCaption": {
+      "en": "Low-resolution and super-resolved PDF-page comparison from the repository.",
+      "zh": "仓库中的低分辨率与超分 PDF 页面对比。"
+    },
+    "stages": [
+      {
+        "en": "Prepare TextZoom or document images",
+        "zh": "准备 TextZoom 或文档图像"
+      },
+      {
+        "en": "Apply prior-enhanced super-resolution",
+        "zh": "执行先验增强超分"
+      },
+      {
+        "en": "Recognize enhanced text",
+        "zh": "识别增强文本"
+      },
+      {
+        "en": "Compare visual and OCR quality",
+        "zh": "比较视觉与 OCR 质量"
+      }
+    ],
+    "sections": [
+      {
+        "title": {
+          "en": "Enhancement guided by text structure",
+          "zh": "文本结构引导的增强"
+        },
+        "paragraphs": [
+          {
+            "en": "The repository presents P-ADON4PDF as a document-focused workflow built around PEAN and a Transformer prior-enhancement module. It supports image inputs and rendered PDF pages, exposing low-resolution, super-resolved and comparison outputs.",
+            "zh": "仓库以 P-ADON4PDF 描述围绕 PEAN 与 Transformer 先验增强模块构建的文档流程，支持图像及 PDF 页面输入，并输出低分辨率、超分与对比结果。"
+          },
+          {
+            "en": "Text structure matters because sharper pixels do not necessarily produce more accurate recognition. The examples therefore inspect character regions and recognition behavior alongside visual enhancement.",
+            "zh": "文本结构很重要，因为更清晰的像素不一定带来更准确的识别。因此示例同时检查字符局部、识别表现与视觉增强效果。"
+          }
+        ],
+        "image": "/assets/projects/padonis-comparison.webp",
+        "caption": {
+          "en": "PDF-page comparison with local text detail and visualization panels.",
+          "zh": "包含局部文字细节与可视化面板的 PDF 页面对比。"
+        }
+      },
+      {
+        "title": {
+          "en": "Modular recognizers and checkpoints",
+          "zh": "模块化识别器与检查点"
+        },
+        "paragraphs": [
+          {
+            "en": "TextZoom supplies evaluation data, and the README supports ASTER, CRNN, MORAN and PARSeq recognizers. Paths, recognizer choice, masks, batch size and super-resolution blocks are configured explicitly for controlled experiments.",
+            "zh": "TextZoom 提供评估数据，README 支持 ASTER、CRNN、MORAN 与 PARSeq 识别器。路径、识别器、掩码、批量和超分模块均显式配置，以支持受控实验。"
+          },
+          {
+            "en": "The documented training path includes optional pretraining and fine-tuning, with separate PEAN and TPEM weights. Consistent checkpoint naming records the model, recognition metric and epoch to make model selection traceable.",
+            "zh": "文档训练路径包含可选预训练与微调，分别管理 PEAN 和 TPEM 权重。统一检查点命名记录模型、识别指标与轮次，使模型选择可追踪。"
+          }
+        ],
+        "image": "/assets/web_page/P-DOINS0.png",
+        "caption": {
+          "en": "Architecture and prior-enhancement context in the project material.",
+          "zh": "项目材料中的架构与先验增强背景。"
+        }
+      },
+      {
+        "title": {
+          "en": "Visual fidelity and recognition are different outputs",
+          "zh": "视觉保真与识别是不同产出"
+        },
+        "paragraphs": [
+          {
+            "en": "The README includes TextZoom samples and a SwinIR comparison path. Its examples explicitly note that recognition can vary even when the enhanced image looks clearer, motivating evaluation with a fixed recognizer and test subset.",
+            "zh": "README 包含 TextZoom 样例与 SwinIR 对比路径，并指出图像看起来更清晰时识别表现仍可能波动，因此需要固定识别器与测试子集评估。"
+          },
+          {
+            "en": "The available evidence emphasizes document examples and recognizer-specific comparisons. Document-level examples and cropped text benchmarks should retain their own context rather than being merged into a single unsupported score.",
+            "zh": "已有证据主要体现文档示例及特定识别器的对比。文档级示例与文字裁剪基准保留各自背景，不合并为缺乏依据的统一分数。"
+          }
+        ],
+        "image": "/assets/web_page/P-DOINS2.png",
+        "caption": {
+          "en": "TextZoom sample comparisons illustrating the distinction between clarity and recognition.",
+          "zh": "TextZoom 样例对比体现清晰度与识别效果的区别。"
+        }
+      }
+    ],
+    "reproduction": {
+      "en": "Configure TextZoom and recognizer paths in config/super_resolution.yaml and the prior checkpoint in config/cfg_diff_prior.json. Use the same recognizer and subset for PEAN / SwinIR comparisons and preserve PDF-page comparison outputs.",
+      "zh": "在 config/super_resolution.yaml 设置 TextZoom 与识别器路径，在 config/cfg_diff_prior.json 设置先验检查点；PEAN / SwinIR 对比使用同一识别器和子集，并保留 PDF 页面结果。"
+    },
+    "metrics": [],
+    "specifications": [
+      {
+        "label": {
+          "en": "Model artifacts",
+          "zh": "模型产物"
+        },
+        "value": {
+          "en": "PEAN_final.pth and TPEM_final.pth, with optional pretraining checkpoints.",
+          "zh": "PEAN_final.pth、TPEM_final.pth 及可选预训练检查点。"
+        }
+      },
+      {
+        "label": {
+          "en": "Recognizer options",
+          "zh": "识别器选项"
+        },
+        "value": {
+          "en": "ASTER, CRNN, MORAN and PARSeq are documented.",
+          "zh": "文档支持 ASTER、CRNN、MORAN 和 PARSeq。"
+        }
+      },
+      {
+        "label": {
+          "en": "Controlled comparison",
+          "zh": "受控比较"
+        },
+        "value": {
+          "en": "Keep TextZoom subset, recognizer and checkpoints aligned for PEAN / SwinIR tests.",
+          "zh": "PEAN / SwinIR 测试固定 TextZoom 子集、识别器和检查点。"
+        }
+      }
+    ]
+  },
+  "hateful-memes-detection": {
+    "sources": ["https://github.com/SuleynanAuir/Hateful-Image-Project"],
+    "overview": {
+      "en": "A CLIP-based multimodal classification pipeline comparing original, text-masked and inpainted memes to study image–text interaction and preprocessing effects.",
+      "zh": "基于 CLIP 的多模态分类流程，通过原始、文字遮盖及补全后的 meme 对比，研究图文交互与预处理影响。"
+    },
+    "hero": "/assets/web_page/hateful_memes_detection_additional1.png",
+    "heroCaption": {
+      "en": "Hateful Memes benchmark examples illustrating image–text interactions.",
+      "zh": "Hateful Memes 基准样例展示图文交互。"
+    },
+    "stages": [
+      {
+        "en": "Select an image variant",
+        "zh": "选择图像变体"
+      },
+      {
+        "en": "Encode image and text",
+        "zh": "编码图像与文本"
+      },
+      {
+        "en": "Train projection and classifier",
+        "zh": "训练投影与分类器"
+      },
+      {
+        "en": "Compare controlled variants",
+        "zh": "比较受控变体"
+      }
+    ],
+    "sections": [
+      {
+        "title": {
+          "en": "Multimodal meaning and controlled inputs",
+          "zh": "多模态语义与受控输入"
+        },
+        "paragraphs": [
+          {
+            "en": "The pipeline works with Hateful Memes and three image views: original, text-masked and inpainted. These views allow experiments on the contribution of embedded text and visual content when the same associated text and labels are used.",
+            "zh": "流程使用 Hateful Memes 及原始、文字遮盖和补全三类图像视图。在保持关联文本与标签一致时，可研究图中嵌入文字及视觉内容的作用。"
+          },
+          {
+            "en": "Optional caption modes either replace the input text or concatenate a caption with it. OFA-based helpers support caption generation and image preprocessing, while the main training path remains distinct from those optional preparation tools.",
+            "zh": "可选 caption 模式替换输入文本或将描述与文本拼接。OFA 工具支持描述生成和图像预处理，主训练路径与这些可选准备工具分开管理。"
+          }
+        ],
+        "image": "/assets/web_page/hateful_memes_detection_additional1.png",
+        "caption": {
+          "en": "Benchmark examples in which text and image jointly determine interpretation.",
+          "zh": "文字与图像共同决定解读的基准样例。"
+        }
+      },
+      {
+        "title": {
+          "en": "CLIP representations with a lightweight task head",
+          "zh": "CLIP 表示与轻量任务头"
+        },
+        "paragraphs": [
+          {
+            "en": "new_main_enhanced.py uses PyTorch Lightning and a configurable CLIP backbone, defaulting to openai/clip-vit-base-patch32. Image and text encoders can be frozen so only the projection and classification layers are trained.",
+            "zh": "new_main_enhanced.py 使用 PyTorch Lightning 与可配置 CLIP 基座，默认 openai/clip-vit-base-patch32。可冻结图像和文本编码器，仅训练投影及分类层。"
+          },
+          {
+            "en": "A pretrained projection head can be loaded from a separate pretraining stage. The configuration exposes image size, batch size, learning rate, weight decay, data variant and caption mode so experiments can change one component at a time.",
+            "zh": "独立预训练阶段的投影头可载入主流程。配置公开图像尺寸、批量、学习率、权重衰减、数据变体与描述模式，便于逐项改变组件开展实验。"
+          }
+        ],
+        "image": "/assets/web_page/hateful_memes_detection.png",
+        "caption": {
+          "en": "Research background on multimodal hateful-meme detection from the portfolio materials.",
+          "zh": "作品集材料中的多模态仇恨 meme 检测研究背景。"
+        }
+      },
+      {
+        "title": {
+          "en": "Reproducible comparison and logging",
+          "zh": "可复现对比与日志"
+        },
+        "paragraphs": [
+          {
+            "en": "The pipeline loads train, validation and test splits, saves checkpoints and supports online, offline or disabled WandB logging. Smaller batch fractions make development runs possible without treating them as full-data evaluations.",
+            "zh": "流程加载训练、验证与测试划分，保存检查点，并支持在线、离线或关闭 WandB。较小批次比例便于开发运行，但不将其视为全量评估。"
+          },
+          {
+            "en": "The README does not supply an aggregate benchmark score. The main presentation therefore focuses on model construction and ablation design; any claimed improvement requires matched splits, encoder settings and a recorded evaluation run.",
+            "zh": "README 未提供汇总基准分数，因此展示重点在模型构造与消融设计；效果提升需以一致划分、编码器配置及有记录的评估为依据。"
+          }
+        ],
+        "image": null,
+        "caption": {
+          "en": "",
+          "zh": ""
+        }
+      }
+    ],
+    "reproduction": {
+      "en": "Use new_main_enhanced.py with the chosen original, masked or inpainted data variant. Fix encoder-freezing and caption settings when comparing variants, and keep checkpoints and local experiment logs for each run.",
+      "zh": "使用 new_main_enhanced.py 选择 original、masked 或 inpainted 视图；比较时固定编码器冻结与 caption 设置，并保留各次检查点和本地实验日志。"
+    },
+    "metrics": [],
+    "specifications": [
+      {
+        "label": {
+          "en": "Backbone",
+          "zh": "基座"
+        },
+        "value": {
+          "en": "Default CLIP: openai/clip-vit-base-patch32, with 224-pixel image input.",
+          "zh": "默认 CLIP 为 openai/clip-vit-base-patch32，图像输入 224 像素。"
+        }
+      },
+      {
+        "label": {
+          "en": "Caption ablation",
+          "zh": "描述消融"
+        },
+        "value": {
+          "en": "none, replace_text or concat_with_text.",
+          "zh": "none、replace_text 或 concat_with_text。"
+        }
+      },
+      {
+        "label": {
+          "en": "Training control",
+          "zh": "训练控制"
+        },
+        "value": {
+          "en": "Freeze image / text encoders independently; optionally load a pretrained projection head.",
+          "zh": "独立冻结图像／文本编码器，可选载入预训练投影头。"
+        }
+      }
+    ]
+  }
+}

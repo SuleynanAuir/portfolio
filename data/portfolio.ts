@@ -665,7 +665,8 @@ export const researchCategories: readonly ResearchCategory[] = [
         description:
           "An end-to-end LLM fine-tuning and deployment pipeline built around LLaMA Factory. It integrates data augmentation, data engineering, cloud-based training, cloud data management, one-click fine-tuning, and local deployment so enterprise-grade model iteration becomes reproducible rather than a sequence of fragile commands.",
         keywords: ["LLaMA Factory", "SFT", "LoRA", "AutoDL", "Ollama"],
-        github: "https://github.com/SuleynanAuir/LLaMa-Factory-Fine-Tuning",
+        github:
+          "https://github.com/SuleynanAuir/Enterprise-Enhanced-LLaMA-Factory-Pro-Advanced-FineTuning-Local-Deployment-Pipeline",
         impact:
           "Turns foundation-model adaptation from scattered fine-tuning commands into a reproducible model engineering workflow with flexible and secure deployment paths.",
         platformRole:
@@ -758,7 +759,7 @@ export const researchCategories: readonly ResearchCategory[] = [
           "A compact Weibo public-opinion and sentiment assistant based on Qwen3.5-0.6B and trained through a complete AutoDL fine-tuning pipeline. The model evolves from the base checkpoint through SFT, LoRA, and DPO preference optimization to support sentiment polarity and social-media QA tasks.",
         keywords: ["Qwen3.5", "Sentiment Polarity", "SFT", "LoRA", "DPO"],
         github:
-          "https://github.com/SuleynanAuir/WeiboPublic-SentimentBot-E2-FineTuning-Pipeline-of-Qwen3.5-0.6B-on-AutoDL-Cloud-Infrastrcture",
+          "https://github.com/SuleynanAuir/WeiboPublics-SentimentBot-E2-FineTuning-Pipeline-of-Qwen3.5-0.6B-on-AutoDL-Cloud-Infrastrcture",
         impact:
           "Shows how compact aligned LLMs can become focused social-media sentiment and public-opinion analysis assistants through staged training.",
         platformRole:
@@ -926,7 +927,7 @@ export const researchCategories: readonly ResearchCategory[] = [
           "Classical ML",
         ],
         github:
-          "https://github.com/SuleynanAuir/Clinical-Brain-Tumor-Detection-Optimized-Machine-Learning-Framework-Using-Basic-Python-Libraries",
+          "https://github.com/SuleynanAuir/Clinical-Brain-Tumor-Detection-Optimized-ML-Frame4MRI-Diagnosis",
         impact:
           "Demonstrates how carefully engineered classical models and preprocessing can support medical-image analysis under lightweight implementation constraints.",
         platformRole:
@@ -1154,7 +1155,8 @@ export const researchCategories: readonly ResearchCategory[] = [
           "Reward Optimization",
           "Short Video",
         ],
-        github: "https://github.com/SuleynanAuir/OMNI-Rec/tree/main",
+        github:
+          "https://github.com/SuleynanAuir/OMNI-Multimodal-Intelligent-OneRec-Based-System",
         impact:
           "Reframes recommendation from discriminative ranking into generative, context-aware, preference-aligned intelligence for short-video platforms.",
         platformRole:

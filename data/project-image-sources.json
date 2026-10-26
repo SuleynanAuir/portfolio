@@ -1,0 +1,86 @@
+[
+  {
+    "src": "/assets/projects/nexus-architecture.webp",
+    "source": "https://github.com/SuleynanAuir/NEXUS-Navigating-Emergent-X-agent-Universe-Simulator-with-Unprecedented-Insight/blob/HEAD/assets/framework.png",
+    "width": 1800,
+    "height": 959
+  },
+  {
+    "src": "/assets/projects/scratchoml-architecture.webp",
+    "source": "https://github.com/SuleynanAuir/ScratchOML-NIDS/blob/HEAD/assets/oml_frame.png",
+    "width": 1800,
+    "height": 896
+  },
+  {
+    "src": "/assets/projects/omni-architecture.webp",
+    "source": "https://github.com/SuleynanAuir/OMNI-Multimodal-Intelligent-OneRec-Based-System/blob/HEAD/assets/rec_frame.png",
+    "width": 1589,
+    "height": 989
+  },
+  {
+    "src": "/assets/projects/flood-network.webp",
+    "source": "https://github.com/SuleynanAuir/VeFloodBN/blob/HEAD/assets/BN_graph.png",
+    "width": 1490,
+    "height": 840
+  },
+  {
+    "src": "/assets/projects/flood-map.webp",
+    "source": "https://github.com/SuleynanAuir/VeFloodBN/blob/HEAD/assets/flood_prob_map.png",
+    "width": 985,
+    "height": 1191
+  },
+  {
+    "src": "/assets/projects/peanut-pipeline.webp",
+    "source": "https://github.com/SuleynanAuir/PEANUT--Prompt-Enhanced-Ablation-with-Optical-Flow-Based-Neural-Unit/blob/HEAD/assets/readme/preview1.png",
+    "width": 1800,
+    "height": 941
+  },
+  {
+    "src": "/assets/projects/peanut-flow.webp",
+    "source": "https://github.com/SuleynanAuir/PEANUT--Prompt-Enhanced-Ablation-with-Optical-Flow-Based-Neural-Unit/blob/HEAD/assets/readme/NOF_FULL.png",
+    "width": 1800,
+    "height": 955
+  },
+  {
+    "src": "/assets/projects/padonis-comparison.webp",
+    "source": "https://github.com/SuleynanAuir/P-ADONIS/blob/HEAD/demo_pdf_results/demo_20251206_165156/comparison/07_report1_page008_comparison.png",
+    "width": 1800,
+    "height": 1403
+  },
+  {
+    "src": "/assets/projects/cognitive-interface.webp",
+    "source": "https://github.com/SuleynanAuir/CognitiveTemp-DeepSearch-Agents/blob/HEAD/assets/UI.png",
+    "width": 1800,
+    "height": 963
+  },
+  {
+    "src": "/assets/projects/cognitive-results.webp",
+    "source": "https://github.com/SuleynanAuir/CognitiveTemp-DeepSearch-Agents/blob/HEAD/assets/result_stats.png",
+    "width": 1800,
+    "height": 1278
+  },
+  {
+    "src": "/assets/projects/uparis-architecture.webp",
+    "source": "https://github.com/SuleynanAuir/UPAIRS-Agents/blob/HEAD/asserts/nano-banana-pro-9PAI8HRRN0BvYYEh1WSex.png",
+    "width": 1319,
+    "height": 985
+  },
+  {
+    "src": "/assets/projects/hotel-architecture.webp",
+    "source": "https://github.com/SuleynanAuir/Distributed-Fine-Tuning-of-Qwen2.5-7B-as-HotelService-Master/blob/HEAD/assets/Gemini_Generated_Image_d0k0ixd0k0ixd0k0.png",
+    "width": 1376,
+    "height": 768
+  },
+  {
+    "src": "/assets/projects/weibo-architecture.webp",
+    "source": "https://github.com/SuleynanAuir/WeiboPublics-SentimentBot-E2-FineTuning-Pipeline-of-Qwen3.5-0.6B-on-AutoDL-Cloud-Infrastrcture/blob/HEAD/assets/777f79ca622ad.jpeg",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "src": "/assets/projects/foundry-training.webp",
+    "source": "https://github.com/SuleynanAuir/Enterprise-Enhanced-LLaMA-Factory-Pro-Advanced-FineTuning-Local-Deployment-Pipeline/blob/HEAD/assets/ft_visualization.png",
+    "width": 1800,
+    "height": 779
+  }
+]

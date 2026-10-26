@@ -5,7 +5,7 @@ import { ArrowDownRight, ArrowUpRight, Github, Sparkles } from "lucide-react";
 import { useCopy } from "@/components/locale-provider";
 import { allProjects, projectImage, site } from "@/lib/site-config";
 import { researchCategories } from "@/data/portfolio";
-import { CurriculumTree } from "@/components/curriculum-tree";
+import { AcademicProfile } from "@/components/academic-profile";
 import {
   ProfileSummary,
   ResearchIntroduction,
@@ -55,7 +55,7 @@ export function HeroSection() {
           </a>
         </div>
       </div>
-      <CurriculumTree />
+      <AcademicProfile />
       <div className="hero-visual">
         <div className="portrait-frame">
           <img

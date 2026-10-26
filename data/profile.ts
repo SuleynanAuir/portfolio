@@ -29,18 +29,47 @@ export const honorLogos: Record<string, { src: string; alt: string }> = {
   },
 };
 
+export const honorRoles: Record<string, string> = {
+  "HSBC Technology Competition | Silver Prize (2nd Place)":
+    "Technical Director",
+  "Global MCM/ICM | Meritorious Winner (Top 15%)": "Algorithm Architect",
+  "CUMCM | Provincial Second Prize (Top 16%)": "Modeling Lead",
+};
+
 export const internships = [
   {
-    organization: "Zhongguancun Institute of Artificial Intelligence (ZGCI)",
+    organization:
+      "Zhongguancun Institute of Artificial Intelligence (ZGCI) · NEXUS4Sci",
     role: "Lead AI Researcher",
-    months: 6,
+    distinction: "First Patent Inventor",
+    period: "Jun 2026 – Present",
+    focus: "Research Agent Architecture & AI Model Design",
+    institutionType: "New-type AI R&D Institution",
+    summary:
+      "AI-native research agents and neuro-symbolic materials world models, integrating LLMs, physics-informed ML and self-evolving GraphRAG.",
+    highlights: [
+      "Designed an AI-native autonomous research agent architecture at the intersection of AI models, Physics-Informed ML (PIML), materials informatics and computational chemistry. Integrated LLMs, ontology engineering and graph-augmented multi-agent intelligence to move beyond static LLM–tool workflows toward autonomous research.",
+      "Advancing the invention patent “Self-Evolving Knowledge Graph and Intelligent Reasoning System for ASC Composite Refractory Materials” as First Patent Inventor, lead author of the technical disclosure and lead algorithm developer (ZGCA + ZGCI; filing work from Sep 2026).",
+      "Built a neuro-symbolic ASC materials science world model integrating multimodal evidence and expert knowledge across composition, processing, reaction mechanisms, phase evolution, microstructure and properties.",
+      "Architected an agentic GraphRAG framework for multi-hop trajectory planning and evidence verification. Combined dynamic agent memory with self-evolving knowledge graphs to incorporate newly published multimodal information and expert domain experience.",
+    ],
     logo: "/assets/organizations/zgci.png",
     logoAlt: "ZGCI",
   },
   {
-    organization: "VIOOH Intelligent Advertising Decision System",
+    organization: "VIOOH · Intelligent Advertising Decision System",
     role: "AI Research Intern",
-    months: 6,
+    distinction: "Commercial Intelligence",
+    period: "Jun 2026 – Present",
+    focus: "Multimodal World Models & Advertising Agents",
+    institutionType: "",
+    summary:
+      "Multimodal world models connect screens, places and audiences. Planning agents support audience matching, reach prediction and budget optimization.",
+    highlights: [
+      "Designed a multimodal world model and an autonomous agent-driven advertising decision system to move beyond rule-based campaign delivery, manual media experience and static user profiles.",
+      "Built a spatial-cognitive world model fusing screen inventory, geospatial data, POI context, visual perception and consumer behavior into a dynamic screen–environment–audience–behavior reasoning chain.",
+      "Designed an advertising planning agent workflow for candidate screen analysis, audience matching, reach prediction and budget optimization, shifting media buying from manual procurement toward automated decision-making.",
+    ],
     logo: "/assets/organizations/viooh.jpg",
     logoAlt: "VIOOH",
   },
@@ -112,5 +141,66 @@ export const knowledgeGroups = [
     zh: "进阶与前沿",
     color: "yellow",
     items: ["AIGC (Generative AI) · LLMs", "Agentic AI · World Models"],
+  },
+] as const;
+
+export const researchLaboratories = [
+  {
+    name: "Zhongguancun Institute of Artificial Intelligence (ZGCI)",
+    label: "China National AI Research Institute",
+    period: "Jun 2026 — Present",
+    periodZh: "2026 年 6 月 — 至今",
+    role: "Lead AI Researcher",
+    distinction: "First Patent Inventor",
+    color: "blue",
+  },
+  {
+    name: "Key Laboratory for Artificial Intelligence and Multi-Modal Data Processing of Department of Education of Guangdong Province",
+    label: "Departmental AI Lab",
+    period: "2023 — 2026",
+    periodZh: "2023 — 2026",
+    role: "AI R&D Algorithm Lead",
+    distinction: "Project Director",
+    color: "purple",
+  },
+  {
+    name: "Guangdong Provincial Key Laboratory of Interdisciplinary Research and Application for Data Science",
+    label: "Provincial Data Science Lab",
+    period: "2023 — 2026",
+    periodZh: "2023 — 2026",
+    role: "AI R&D Algorithm Lead",
+    distinction: "Project Director",
+    color: "mint",
+  },
+] as const;
+
+export const activities = [
+  {
+    name: "NVIDIA AI Summit",
+    logo: "/assets/organizations/nvidia-ai-summit.png",
+    logoAlt: "NVIDIA AI Summit",
+    details: "Taiwan, China · Attendee · Jun 2024",
+    tags: ["NVIDIA", "GTC", "Generative AI"],
+  },
+  {
+    name: "International Congress of Basic Science (ICBS 2026)",
+    logo: "/assets/organizations/icbs-2026.webp",
+    logoAlt: "International Congress of Basic Science",
+    details: "Basic Science and AI Forum · Beijing, China · Aug 2026",
+    tags: ["AI4Science", "Interdisciplinary Research"],
+  },
+  {
+    name: "DACon (Data+AI Conference)",
+    logo: "/assets/organizations/dacon.webp",
+    logoAlt: "DACon · DataFun",
+    details: "Beijing/Shenzhen, China · Jul & Nov 2025",
+    tags: ["Industry-Oriented", "Production-Ready AI", "Agentic AI"],
+  },
+  {
+    name: "Wanxi XiaoIce (Zhongshan) Technology Co., Ltd.",
+    logo: "/assets/organizations/xiaoice.png",
+    logoAlt: "XiaoIce",
+    details: "Project Manager · 2024",
+    tags: ["Digital Human", "AIGC Solutions", "Client Management"],
   },
 ] as const;

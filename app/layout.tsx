@@ -20,6 +20,13 @@ const onest = localFont({
   display: "swap",
 });
 
+const marker = localFont({
+  src: "../public/fonts/permanent-marker-latin.woff2",
+  variable: "--font-marker",
+  weight: "400",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   metadataBase: new URL(`${siteUrl}/`),
   title: {
@@ -42,7 +49,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${onest.variable} font-sans antialiased`}>
+      <body
+        className={`${onest.variable} ${marker.variable} font-sans antialiased`}
+      >
         <PageTransitions>{children}</PageTransitions>
       </body>
     </html>
