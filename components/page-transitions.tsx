@@ -15,7 +15,6 @@ export function PageTransitions({ children }: { children: React.ReactNode }) {
   const zh = /(^|\/)zh(\/|$)/.test(pathname);
   useEffect(() => {
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)");
-    let lastFlash = -Infinity;
     const animations = new Set<Animation>();
     const play = (
       element: HTMLElement | null,
@@ -30,21 +29,25 @@ export function PageTransitions({ children }: { children: React.ReactNode }) {
       animations.add(animation);
       animation.onfinish = () => animations.delete(animation);
     };
-    const reveal = (panel?: HTMLElement) => {
-      if (performance.now() - lastFlash < 500) return;
-      lastFlash = performance.now();
+    const reveal = (panel?: HTMLElement, direction = 1) => {
+      animations.forEach((animation) => animation.cancel());
+      animations.clear();
       play(
         flash.current,
-        [{ opacity: 0 }, { opacity: 0.18, offset: 0.15 }, { opacity: 0 }],
-        420,
+        [
+          { opacity: 0, transform: "scaleX(0)" },
+          { opacity: 0.9, transform: "scaleX(0.65)", offset: 0.45 },
+          { opacity: 0, transform: "scaleX(1)" },
+        ],
+        700,
       );
       play(
         panel ?? content.current,
         [
-          { opacity: 0.35 },
-          { opacity: 1 },
+          { opacity: 0.2, transform: `translateY(${direction * 18}px)` },
+          { opacity: 1, transform: "translateY(0)" },
         ],
-        360,
+        580,
       );
     };
     panels.current = Array.from(
@@ -61,9 +64,11 @@ export function PageTransitions({ children }: { children: React.ReactNode }) {
         const entry = entries.find((item) => item.isIntersecting);
         if (!entry || entry.target === current) return;
         const first = current === null;
+        const previous = panels.current.indexOf(current as HTMLElement);
+        const next = panels.current.indexOf(entry.target as HTMLElement);
         current = entry.target;
-        setActive(panels.current.indexOf(entry.target as HTMLElement));
-        if (!first) reveal(entry.target as HTMLElement);
+        setActive(next);
+        if (!first) reveal(entry.target as HTMLElement, next >= previous ? 1 : -1);
       },
       { rootMargin: "-35% 0px -55% 0px", threshold: 0 },
     );

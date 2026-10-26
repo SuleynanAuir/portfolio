@@ -2331,13 +2331,17 @@ h2 {
 .direction-grid .empty-state {
   grid-column: 1/-1;
 }
-/* Full-page section arrivals and route arrivals share a single soft flash. */
+/* A brief progress sweep accompanies directional page arrivals. */
 .page-flash {
   position: fixed;
-  inset: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
   z-index: 200;
   opacity: 0;
-  background: #fff0bc;
+  transform-origin: left center;
+  background: linear-gradient(90deg, #7aaff4, #a7a5df, #8bc6af);
   pointer-events: none;
 }
 .page-panel {
