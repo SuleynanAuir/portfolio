@@ -16,7 +16,7 @@ export function getLanguageHref(pathname: string) {
 
 export const headerCopy = {
   en: {
-    brandTitle: "AI Research Lab",
+    brandTitle: "Research Portfolio",
     brandSubtitle: "Agents, Knowledge, AI for Science",
     nav: [
       { label: "Home", href: "/asrl_agent_ml_dl_cv_nlp" },
@@ -45,7 +45,7 @@ export const homeCopy = {
     visionEyebrow: "Research Vision",
     visionTitle: "From algorithms to intelligent systems.",
     visionDescription:
-      "The laboratory direction is to build AI systems that understand context, reason over evidence, act through tools, maintain memory, and continuously improve.",
+      "My research direction is to build AI systems that understand context, reason over evidence, act through tools, maintain memory, and continuously improve.",
     contactEyebrow: "Contact",
     contactTitle: "Research projects, publications, and collaboration notes.",
     contactDescription:
@@ -98,22 +98,22 @@ export const homeCopy = {
 
 export const heroCopy = {
   en: {
-    labName: "AI Systems Research Laboratory",
+    labName: "Research Portfolio",
     h1Line1Prefix: "From",
     h1Line1Highlight: "Foundation Models",
     h1Line2Prefix: "to",
-    h1Line2Highlight: "Agentic AI Laboratory 🧑‍🍳",
+    h1Line2Highlight: "Agentic AI Systems",
     description:
       "Exploring evolution of AI from learning algorithms to autonomous reasoning systems.",
     tags: ["LLM Agents 🤖", "GraphRAG 🧩", "AI for Science 🧑‍🔬"],
     author: "Author",
     profileStats: ["Repositories", "Stars", "Followers"],
     explore: "Explore Research",
-    indexEyebrow: "Research Laboratory Index",
+    indexEyebrow: "Research Index",
     ecosystemTitle: "Research ecosystem",
     ecosystemDescription: "Projects, agents, knowledge systems.",
     core: "Core",
-    coreTitle: "AI Lab",
+    coreTitle: "Research Portfolio",
     coreDescription: "Research Converge here",
     currentFocus: "Current focus: AI Agents + Scientific AI",
     navItems: {

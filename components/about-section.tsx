@@ -21,7 +21,7 @@ export function AboutSection() {
         <div className="about-orbit" />
         <div className="about-core">
           <Network size={58} strokeWidth={1.5} />
-          <strong>AI Lab</strong>
+          <strong>AI Systems</strong>
         </div>
         <span className="orbit-label label-top">
           <Search size={20} />

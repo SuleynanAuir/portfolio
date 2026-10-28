@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { ArrowUpRight, X } from "lucide-react";
+import { ArrowUpRight, Github, X } from "lucide-react";
 import { internships } from "@/data/profile";
 import { useCopy } from "@/components/locale-provider";
 import { asset } from "@/lib/site-config";
@@ -40,20 +40,33 @@ export function InternshipEntry({ internship }: { internship: Internship }) {
       <div className="internship-meta-line">
         <div className="internship-roles">
           <strong>{internship.role}</strong>
-          <span>{internship.distinction}</span>
+          <span className={internship.distinction === "First Patent Inventor" ? "patent-distinction" : undefined}>{internship.distinction}</span>
         </div>
         <p className="internship-period">{internship.period}</p>
       </div>
       <p className="internship-summary">{internship.summary}</p>
-      <button
-        className="internship-more"
-        onClick={() => setOpen(true)}
-        aria-haspopup="dialog"
-        aria-label={`${t("Research details", "研究详情")} · ${internship.logoAlt}`}
-      >
-        {t("Research details", "研究详情")}{" "}
-        <ArrowUpRight size={12} aria-hidden="true" />
-      </button>
+      <div className="internship-actions">
+        <button
+          className="internship-more"
+          onClick={() => setOpen(true)}
+          aria-haspopup="dialog"
+          aria-label={`${t("Research details", "研究详情")} · ${internship.logoAlt}`}
+        >
+          {t("Research details", "研究详情")}{" "}
+          <ArrowUpRight size={12} aria-hidden="true" />
+        </button>
+        {"projectUrl" in internship && (
+          <a
+            className="internship-more"
+            href={internship.projectUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub · NEXUS4Sci"
+          >
+            <Github size={12} aria-hidden="true" /> GitHub
+          </a>
+        )}
+      </div>
       <dialog
         ref={dialog}
         className="internship-detail"
@@ -91,7 +104,7 @@ export function InternshipEntry({ internship }: { internship: Internship }) {
         <p className="detail-period">{internship.period}</p>
         <div className="internship-roles">
           <strong>{internship.role}</strong>
-          <span>{internship.distinction}</span>
+          <span className={internship.distinction === "First Patent Inventor" ? "patent-distinction" : undefined}>{internship.distinction}</span>
         </div>
         {internship.institutionType && (
           <p className="detail-institution">{internship.institutionType}</p>

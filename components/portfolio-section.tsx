@@ -7,7 +7,6 @@ import {
   Github,
   Search,
   X,
-  Network,
   Bot,
   BrainCircuit,
   FlaskConical,
@@ -101,18 +100,10 @@ export function PortfolioSection() {
       <span id="portfolio" className="panel-anchor" aria-hidden="true" />
       <div id="about" className="explorer-intro">
         <div className="explorer-heading">
-          <div className="explorer-brand">
-            <Network size={25} aria-hidden="true" />
-            <span>
-              AI Lab<span className="brand-dot">.</span>
-            </span>
-          </div>
           <h2 className="explorer-title">
-            {t("Six Frontiers.", "六大前沿。")}{" "}
-            <span className="highlight coral">
-              {t("Cross-Pollinated.", "跨域交融。")}
-            </span>{" "}
-            {t("Battle-Tested.", "实战淬炼。")}
+            Beyond patterns &amp; prediction, toward{" "}
+            <em className="highlight coral">mechanistic</em>{" "}
+            understanding and real-world intelligence.
           </h2>
         </div>
       </div>

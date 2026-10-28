@@ -122,7 +122,7 @@ export function FeaturedProjects() {
         <blockquote className="selected-quote paper-card">
           <Quote size={30} aria-hidden="true" />
           <p>
-            Beyond patterns and predictions, toward <em>mechanistic</em>{" "}
+            Beyond patterns &amp; prediction, toward <em>mechanistic</em>{" "}
             understanding and <strong>real-world</strong> intelligence.
           </p>
           <cite>—— Suleynan Aiur</cite>

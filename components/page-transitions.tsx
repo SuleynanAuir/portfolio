@@ -12,7 +12,6 @@ export function PageTransitions({ children }: { children: React.ReactNode }) {
   const panels = useRef<HTMLElement[]>([]);
   const [pages, setPages] = useState<string[]>([]);
   const [active, setActive] = useState(0);
-  const zh = /(^|\/)zh(\/|$)/.test(pathname);
   useEffect(() => {
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)");
     const animations = new Set<Animation>();
@@ -95,12 +94,12 @@ export function PageTransitions({ children }: { children: React.ReactNode }) {
       {pages.length > 1 && (
         <nav
           className="page-stepper"
-          aria-label={zh ? "分屏导航" : "Page navigation"}
+          aria-label="Page navigation"
         >
           <button
             onClick={() => move(active - 1)}
             disabled={active === 0}
-            aria-label={zh ? "上一页" : "Previous page"}
+            aria-label="Previous page"
           >
             <ChevronUp size={17} />
           </button>
@@ -111,7 +110,7 @@ export function PageTransitions({ children }: { children: React.ReactNode }) {
           <button
             onClick={() => move(active + 1)}
             disabled={active === pages.length - 1}
-            aria-label={zh ? "下一页" : "Next page"}
+            aria-label="Next page"
           >
             <ChevronDown size={17} />
           </button>

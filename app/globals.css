@@ -476,21 +476,6 @@ h2 {
   font-size: 11px;
   line-height: 1;
 }
-.coursework-tags li:nth-child(4n + 2) {
-  background: #efebff;
-  border-color: #d1c4ed;
-  color: #62428a;
-}
-.coursework-tags li:nth-child(4n + 3) {
-  background: #e6f4e9;
-  border-color: #b9d9c2;
-  color: #286043;
-}
-.coursework-tags li:nth-child(4n) {
-  background: #fff4d9;
-  border-color: #e5d3a3;
-  color: #765412;
-}
 .portrait-frame {
   border: 3px solid #101010;
   border-radius: 28px;
@@ -2131,12 +2116,6 @@ h2 {
   font-size: 10px;
   font-weight: 700;
 }
-.research-principles > span:nth-child(2) {
-  background: #fff1c5;
-}
-.research-principles > span:nth-child(3) {
-  background: #d8efdf;
-}
 .research-principles small {
   font-size: 9px;
   font-weight: 500;
@@ -3122,18 +3101,6 @@ h2 {
   padding: 1px 5px;
   color: #315b91;
   background: #eaf2ff;
-}
-.activity-1 .activity-tags li {
-  color: #326849;
-  background: #eaf6ed;
-}
-.activity-2 .activity-tags li {
-  color: #704c9b;
-  background: #f0eafa;
-}
-.activity-4 .activity-tags li {
-  color: #8b5d0b;
-  background: #fff2d4;
 }
 @media (min-width: 1100px) {
   .home-intro > .hero {
@@ -4343,31 +4310,6 @@ h2 {
   padding: 7px 10px;
   font-size: 12px;
 }
-.study-tags .study-tag-0 {
-  background: #e3efff;
-  color: #284e82;
-  border-color: #bdd3ee;
-}
-.study-tags .study-tag-1 {
-  background: #eee6fb;
-  color: #66438b;
-  border-color: #d6c4ec;
-}
-.study-tags .study-tag-2 {
-  background: #e2f2e8;
-  color: #2e694b;
-  border-color: #bfdcca;
-}
-.study-tags .study-tag-3 {
-  background: #fff0ce;
-  color: #815b14;
-  border-color: #edd7a4;
-}
-.study-tags .study-tag-4 {
-  background: #fbe4e9;
-  color: #963a54;
-  border-color: #edc2cd;
-}
 .study-figure {
   margin: 26px 0;
   border: 1px solid #dedbd5;
@@ -5278,4 +5220,184 @@ h2 {
     width: 48px;
     height: 48px;
   }
+}
+
+/* Shared quiet palette: neutral information surfaces, blue for emphasis. */
+:root {
+  --ui-surface: #f4f5f6;
+  --ui-border: #dfe3e7;
+  --ui-ink: #46515e;
+  --ui-accent: #345d83;
+  --ui-accent-soft: #edf2f7;
+  --ui-shadow: 0 4px 18px rgb(25 40 55 / 5%);
+}
+
+.home-intro {
+  --surface-blue: var(--ui-accent-soft);
+  --surface-purple: var(--ui-surface);
+  --surface-mint: var(--ui-surface);
+  --surface-gold: var(--ui-surface);
+  --surface-rose: var(--ui-surface);
+}
+
+.coral, .yellow, .purple {
+  background: var(--ui-surface);
+  color: #252b33;
+}
+.blue {
+  background: var(--ui-accent-soft);
+  color: var(--ui-accent);
+}
+
+.tag-list span,
+.study-tags span,
+.activity-tags li,
+.coursework-tags li,
+.research-principles > span,
+.direction-tags li,
+.internship-roles strong,
+.internship-roles > span,
+.internship-duration,
+.rank-badge,
+.gpa-badge,
+.honor-role,
+.coming-soon {
+  background: var(--ui-surface);
+  color: var(--ui-ink);
+  border-color: var(--ui-border);
+  box-shadow: none;
+}
+
+.knowledge-group {
+  background: transparent;
+  border-color: var(--ui-border);
+}
+.knowledge-group li,
+.selected-quote em {
+  color: var(--ui-ink);
+}
+
+.laboratory-item {
+  --lab-accent: var(--ui-border);
+  --lab-bg: transparent;
+  --lab-ink: var(--ui-ink);
+}
+
+/* Let type and spacing carry section hierarchy instead of marker blocks. */
+.brush-label {
+  padding-inline: 0;
+  transform: none;
+}
+.brush-label::before,
+.brush-label::after {
+  content: none;
+}
+.profile-section-heading > svg {
+  color: var(--ui-accent);
+}
+
+.paper-card,
+.paper-nav,
+.direction-card,
+.detail-hero-image,
+.selected-quote {
+  border-color: var(--ui-border);
+  box-shadow: var(--ui-shadow);
+}
+.direction-card {
+  background: #fff;
+}
+.direction-icon,
+.explorer-brand > svg {
+  background: transparent;
+  color: var(--ui-accent);
+  border-color: var(--ui-border);
+  box-shadow: none;
+}
+.selected-card:hover {
+  box-shadow: 0 6px 22px rgb(25 40 55 / 10%);
+}
+.selected-title h2 span {
+  background: transparent;
+  color: var(--ui-accent);
+  padding-inline: 0;
+}
+.selected-quote > svg {
+  color: var(--ui-accent);
+}
+.selected-page .site-footer {
+  background: #f5f6f7;
+  color: #252b33;
+}
+.selected-page .contact-banner {
+  background: transparent;
+  border-bottom: 1px solid var(--ui-border);
+  border-radius: 0;
+}
+.home-intro .header-topics li > span {
+  color: #c8d5e2;
+}
+
+/* Text-only emphasis keeps important credentials visible on quiet surfaces. */
+.hero-description .skill-blue { color: #345d83; }
+.hero-description .skill-purple { color: #70518e; }
+.hero-description .skill-coral { color: #9b4b60; }
+.hero-description .skill-mint { color: #34735c; }
+.hero-description .skill-yellow { color: #876322; }
+
+.internship-roles strong,
+.laboratory-role .research-role {
+  color: #2563eb;
+  font-weight: 700;
+}
+.internship-roles > .patent-distinction,
+.laboratory-role > .patent-distinction {
+  color: #7c3aed;
+  font-weight: 700;
+}
+.laboratory-label.institution-emphasis {
+  color: #345d83;
+  font-weight: 750;
+}
+.honor-emphasis,
+.rank-badge {
+  color: #a65f00;
+}
+
+.gpa-badge {
+  color: #2563eb;
+}
+.internship-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px 14px;
+}
+
+/* Restore the vivid paper palette within the research explorer. */
+.research-explorer .explorer-title {
+  max-width: 1000px;
+  margin-inline: auto;
+  white-space: normal;
+  text-wrap: balance;
+  line-height: 1.45;
+}
+.research-explorer .highlight.coral {
+  background: #ff6b7a;
+  color: #151515;
+}
+.research-explorer .direction-card {
+  border-color: #101010;
+  box-shadow: 3px 3px 0 #101010;
+}
+.research-explorer .direction-icon {
+  color: #101010;
+  background: #ffffff80;
+  border-color: #101010;
+  box-shadow: 3px 2px 0 #101010;
+}
+.research-explorer .direction-tags li {
+  background: #ffffff90;
+  color: #101010;
+  border-color: #101010;
 }

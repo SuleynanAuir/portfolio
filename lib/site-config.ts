@@ -12,7 +12,7 @@ export function imageSize(path: string) {
 /** Personal details and deployment settings shared by every page. */
 export const site = {
   name: "Suleynan Aiur",
-  title: "AI Research Lab",
+  title: "Research Portfolio",
   github: "https://github.com/SuleynanAuir",
   avatar: "/assets/web_page/head_img.jpeg",
   logo: "/assets/web_page/logo.png",

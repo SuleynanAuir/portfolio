@@ -13,7 +13,7 @@ export function Footer({ compact = false }: { compact?: boolean }) {
     return (
       <footer id="contact" className="selected-footer shell">
         <span>
-          © {new Date().getFullYear()} {site.name} · AI Research Lab
+          © {new Date().getFullYear()} {site.name}
         </span>
         <a href={site.github} target="_blank" rel="noreferrer">
           <Github size={16} /> GitHub <ArrowUpRight size={15} />
@@ -45,14 +45,14 @@ export function Footer({ compact = false }: { compact?: boolean }) {
           <div>
             <Link className="brand" href={href()}>
               <img src={asset(site.logo)} width="36" height="36" alt="" />
-              AI Lab.
+              {site.name}
             </Link>
             <p>{homeCopy[locale].contactDescription}</p>
           </div>
           <div>
             <h3>{t("Explore", "探索")}</h3>
             <Link href={`${href()}#about`}>
-              {t("About the lab", "关于实验室")}
+              {t("About me", "关于实验室")}
             </Link>
             <Link href={`${href()}#research`}>
               {t("Research directions", "研究方向")}
@@ -75,7 +75,7 @@ export function Footer({ compact = false }: { compact?: boolean }) {
         </div>
         <div className="footer-bottom">
           <span>
-            © {new Date().getFullYear()} {site.name} · AI Research Lab
+            © {new Date().getFullYear()} {site.name}
           </span>
           <Link href={href()}>
             {t("Back to top", "返回顶部")}

@@ -55,6 +55,7 @@ export const internships = [
     ],
     logo: "/assets/organizations/zgci.png",
     logoAlt: "ZGCI",
+    projectUrl: "https://suleynanauir.github.io/NEXUS4SCI-Mat-Project-Page/",
   },
   {
     organization: "VIOOH · Intelligent Advertising Decision System",
@@ -156,7 +157,7 @@ export const researchLaboratories = [
   },
   {
     name: "Key Laboratory for Artificial Intelligence and Multi-Modal Data Processing of Department of Education of Guangdong Province",
-    label: "Departmental AI Lab",
+    label: "Departmental AI Research",
     period: "2023 — 2026",
     periodZh: "2023 — 2026",
     role: "AI R&D Algorithm Lead",

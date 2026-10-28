@@ -30,13 +30,13 @@ const marker = localFont({
 export const metadata: Metadata = {
   metadataBase: new URL(`${siteUrl}/`),
   title: {
-    default: `${site.name} · AI Research Lab`,
+    default: `${site.name} · Research Portfolio`,
     template: `%s · ${site.name}`,
   },
   description: site.description,
   authors: [{ name: site.name, url: site.github }],
   openGraph: {
-    title: `${site.name} · AI Research Lab`,
+    title: `${site.name} · Research Portfolio`,
     description: site.description,
     type: "website",
   },

@@ -12,13 +12,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...allProjects.map((project) => `/projects/${project.slug}/`),
     ...getAllProjects().map((note) => `/notes/${note.slug}/`),
   ];
-  return paths.flatMap((path) => {
-    const en = `${siteUrl}${path}`;
-    const zh = `${siteUrl}/zh${path}`;
-    const alternates = { languages: { en, "zh-CN": zh } };
-    return [
-      { url: en, alternates },
-      { url: zh, alternates },
-    ];
-  });
+  return paths.map((path) => ({ url: `${siteUrl}${path}` }));
 }

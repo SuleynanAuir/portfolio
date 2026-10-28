@@ -78,8 +78,8 @@ export function ProjectDetail({ slug }: { slug: string }) {
           <h1>{project.name}</h1>
           <p className="detail-summary">{text(study.overview)}</p>
           <div className="tag-list study-tags">
-            {project.keywords.map((keyword, index) => (
-              <span className={`study-tag-${index % 5}`} key={keyword}>
+            {project.keywords.map((keyword) => (
+              <span key={keyword}>
                 {keyword}
               </span>
             ))}

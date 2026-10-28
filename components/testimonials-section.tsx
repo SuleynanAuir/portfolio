@@ -33,7 +33,7 @@ export function TestimonialsSection() {
           <div>
             <strong>{site.name}</strong>
             <span>
-              {t("AI Systems Research Laboratory", "AI 系统研究实验室")}
+              {t("Research Portfolio", "AI 系统研究实验室")}
             </span>
           </div>
           <a

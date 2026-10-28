@@ -2,24 +2,14 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { ArrowUpRight, Menu, X } from "lucide-react";
 import { useCopy } from "@/components/locale-provider";
-import { asset, basePath, site } from "@/lib/site-config";
+import { asset, site } from "@/lib/site-config";
 import { researchTopics } from "@/data/profile";
 
 export function Navigation() {
-  const { locale, t, href } = useCopy();
+  const { t, href } = useCopy();
   const [open, setOpen] = useState(false);
-  const pathname = usePathname();
-  const localPath =
-    basePath && pathname.startsWith(basePath)
-      ? pathname.slice(basePath.length) || "/"
-      : pathname;
-  const switchPath =
-    locale === "zh"
-      ? localPath.replace(/^\/zh(?=\/|$)/, "") || "/"
-      : `/zh${localPath === "/" ? "/" : localPath}`;
   const links = [
     [t("About", "关于"), "about"],
     [t("Research", "研究"), "research"],
@@ -36,11 +26,11 @@ export function Navigation() {
           <Link
             href={href()}
             className="brand"
-            aria-label={t("AI Research Lab home", "AI 研究实验室首页")}
+            aria-label="Suleynan Aiur home"
           >
             <img src={asset(site.logo)} width="36" height="36" alt="" />
             <span>
-              AI Lab<span className="brand-dot">.</span>
+              {site.name}<span className="brand-dot">.</span>
             </span>
           </Link>
           <div className="desktop-nav">
@@ -64,13 +54,6 @@ export function Navigation() {
             </ul>
           </div>
           <div className="nav-actions">
-            <Link
-              className="language-switch"
-              href={switchPath}
-              aria-label={t("Switch to Chinese", "切换为英文")}
-            >
-              {t("中文", "EN")}
-            </Link>
             <Link
               className="nav-contact"
               href={`${href()}#contact`}

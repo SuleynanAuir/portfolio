@@ -16,10 +16,6 @@ export function HeroSection() {
   return (
     <section id="home" className="hero shell">
       <div className="hero-copy">
-        <p className="eyebrow">
-          <span className="status-dot" />{" "}
-          {t("AI SYSTEMS RESEARCH LABORATORY", "AI 系统研究实验室")}
-        </p>
         <h1>
           <span className="hero-title-line">
             {t("Hi, I'm", "你好，我是")}{" "}

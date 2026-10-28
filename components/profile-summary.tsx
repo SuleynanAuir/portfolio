@@ -121,7 +121,13 @@ export function ProfileSummary() {
               <li key={honor} className={logo ? "honor-with-logo" : undefined}>
                 {role && ranking ? (
                   <>
-                    <span className="honor-title">{title}</span>
+                    <span className="honor-title">
+                      {title.split(/(Silver Prize)/g).map((part, index) =>
+                        part === "Silver Prize" ? (
+                          <strong className="honor-emphasis" key={index}>{part}</strong>
+                        ) : part,
+                      )}
+                    </span>
                     <span className="honor-details">
                       <strong className="honor-emphasis">({ranking})</strong>
                       <span className="honor-role">{role}</span>

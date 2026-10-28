@@ -56,7 +56,7 @@ export function AcademicProfile() {
         <h2 className="profile-section-heading">
           <FlaskConical size={24} aria-hidden="true" />
           <span className="brush-label">
-            {t("Research Laboratory", "研究实验室")}
+            {t("Research Experience", "研究实验室")}
           </span>
         </h2>
         <ul>
@@ -72,10 +72,11 @@ export function AcademicProfile() {
                 </span>
               </h3>
               <div className="laboratory-meta">
-                <span className="laboratory-label">{lab.label}</span>
+                <span className={`laboratory-label${lab.label === "China National AI Research Institute" ? " institution-emphasis" : ""}`}>{lab.label}</span>
                 <span className="laboratory-role">
-                  <span className="role-caption">Role</span> {lab.role} +{" "}
-                  <strong>{lab.distinction}</strong>
+                  <span className="role-caption">Role</span>{" "}
+                  <span className="research-role">{lab.role}</span> +{" "}
+                  <strong className={lab.distinction === "First Patent Inventor" ? "patent-distinction" : undefined}>{lab.distinction}</strong>
                 </span>
               </div>
             </li>
