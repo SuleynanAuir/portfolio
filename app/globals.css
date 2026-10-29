@@ -5377,9 +5377,15 @@ h2 {
   flex-wrap: wrap;
   gap: 4px 14px;
 }
+.internship-project-heading {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 12px;
+  white-space: nowrap;
+}
 .internship-heading .internship-project-link {
   margin-top: 0;
-  margin-left: 12px;
+  flex-shrink: 0;
   vertical-align: baseline;
   white-space: nowrap;
 }

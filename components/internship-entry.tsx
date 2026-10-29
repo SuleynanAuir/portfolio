@@ -29,17 +29,22 @@ export function InternshipEntry({ internship }: { internship: Internship }) {
     <li className="internship-entry">
       <div className="internship-heading">
         <h3>
-          {internship.organization}
-          {"projectUrl" in internship && (
-            <a
-              className="internship-more internship-project-link"
-              href={internship.projectUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Github size={12} aria-hidden="true" /> Patent Project Page
-            </a>
-          )}
+          {"projectUrl" in internship ? (
+            <>
+              {internship.organization.slice(0, internship.organization.lastIndexOf(" · "))} ·{" "}
+              <span className="internship-project-heading">
+                {internship.organization.slice(internship.organization.lastIndexOf(" · ") + 3)}
+                <a
+                  className="internship-more internship-project-link"
+                  href={internship.projectUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Github size={12} aria-hidden="true" /> Patent Project Page
+                </a>
+              </span>
+            </>
+          ) : internship.organization}
         </h3>
         <img
           className="internship-logo"
