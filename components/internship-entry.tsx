@@ -28,7 +28,19 @@ export function InternshipEntry({ internship }: { internship: Internship }) {
   return (
     <li className="internship-entry">
       <div className="internship-heading">
-        <h3>{internship.organization}</h3>
+        <h3>
+          {internship.organization}
+          {"projectUrl" in internship && (
+            <a
+              className="internship-more internship-project-link"
+              href={internship.projectUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Github size={12} aria-hidden="true" /> Patent Project Page
+            </a>
+          )}
+        </h3>
         <img
           className="internship-logo"
           src={asset(internship.logo)}
@@ -55,17 +67,6 @@ export function InternshipEntry({ internship }: { internship: Internship }) {
           {t("Research details", "研究详情")}{" "}
           <ArrowUpRight size={12} aria-hidden="true" />
         </button>
-        {"projectUrl" in internship && (
-          <a
-            className="internship-more"
-            href={internship.projectUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="GitHub · NEXUS4Sci"
-          >
-            <Github size={12} aria-hidden="true" /> GitHub
-          </a>
-        )}
       </div>
       <dialog
         ref={dialog}

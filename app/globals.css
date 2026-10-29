@@ -5284,7 +5284,11 @@ h2 {
 }
 
 /* Let type and spacing carry section hierarchy instead of marker blocks. */
-.brush-label {
+.brush-label,
+.brush-label:lang(zh) {
+  font-family: var(--font-onest), sans-serif;
+  font-weight: 800;
+  font-style: normal;
   padding-inline: 0;
   transform: none;
 }
@@ -5372,6 +5376,12 @@ h2 {
   align-items: center;
   flex-wrap: wrap;
   gap: 4px 14px;
+}
+.internship-heading .internship-project-link {
+  margin-top: 0;
+  margin-left: 12px;
+  vertical-align: baseline;
+  white-space: nowrap;
 }
 
 /* Restore the vivid paper palette within the research explorer. */
