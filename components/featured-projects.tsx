@@ -125,7 +125,7 @@ export function FeaturedProjects() {
             Beyond patterns &amp; prediction, toward <em>mechanistic</em>{" "}
             understanding and <strong>real-world</strong> intelligence.
           </p>
-          <cite>—— Suleynan Aiur</cite>
+          <cite>—— Minghao LI</cite>
         </blockquote>
       </header>
       <div className="selected-label">

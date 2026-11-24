@@ -26,7 +26,7 @@ export function Navigation() {
           <Link
             href={href()}
             className="brand"
-            aria-label="Suleynan Aiur home"
+            aria-label="Minghao LI home"
           >
             <img src={asset(site.logo)} width="36" height="36" alt="" />
             <span>

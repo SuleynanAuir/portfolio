@@ -11,10 +11,10 @@ export function imageSize(path: string) {
 
 /** Personal details and deployment settings shared by every page. */
 export const site = {
-  name: "Suleynan Aiur",
+  name: "Minghao LI",
   title: "Research Portfolio",
   github: "https://github.com/SuleynanAuir",
-  avatar: "/assets/web_page/head_img.jpeg",
+  avatar: "/assets/liminghao_avatar.png",
   logo: "/assets/web_page/logo.png",
   description:
     "AI research portfolio: autonomous agents, foundation models, scientific AI, machine learning, reinforcement learning and multimodal intelligence.",

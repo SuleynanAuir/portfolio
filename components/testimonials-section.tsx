@@ -41,8 +41,8 @@ export function TestimonialsSection() {
             target="_blank"
             rel="noreferrer"
             aria-label={t(
-              "View Suleynan Aiur on GitHub",
-              "在 GitHub 上查看 Suleynan Aiur",
+              "View Minghao LI on GitHub",
+              "在 GitHub 上查看 Minghao LI",
             )}
           >
             <ArrowUpRight size={28} />

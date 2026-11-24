@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { ArrowDownRight, ArrowUpRight, Github, Sparkles } from "lucide-react";
 import { useCopy } from "@/components/locale-provider";
-import { allProjects, projectImage, site } from "@/lib/site-config";
+import { allProjects, asset, site } from "@/lib/site-config";
 import { researchCategories } from "@/data/portfolio";
 import { AcademicProfile } from "@/components/academic-profile";
 import {
@@ -56,10 +56,10 @@ export function HeroSection() {
         <div className="portrait-frame">
           <img
             className="portrait"
-            src={projectImage(site.avatar)}
+            src={asset(site.avatar)}
             width="800"
             height="800"
-            alt="Suleynan Aiur"
+            alt="Minghao LI"
             fetchPriority="high"
           />
           <div className="portrait-caption">
