@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowDownRight, ArrowUpRight, Github, Sparkles } from "lucide-react";
+import { ArrowDownRight, ArrowUpRight, Github } from "lucide-react";
 import { useCopy } from "@/components/locale-provider";
 import { allProjects, asset, site } from "@/lib/site-config";
 import { researchCategories } from "@/data/portfolio";
@@ -62,14 +62,6 @@ export function HeroSection() {
             alt="Minghao LI"
             fetchPriority="high"
           />
-          <div className="portrait-caption">
-            <span>RESEARCH. BUILD. REPEAT.</span>
-            <Sparkles size={22} />
-          </div>
-        </div>
-        <div className="sticker sticker-top">
-          <Sparkles size={20} />{" "}
-          {t("Curiosity → intelligence", "从好奇心到智能")}
         </div>
         <div className="sticker sticker-bottom">
           <span className="sticker-number">{allProjects.length}</span>
